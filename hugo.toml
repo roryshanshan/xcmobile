@@ -1,0 +1,78 @@
+baseurl = "https://example.com"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Hugo Theme Dream"
+theme = "dream"
+
+# [services]
+# [services.disqus]
+# shortname = ""
+# [services.googleAnalytics]
+# ID = ""
+
+[params]
+# zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "img/1.jpg"
+# backgroundImageDark = ""
+
+author = "Dream"
+description = "XC MOBILE HOUSE--Manufacturer for mobile house"
+avatar = "img/avatar.jpg"
+headerTitle = "XC MOBILE HOUSE--Manufacturer for mobile house"
+motto = "Be your best supplier--Made IN CHINA"
+
+footerBottomText = "Qingzhou County, Weifang City, Shandong Province"
+
+# rss = true
+
+# utterancesRepo = ""
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+# email = "roryshanshan@gmail.com"
+
+siteStartYear = 2016
+
+# favicon = "favicon.ico"
+
+# Syntax highlighting
+# customSyntaxHighlighting = true
+
+# options
+# stickyNav = true
+# reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
+# collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+# showTableOfContents = true
+# showSummaryCoverInPost = true
+# imageZoomableInPost = true
+# showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+[params.navItems]
+spaceCapsule = { href = "/categories/space-capsule/", icon = "cube", title = "Space Capsule" }
+appleCabin = { href = "/categories/apple-cabin/", icon = "leaf", title = "Apple Cabin" }
+kitchenHouse = { href = "/categories/kitchen-house/", icon = "restaurant", title = "Kitchen House" }
+
+[params.twikoo]
+enabled = true
+envID = ""
+region = ""
+lang = "en"
+
+# [params.advanced]
+# customCSS = ["css/custom.css"]
+# customJS = []
+
+# [params.experimental]
+# jsDate = true
+# jsDateFormat = "yyyy年MM月dd日"
