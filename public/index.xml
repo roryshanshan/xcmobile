@@ -1,40 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Theme Dream</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Hugo Theme Dream</description>
+    <title>XC Mobile House</title>
+    <link>https://roryshanshan.github.io/xcmobile/</link>
+    <description>Recent content on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://roryshanshan.github.io/xcmobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test1</title>
-      <link>http://localhost:1313/posts/test1/</link>
+      <title>Apple Cabin</title>
+      <link>https://roryshanshan.github.io/xcmobile/apple-cabin/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test1/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <guid>https://roryshanshan.github.io/xcmobile/apple-cabin/</guid>
+      <description>&lt;p&gt;I have made a blog and upload a catalog for &lt;a href=&#34;https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/&#34; target=&#34;_blank&#34;&gt;apple cabin house: please check here&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;div style=&#34;display: flex; align-items: center; justify-content: space-between; background-color: rgb(1, 136, 255); border: 1px solid #cce; border-radius: 12px; padding: 1rem 1.5rem; max-width: 500px; margin: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;div style=&#34;font-size: 1.1rem; color: #fff;&#34;&gt;&#xA;    📄 &lt;strong&gt;XC Apple Cabin Brochure&lt;/strong&gt;&lt;br/&gt;&#xA;    PDF Download Available&#xA;  &lt;/div&gt;&#xA;  &lt;a href=&#34;https://roryshanshan.github.io/xcmobile/files/XC-Apple-Cabin.pdf&#34; target=&#34;_blank&#34; style=&#34;background-color: #ffffff; color: #007BFF; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; white-space: nowrap; margin-left: 1rem;&#34;&gt;&#xA;    View PDF&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;    &#xA;&lt;p&gt;If you have any needs for customizing, please contact me (Drawing provided will be better)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Test1</title>
-      <link>http://localhost:1313/posts/test1_%E5%89%AF%E6%9C%AC/</link>
+      <title>Catalog for apple cabin</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test1_%E5%89%AF%E6%9C%AC/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Test1</title>
-      <link>http://localhost:1313/posts/test1_%E5%89%AF%E6%9C%AC2/</link>
+      <title>Double-Story Gable Roof House Details</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/double-story-gable-roof-house-details/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test1_%E5%89%AF%E6%9C%AC2/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/double-story-gable-roof-house-details/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Test1</title>
-      <link>http://localhost:1313/posts/test1_%E5%89%AF%E6%9C%AC3/</link>
+      <title>E5 MODEL (Space capsule) details</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test1_%E5%89%AF%E6%9C%AC3/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E7 MODEL (Space capsule) details</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kitchen House</title>
+      <link>https://roryshanshan.github.io/xcmobile/kitchen-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/kitchen-house/</guid>
+      <description>&lt;h2 id=&#34;video-for-kitchen-house&#34;&gt;Video for kitchen house&lt;/h2&gt;&#xA;&lt;style&gt;&#xA;  .responsive-video-wrapper {&#xA;    position: relative;&#xA;    padding-bottom: 56.25%; /* 16:9 ratio */&#xA;    height: 0;&#xA;    overflow: hidden;&#xA;    max-width: 100%;&#xA;  }&#xA;&#xA;  .responsive-video-wrapper iframe {&#xA;    position: absolute;&#xA;    top: 0;&#xA;    left: 0;&#xA;    width: 100%;&#xA;    height: 100%;&#xA;    border: 0;&#xA;  }&#xA;&lt;/style&gt;&#xA;&lt;div class=&#34;responsive-video-wrapper&#34; id=&#34;bilibili-video-container&#34;&gt;&lt;/div&gt;&#xA;&lt;script&gt;&#xA;  const container = document.getElementById(&#39;bilibili-video-container&#39;);&#xA;  const iframe = document.createElement(&#39;iframe&#39;);&#xA;  iframe.src = &#39;https://player.bilibili.com/player.html?bvid=BV1f5ddYKEKZ&amp;autoplay=0&#39;;&#xA;  iframe.allowFullscreen = true;&#xA;  container.appendChild(iframe);&#xA;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Our Featured Projects</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Space Capsule House </title>
+      <link>https://roryshanshan.github.io/xcmobile/space-capsule/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/space-capsule/</guid>
+      <description>&lt;h1 id=&#34;for-now-only-e5-model-is-available&#34;&gt;For now only E5 model is available&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;  &lt;blockquote&gt;&#xA;    &lt;h2 id=&#34;-we-are-currently-producing-100-units-e5-models&#34;&gt;🏭 We are currently producing 100 units E5 models&lt;/h2&gt;&#xA;&lt;h2 id=&#34;you-are-welcome-to-visit-our-factory-for-process-and-quality-inspection&#34;&gt;&lt;center&gt;You are welcome to visit our factory for process and quality inspection.&lt;/h2&gt;&#xA;  &lt;/blockquote&gt;&#xA;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;  &lt;iframe &#xA;    src=&#34;https://player.bilibili.com/player.html?bvid=BV1JedoYGEyP&amp;autoplay=0&#34; &#xA;    allowfullscreen &#xA;    style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&gt;&#xA;  &lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;center&gt;&#xA;  &lt;a href=&#34;https://vr.3d66.com/next/vr/view/5962204&#34; style=&#34;color: blue; font-size: 24px; font-weight: bold; letter-spacing: 1px;&#34;&gt;&#xA;    Click here to view VR content&#xA;  &lt;/a&gt;&#xA;&lt;/center&gt;&#xA;&lt;p&gt;&lt;strong&gt;📷 Project Image Gallery&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; width: 100%; overflow: hidden; max-width: 1000px; margin: auto;&#34;&gt;&#xA;  &lt;div id=&#34;carousel-track&#34; style=&#34;display: flex; transition: transform 0.5s ease; gap: 20px;&#34;&gt;&#xA;    &lt;img src=&#34;https://i.postimg.cc/nHBmRW5B/79392e224812ea8e198ac0aafcae3299.jpg?dl=1&#34; style=&#34;width: 300px; border: 2px solid #666; border-radius: 8px;&#34; /&gt;&#xA;    &lt;img src=&#34;https://i.postimg.cc/0kCwxw9N/20250416102628601.png?dl=1&#34; style=&#34;width: 300px; border: 2px solid #666; border-radius: 8px;&#34; /&gt;&#xA;    &lt;img src=&#34;https://i.postimg.cc/BJ8HDbBh/fa2623135b9513ac365ff8855aa06dfe.jpg?dl=1&#34; style=&#34;width: 300px; border: 2px solid #666; border-radius: 8px;&#34; /&gt;&#xA;    &lt;img src=&#34;https://i.postimg.cc/VmkjfDrP/edbec8b7b6c76ebf4692ff57f0af8c07.jpg?dl=1&#34; style=&#34;width: 300px; border: 2px solid #666; border-radius: 8px;&#34; /&gt;&#xA;    &lt;img src=&#34;https://i.postimg.cc/R9R7xj0T/4a35acd2a486b7a2fe929e6279addd3b.jpg?dl=1&#34; style=&#34;width: 300px; border: 2px solid #666; border-radius: 8px;&#34; /&gt;&#xA;    &lt;img src=&#34;https://i.postimg.cc/hggLwSKj/f711f81e9bd8fd227d027f634e4b773c.jpg?dl=1&#34; style=&#34;width: 300px; border: 2px solid #666; border-radius: 8px;&#34; /&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- 左右箭头 --&gt;&#xA;&lt;p&gt;&lt;button onclick=&#34;moveSlide(-1)&#34; style=&#34;position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer;&#34;&gt;❮&lt;/button&gt;&#xA;&lt;button onclick=&#34;moveSlide(1)&#34; style=&#34;position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 24px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer;&#34;&gt;❯&lt;/button&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Villa</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/villa/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/villa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What model we can do</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/what-model-for-mobile-house-we-can-do/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/what-model-for-mobile-house-we-can-do/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>XC Catalog </title>
+      <link>https://roryshanshan.github.io/xcmobile/xc-catalog/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/xc-catalog/</guid>
+      <description>&lt;div style=&#34;display: flex; align-items: center; justify-content: space-between; background-color: rgb(1, 136, 255); border: 1px solid #cce; border-radius: 12px; padding: 1rem 1.5rem; max-width: 500px; margin: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;div style=&#34;font-size: 1.1rem; color: #fff;&#34;&gt;&#xA;    📄 &lt;strong&gt;XC mobile house Brochure&lt;/strong&gt;&lt;br/&gt;&#xA;    PDF Download Available&#xA;  &lt;/div&gt;&#xA;  &lt;a href=&#34;https://roryshanshan.github.io/xcmobile/files/XC-mobilehouse.pdf&#34; target=&#34;_blank&#34; style=&#34;background-color: #ffffff; color: #007BFF; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; white-space: nowrap; margin-left: 1rem;&#34;&gt;&#xA;    View PDF&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;    &#xA;&#xA;&#xA;&#xA;  &lt;blockquote&gt;&#xA;    &lt;h1 id=&#34;welcome-to-our-factory-for-inspection-hope-to-be-your-supplier-and-partner&#34;&gt;&lt;center&gt; Welcome to our factory for inspection, hope to be your supplier and partner&lt;/h1&gt;&#xA;  &lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/GdJ4hnJt/202504141229119.png?dl=1&#34; alt=&#34;XC SAPCE CAPSULE HOUSE&#34;&gt;&#xA;&lt;img src=&#34;https://i.postimg.cc/vb85kwKr/20250414141129193.png?dl=1&#34; alt=&#34;XC SAPCE CAPSULE HOUSE&#34;&gt;&#xA;&lt;img src=&#34;https://i.postimg.cc/7wVR5sZH/20250416075936936.png?dl=1&#34; alt=&#34;XC SAPCE CAPSULE HOUSE&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>other</title>
+      <link>https://roryshanshan.github.io/xcmobile/other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/other/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

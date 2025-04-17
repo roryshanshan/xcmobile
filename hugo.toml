@@ -1,29 +1,26 @@
-baseurl = "https://example.com"
+baseURL = "https://roryshanshan.github.io/xcmobile/"
 defaultContentLanguage = "en"
 languageCode = "en"
-title = "Hugo Theme Dream"
+title = "XC Mobile House"
 theme = "dream"
 
-# [services]
-# [services.disqus]
-# shortname = ""
-# [services.googleAnalytics]
-# ID = ""
 
 [params]
-# zenMode = true
+enableMenu = true
+github = { href = "https://github.com/g1eny0ung", title = "GitHub" }
+favicon = "https://i.postimg.cc/sjj7ZykN/202504120804853.png"
 
 lightTheme = "emerald"
 darkTheme = "forest"
 
-# backgroundImage = "img/1.jpg"
+# backgroundImage = "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
 # backgroundImageDark = ""
 
-author = "Dream"
+author = "Gavin"
 description = "XC MOBILE HOUSE--Manufacturer for mobile house"
-avatar = "img/avatar.jpg"
+avatar = "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
 headerTitle = "XC MOBILE HOUSE--Manufacturer for mobile house"
-motto = "Be your best supplier--Made IN CHINA"
+# motto = "Be your best supplier--Made IN CHINA"
 
 footerBottomText = "Qingzhou County, Weifang City, Shandong Province"
 
@@ -38,30 +35,25 @@ footerBottomText = "Qingzhou County, Weifang City, Shandong Province"
 # waline = true
 # walineServer = ""
 
-# email = "roryshanshan@gmail.com"
+email = "roryshanshan@gmail.com"
 
 siteStartYear = 2016
 
-# favicon = "favicon.ico"
 
 # Syntax highlighting
 # customSyntaxHighlighting = true
 
 # options
-# stickyNav = true
-# reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
-# collapseNavItems = ["posts", "categories", "tags"]
-# noDefaultSummaryCover = true
-# showTableOfContents = true
-# showSummaryCoverInPost = true
-# imageZoomableInPost = true
+stickyNav = true
+# reorderNavItems =  ["about", "search", "rss", "posts", "categories", "tags"]
+collapseNavItems = ["posts", "categories", "tags"]
+noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
 # showPrevNextPost = true
-# reorderShares = ["x", "facebook", "whatsapp"]
+reorderShares = ["x", "facebook", "whatsapp"]
 
-[params.navItems]
-spaceCapsule = { href = "/categories/space-capsule/", icon = "cube", title = "Space Capsule" }
-appleCabin = { href = "/categories/apple-cabin/", icon = "leaf", title = "Apple Cabin" }
-kitchenHouse = { href = "/categories/kitchen-house/", icon = "restaurant", title = "Kitchen House" }
 
 [params.twikoo]
 enabled = true
@@ -74,5 +66,47 @@ lang = "en"
 # customJS = []
 
 # [params.experimental]
-# jsDate = true
-# jsDateFormat = "yyyy年MM月dd日"
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
+
+[menu]
+   [[menu.main]]
+    identifier = "xc-catalog"
+    name = "XC Catalog"
+    url = "/xc-catalog"  # 指向站内页面或外部链接
+    weight = 1
+
+  [[menu.main]]
+    identifier = "space-capsule"
+    name = "Space Capsule"
+    url = "/space-capsule/"  # 指向站内页面或外部链接
+    weight = 2
+
+  [[menu.main]]
+    identifier = "apple-cabin"
+    name = "Apple Cabin"
+    url = "/apple-cabin/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "kitchen-house"
+    name = "Kitchen House"
+    url = "/kitchen-house/"
+    weight = 4
+
+  [[menu.main]]
+  name = "Other"
+  identifier = "other"
+  url = "/other/"
+  weight = 5
+
+
+enableRobotsTXT = true  # 详见 Dream 作者 docs 目录下文档
+enableEmoji = true    
+hasCJKLanguage = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Space Capsule on Hugo Theme Dream</title>
-    <link>http://localhost:1313/categories/space-capsule/</link>
-    <description>Recent content in Space Capsule on Hugo Theme Dream</description>
+    <title>Space Capsule on XC Mobile House</title>
+    <link>https://roryshanshan.github.io/xcmobile/categories/space-capsule/</link>
+    <description>Recent content in Space Capsule on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/space-capsule/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://roryshanshan.github.io/xcmobile/categories/space-capsule/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test1</title>
-      <link>http://localhost:1313/posts/test1/</link>
+      <title>E5 MODEL (Space capsule) details</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test1/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E7 MODEL (Space capsule) details</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Featured Projects</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

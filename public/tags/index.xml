@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Theme Dream</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Hugo Theme Dream</description>
+    <title>Tags on XC Mobile House</title>
+    <link>https://roryshanshan.github.io/xcmobile/tags/</link>
+    <description>Recent content in Tags on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://roryshanshan.github.io/xcmobile/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADU</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/adu/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/adu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AppleCabin</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/applecabin/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/applecabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CulturalTourism</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/culturaltourism/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/culturaltourism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E5</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/e5/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/e5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E7</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/e7/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/e7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EcoLodging</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/ecolodging/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/ecolodging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Glamping</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/glamping/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/glamping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HospitalityInnovation</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/hospitalityinnovation/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/hospitalityinnovation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile House</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/mobile-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/mobile-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ModularHomes</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/modularhomes/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/modularhomes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SpaceCapsule</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/spacecapsule/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/spacecapsule/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tag1</title>
-      <link>http://localhost:1313/tags/tag1/</link>
+      <link>https://roryshanshan.github.io/xcmobile/tags/tag1/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/tags/tag1/</guid>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/tag1/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag2</title>
-      <link>http://localhost:1313/tags/tag2/</link>
+      <link>https://roryshanshan.github.io/xcmobile/tags/tag2/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/tags/tag2/</guid>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/tag2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tiny House</title>
+      <link>https://roryshanshan.github.io/xcmobile/tags/tiny-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/tags/tiny-house/</guid>
       <description></description>
     </item>
   </channel>
