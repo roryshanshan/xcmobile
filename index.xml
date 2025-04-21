@@ -51,6 +51,13 @@
       <description>&lt;h2 id=&#34;video-for-kitchen-house&#34;&gt;Video for kitchen house&lt;/h2&gt;&#xA;&lt;style&gt;&#xA;  .responsive-video-wrapper {&#xA;    position: relative;&#xA;    padding-bottom: 56.25%; /* 16:9 ratio */&#xA;    height: 0;&#xA;    overflow: hidden;&#xA;    max-width: 100%;&#xA;  }&#xA;&#xA;  .responsive-video-wrapper iframe {&#xA;    position: absolute;&#xA;    top: 0;&#xA;    left: 0;&#xA;    width: 100%;&#xA;    height: 100%;&#xA;    border: 0;&#xA;  }&#xA;&lt;/style&gt;&#xA;&lt;div class=&#34;responsive-video-wrapper&#34; id=&#34;bilibili-video-container&#34;&gt;&lt;/div&gt;&#xA;&lt;script&gt;&#xA;  const container = document.getElementById(&#39;bilibili-video-container&#39;);&#xA;  const iframe = document.createElement(&#39;iframe&#39;);&#xA;  iframe.src = &#39;https://player.bilibili.com/player.html?bvid=BV1f5ddYKEKZ&amp;autoplay=0&#39;;&#xA;  iframe.allowFullscreen = true;&#xA;  container.appendChild(iframe);&#xA;&lt;/script&gt;</description>
     </item>
     <item>
+      <title>Known more about the difference for Expandable Container/ Prefab Container House /Flat Pack Container /Integrated House</title>
+      <link>https://roryshanshan.github.io/xcmobile/posts/expandable-container-prefab-container-house-flat-pack-container-integrated-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/posts/expandable-container-prefab-container-house-flat-pack-container-integrated-house/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Our Featured Projects</title>
       <link>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
@@ -105,6 +112,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://roryshanshan.github.io/xcmobile/other/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>https://roryshanshan.github.io/xcmobile/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://roryshanshan.github.io/xcmobile/project/</guid>
+      <description>&lt;p&gt;This is the Project page under Other.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
