@@ -1,0 +1,53 @@
+<footer class="flex justify-between items-center gap-2 max-w-[65ch] mx-auto px-4 md:px-0 py-12">
+  {{ if .Site.Params.zenMode }}
+  {{ end }}
+  {{ if not .Site.Params.zenMode }}
+  {{ end }}
+  {{ partial "footerLeft.html" . }}
+  {{ partial "footerRight.html" . }}
+
+  <div class="social-icons flex gap-4">
+    <a href="https://api.whatsapp.com/send?phone=8619906365856" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+    </a>
+  
+    <!-- 注释掉第二个 WhatsApp 联系方式 -->
+    <!--
+    <a href="https://api.whatsapp.com/send?phone=97470171884" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+    </a>
+    -->
+  
+    <a href="https://www.linkedin.com/newsletters/7311612702156603393/?displayConfirmation=true" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin" style="font-size: 2rem; color: #0077B5;"></i>
+    </a>
+  
+    <!-- 注释掉个人 LinkedIn 链接 -->
+    <!--
+    <a href="https://www.linkedin.com/in/nadeem-ullah-1a0294194/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin" style="font-size: 2rem; color: #0077B5;"></i>
+    </a>
+    -->
+  
+    <a href="https://github.com/roryshanshan/picx-images-hosting/raw/master/IMG_3958.1lbqa2aob3.webp" target="_blank" title="WeChat">
+      <i class="fab fa-weixin" style="font-size: 2rem; color: #07c160;"></i>
+    </a>
+</footer>
+
+<!-- SwiperJS JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
