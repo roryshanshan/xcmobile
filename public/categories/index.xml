@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on XC Mobile House</title>
-    <link>http://localhost:1313/xcmobile/categories/</link>
+    <link>https://roryshanshan.github.io/xcmobile/categories/</link>
     <description>Recent content in Categories on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 23 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/xcmobile/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://roryshanshan.github.io/xcmobile/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apple Cabin</title>
-      <link>http://localhost:1313/xcmobile/categories/apple-cabin/</link>
+      <link>https://roryshanshan.github.io/xcmobile/categories/apple-cabin/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/xcmobile/categories/apple-cabin/</guid>
+      <guid>https://roryshanshan.github.io/xcmobile/categories/apple-cabin/</guid>
       <description></description>
     </item>
     <item>
       <title>Category1</title>
-      <link>http://localhost:1313/xcmobile/categories/category1/</link>
+      <link>https://roryshanshan.github.io/xcmobile/categories/category1/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/xcmobile/categories/category1/</guid>
+      <guid>https://roryshanshan.github.io/xcmobile/categories/category1/</guid>
       <description></description>
     </item>
     <item>
       <title>Expandable Container Houses</title>
-      <link>http://localhost:1313/xcmobile/categories/expandable-container-houses/</link>
+      <link>https://roryshanshan.github.io/xcmobile/categories/expandable-container-houses/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/xcmobile/categories/expandable-container-houses/</guid>
+      <guid>https://roryshanshan.github.io/xcmobile/categories/expandable-container-houses/</guid>
       <description></description>
     </item>
     <item>
       <title>Space Capsule</title>
-      <link>http://localhost:1313/xcmobile/categories/space-capsule/</link>
+      <link>https://roryshanshan.github.io/xcmobile/categories/space-capsule/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>http://localhost:1313/xcmobile/categories/space-capsule/</guid>
+      <guid>https://roryshanshan.github.io/xcmobile/categories/space-capsule/</guid>
       <description></description>
     </item>
   </channel>
