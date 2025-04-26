@@ -2,60 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on XC Mobile House</title>
-    <link>https://roryshanshan.github.io/xcmobile/posts/</link>
+    <link>http://localhost:1313/xcmobile/posts/</link>
     <description>Recent content in Posts on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="https://roryshanshan.github.io/xcmobile/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Apr 2025 08:53:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/xcmobile/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catalog for apple cabin</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/</link>
+      <link>http://localhost:1313/xcmobile/posts/catalog-for-apple-cabin/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/catalog-for-apple-cabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Detachable Container House</title>
+      <link>http://localhost:1313/xcmobile/posts/detachable-container-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/detachable-container-house/</guid>
       <description></description>
     </item>
     <item>
       <title>Double-Story Gable Roof House Details</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/double-story-gable-roof-house-details/</link>
+      <link>http://localhost:1313/xcmobile/posts/double-story-gable-roof-house-details/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/double-story-gable-roof-house-details/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/double-story-gable-roof-house-details/</guid>
       <description></description>
     </item>
     <item>
       <title>E5 MODEL (Space capsule) details</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</link>
+      <link>http://localhost:1313/xcmobile/posts/e5-modelspace-capsule-details/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/e5-modelspace-capsule-details/</guid>
       <description></description>
     </item>
     <item>
       <title>E7 MODEL (Space capsule) details</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</link>
+      <link>http://localhost:1313/xcmobile/posts/e7-modelspace-capsule-details-/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/e7-modelspace-capsule-details-/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Featured Projects</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</link>
+      <link>http://localhost:1313/xcmobile/posts/our-featured-projects/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/our-featured-projects/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/our-featured-projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefab Portable A Fram Aframe Triangle Cabin House Home</title>
+      <link>http://localhost:1313/xcmobile/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefabricated Modular Expandable Container Houses with Bedroom</title>
+      <link>http://localhost:1313/xcmobile/posts/prefabricated-modular-expandable-container-houses-with-bedroom/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/prefabricated-modular-expandable-container-houses-with-bedroom/</guid>
       <description></description>
     </item>
     <item>
       <title>Villa</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/villa/</link>
+      <link>http://localhost:1313/xcmobile/posts/villa/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/villa/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/villa/</guid>
       <description></description>
     </item>
     <item>
       <title>What model we can do</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/what-model-for-mobile-house-we-can-do/</link>
+      <link>http://localhost:1313/xcmobile/posts/what-model-for-mobile-house-we-can-do/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/what-model-for-mobile-house-we-can-do/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/what-model-for-mobile-house-we-can-do/</guid>
       <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xcmobile/posts/5-great-reasons-why-you-should-switch-to-tiny-house-living-copy-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/5-great-reasons-why-you-should-switch-to-tiny-house-living-copy-2/</guid>
+      <description>&lt;h1 id=&#34;5-great-reasons-why-you-should-switch-to-tiny-house&#34;&gt;5 GREAT REASONS WHY YOU SHOULD SWITCH TO TINY HOUSE&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xcmobile/posts/7-reasons-why-prefab-homes-are-the-best-alternative-to-traditional-homebuilding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/7-reasons-why-prefab-homes-are-the-best-alternative-to-traditional-homebuilding/</guid>
+      <description>&lt;h1 id=&#34;7-reasons-why-prefab-homes-are-the-best-alternative-to-traditional-homebuilding&#34;&gt;7 REASONS WHY PREFAB HOMES ARE THE BEST ALTERNATIVE TO TRADITIONAL HOMEBUILDING&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xcmobile/posts/tiny-house-permits-a-guide-to-consulting-the-right-experts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/tiny-house-permits-a-guide-to-consulting-the-right-experts/</guid>
+      <description>&lt;h1 id=&#34;tiny-house-permits-a-guide-to-consulting-the-right-experts&#34;&gt;TINY HOUSE PERMITS: A GUIDE TO CONSULTING THE RIGHT EXPERTS&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xcmobile/posts/what-to-consider-when-purchasing-a-prefab-house/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xcmobile/posts/what-to-consider-when-purchasing-a-prefab-house/</guid>
+      <description>&lt;h1 id=&#34;what-to-consider-when-purchasing-a-prefab-house&#34;&gt;WHAT TO CONSIDER WHEN PURCHASING A PREFAB HOUSE&lt;/h1&gt;</description>
     </item>
   </channel>
 </rss>

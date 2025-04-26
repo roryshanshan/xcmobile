@@ -1,0 +1,48 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* 其他样式 */
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #25D366; /* WhatsApp 标准绿色 */
+  }
+  
+  .sidebar a i {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      display: block;  /* 确保侧边栏在小屏设备上显示 */
+    }
+  }

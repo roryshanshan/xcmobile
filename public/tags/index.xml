@@ -2,108 +2,465 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on XC Mobile House</title>
-    <link>https://roryshanshan.github.io/xcmobile/tags/</link>
+    <link>http://localhost:1313/xcmobile/tags/</link>
     <description>Recent content in Tags on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="https://roryshanshan.github.io/xcmobile/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Apr 2025 08:53:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/xcmobile/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADU</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/adu/</link>
+      <link>http://localhost:1313/xcmobile/tags/adu/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/adu/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/adu/</guid>
       <description></description>
     </item>
     <item>
       <title>AppleCabin</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/applecabin/</link>
+      <link>http://localhost:1313/xcmobile/tags/applecabin/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/applecabin/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/applecabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collapsible Container House</title>
+      <link>http://localhost:1313/xcmobile/tags/collapsible-container-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/collapsible-container-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Construction Site Cabin</title>
+      <link>http://localhost:1313/xcmobile/tags/construction-site-cabin/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/construction-site-cabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container Home Kit</title>
+      <link>http://localhost:1313/xcmobile/tags/container-home-kit/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/container-home-kit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/container-houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/container-houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containerized Living Unit</title>
+      <link>http://localhost:1313/xcmobile/tags/containerized-living-unit/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/containerized-living-unit/</guid>
       <description></description>
     </item>
     <item>
       <title>CulturalTourism</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/culturaltourism/</link>
+      <link>http://localhost:1313/xcmobile/tags/culturaltourism/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/culturaltourism/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/culturaltourism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CustomSpaceCapsule</title>
+      <link>http://localhost:1313/xcmobile/tags/customspacecapsule/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/customspacecapsule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Demountable Office Cabin</title>
+      <link>http://localhost:1313/xcmobile/tags/demountable-office-cabin/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/demountable-office-cabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Detachable Mobile Room</title>
+      <link>http://localhost:1313/xcmobile/tags/detachable-mobile-room/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/detachable-mobile-room/</guid>
       <description></description>
     </item>
     <item>
       <title>E5</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/e5/</link>
+      <link>http://localhost:1313/xcmobile/tags/e5/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/e5/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/e5/</guid>
       <description></description>
     </item>
     <item>
       <title>E7</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/e7/</link>
+      <link>http://localhost:1313/xcmobile/tags/e7/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/e7/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/e7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Easy Install Office</title>
+      <link>http://localhost:1313/xcmobile/tags/easy-install-office/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/easy-install-office/</guid>
       <description></description>
     </item>
     <item>
       <title>EcoLodging</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/ecolodging/</link>
+      <link>http://localhost:1313/xcmobile/tags/ecolodging/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/ecolodging/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/ecolodging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emergency Housing Module</title>
+      <link>http://localhost:1313/xcmobile/tags/emergency-housing-module/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/emergency-housing-module/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expandable  Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/expandable--houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/expandable--houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expandable Container</title>
+      <link>http://localhost:1313/xcmobile/tags/expandable-container/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/expandable-container/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expandable Container Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/expandable-container-houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/expandable-container-houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expandable Prefab Home</title>
+      <link>http://localhost:1313/xcmobile/tags/expandable-prefab-home/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/expandable-prefab-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flat Pack Container</title>
+      <link>http://localhost:1313/xcmobile/tags/flat-pack-container/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/flat-pack-container/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flat Pack Container Cabin</title>
+      <link>http://localhost:1313/xcmobile/tags/flat-pack-container-cabin/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/flat-pack-container-cabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flat Pack Living Unit</title>
+      <link>http://localhost:1313/xcmobile/tags/flat-pack-living-unit/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/flat-pack-living-unit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flat Pack Office Unit</title>
+      <link>http://localhost:1313/xcmobile/tags/flat-pack-office-unit/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/flat-pack-office-unit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foldable Container House</title>
+      <link>http://localhost:1313/xcmobile/tags/foldable-container-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/foldable-container-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foldable Modular House</title>
+      <link>http://localhost:1313/xcmobile/tags/foldable-modular-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/foldable-modular-house/</guid>
       <description></description>
     </item>
     <item>
       <title>Glamping</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/glamping/</link>
+      <link>http://localhost:1313/xcmobile/tags/glamping/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/glamping/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/glamping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HighQualityCapsule</title>
+      <link>http://localhost:1313/xcmobile/tags/highqualitycapsule/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/highqualitycapsule/</guid>
       <description></description>
     </item>
     <item>
       <title>HospitalityInnovation</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/hospitalityinnovation/</link>
+      <link>http://localhost:1313/xcmobile/tags/hospitalityinnovation/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/hospitalityinnovation/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/hospitalityinnovation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IntegratedHouse</title>
+      <link>http://localhost:1313/xcmobile/tags/integratedhouse/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/integratedhouse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knockdown Container</title>
+      <link>http://localhost:1313/xcmobile/tags/knockdown-container/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/knockdown-container/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lightweight Container Home</title>
+      <link>http://localhost:1313/xcmobile/tags/lightweight-container-home/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/lightweight-container-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile Container Home</title>
+      <link>http://localhost:1313/xcmobile/tags/mobile-container-home/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/mobile-container-home/</guid>
       <description></description>
     </item>
     <item>
       <title>Mobile House</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/mobile-house/</link>
+      <link>http://localhost:1313/xcmobile/tags/mobile-house/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/mobile-house/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/mobile-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile Site Office</title>
+      <link>http://localhost:1313/xcmobile/tags/mobile-site-office/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/mobile-site-office/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MobileHomestay</title>
+      <link>http://localhost:1313/xcmobile/tags/mobilehomestay/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/mobilehomestay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MobileSpaceCapsule</title>
+      <link>http://localhost:1313/xcmobile/tags/mobilespacecapsule/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/mobilespacecapsule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modular Container House</title>
+      <link>http://localhost:1313/xcmobile/tags/modular-container-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/modular-container-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modular Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/modular-houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/modular-houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modular Workforce Housing</title>
+      <link>http://localhost:1313/xcmobile/tags/modular-workforce-housing/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/modular-workforce-housing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ModularCapsule</title>
+      <link>http://localhost:1313/xcmobile/tags/modularcapsule/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/modularcapsule/</guid>
       <description></description>
     </item>
     <item>
       <title>ModularHomes</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/modularhomes/</link>
+      <link>http://localhost:1313/xcmobile/tags/modularhomes/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/modularhomes/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/modularhomes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Panelized Building Unit</title>
+      <link>http://localhost:1313/xcmobile/tags/panelized-building-unit/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/panelized-building-unit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portable Modular Housing</title>
+      <link>http://localhost:1313/xcmobile/tags/portable-modular-housing/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/portable-modular-housing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portable Prefab Cabin</title>
+      <link>http://localhost:1313/xcmobile/tags/portable-prefab-cabin/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/portable-prefab-cabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefab Container House</title>
+      <link>http://localhost:1313/xcmobile/tags/prefab-container-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefab-container-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefab Expandable Cabin</title>
+      <link>http://localhost:1313/xcmobile/tags/prefab-expandable-cabin/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefab-expandable-cabin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefab Portable a Fram Aframe Triangle Cabin House Home</title>
+      <link>http://localhost:1313/xcmobile/tags/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefabricated  Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/prefabricated--houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefabricated--houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefabricated Modular Expandable Container Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/prefabricated-modular-expandable-container-houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefabricated-modular-expandable-container-houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefabricated Modular Expandable Container Houses With Bedroom</title>
+      <link>http://localhost:1313/xcmobile/tags/prefabricated-modular-expandable-container-houses-with-bedroom/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefabricated-modular-expandable-container-houses-with-bedroom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefabricated Modular Houses</title>
+      <link>http://localhost:1313/xcmobile/tags/prefabricated-modular-houses/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/prefabricated-modular-houses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quick Assembly House</title>
+      <link>http://localhost:1313/xcmobile/tags/quick-assembly-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/quick-assembly-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quick Install Prefab House</title>
+      <link>http://localhost:1313/xcmobile/tags/quick-install-prefab-house/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/quick-install-prefab-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relocatable Prefab Building</title>
+      <link>http://localhost:1313/xcmobile/tags/relocatable-prefab-building/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/relocatable-prefab-building/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reusable Prefab Module</title>
+      <link>http://localhost:1313/xcmobile/tags/reusable-prefab-module/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/reusable-prefab-module/</guid>
       <description></description>
     </item>
     <item>
       <title>SpaceCapsule</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/spacecapsule/</link>
+      <link>http://localhost:1313/xcmobile/tags/spacecapsule/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/spacecapsule/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/spacecapsule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SpaceCapsuleCompany</title>
+      <link>http://localhost:1313/xcmobile/tags/spacecapsulecompany/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/spacecapsulecompany/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SpaceCapsuleFactory</title>
+      <link>http://localhost:1313/xcmobile/tags/spacecapsulefactory/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/spacecapsulefactory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SpaceCapsuleHomestay</title>
+      <link>http://localhost:1313/xcmobile/tags/spacecapsulehomestay/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/spacecapsulehomestay/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag1</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/tag1/</link>
+      <link>http://localhost:1313/xcmobile/tags/tag1/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/tag1/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/tag1/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag2</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/tag2/</link>
+      <link>http://localhost:1313/xcmobile/tags/tag2/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/tag2/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/tag2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Temporary Site Housing</title>
+      <link>http://localhost:1313/xcmobile/tags/temporary-site-housing/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/temporary-site-housing/</guid>
       <description></description>
     </item>
     <item>
       <title>Tiny House</title>
-      <link>https://roryshanshan.github.io/xcmobile/tags/tiny-house/</link>
+      <link>http://localhost:1313/xcmobile/tags/tiny-house/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/tags/tiny-house/</guid>
+      <guid>http://localhost:1313/xcmobile/tags/tiny-house/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transportable Container Unit</title>
+      <link>http://localhost:1313/xcmobile/tags/transportable-container-unit/</link>
+      <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
+      <guid>http://localhost:1313/xcmobile/tags/transportable-container-unit/</guid>
       <description></description>
     </item>
   </channel>

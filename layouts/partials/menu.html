@@ -1,3 +1,22 @@
+<ul>
+  {{ range .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ if .HasChildren }}
+        <ul>
+          {{ range .Children }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>
+
 {{ range .Site.Menus.main }}
-  <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+  <li>
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    <p>Identifier: {{ .Identifier }}</p>
+    <p>Has Children: {{ .HasChildren }}</p>
+  </li>
 {{ end }}

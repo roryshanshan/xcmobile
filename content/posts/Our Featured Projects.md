@@ -7,7 +7,6 @@ author: Gavin （Whatsapp/Wechat:+86 19906365856）
 authorlink: 
 
 categories:
-  - category1
   - space capsule
 
 tags:

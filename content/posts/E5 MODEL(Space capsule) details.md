@@ -21,6 +21,14 @@ tags:
   - Glamping 
   - SpaceCapsule 
   - AppleCabin
+  - mobileSpaceCapsule
+  - spaceCapsuleHomestay
+  - spaceCapsuleFactory
+  - modularCapsule
+  - customSpaceCapsule
+  - mobileHomestay
+  - spaceCapsuleCompany
+  - highQualityCapsule
 # nolastmod: true
 draft: false
 ---
@@ -42,6 +50,17 @@ draft: false
     Click here to view VR content
   </a>
 </center>
+
+
+<div style="display: flex; align-items: center; justify-content: space-between; background-color: rgb(1, 136, 255); border: 1px solid #cce; border-radius: 12px; padding: 1rem 1.5rem; max-width: 500px; margin: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+  <div style="font-size: 1.1rem; color: #fff;">
+    📄 <strong> E5 Layout Drawing</strong><br/>
+    PDF Download Available
+  </div>
+  <a href="/xcmobile/files/E5.pdf" target="_blank" style="background-color: #ffffff; color: #007BFF; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; white-space: nowrap; margin-left: 1rem;">
+    View PDF
+  </a>
+</div>    
 
 **📷 Project Image Gallery**
 <div style="position: relative; width: 100%; overflow: hidden; max-width: 1000px; margin: auto;">
@@ -89,6 +108,15 @@ draft: false
 +   ✅ **Durable, high-quality materials** – Steel frame built to exceed industry standards.
 +   ✅ **Smart and comfortable** – Integrated lighting, ventilation, and insulation for year-round use.
 +   ✅ **Modular and scalable** – Easily installed across terrains from mountain slopes to beachside resorts.
+
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1qmL4zFETM" 
+        scrolling="no" 
+        border="0" 
+        frameborder="0" 
+        width="100%" 
+        height="500" 
+        allowfullscreen="true">
+</iframe>
 
 | No. | 中文描述 | English Description | 参数 | Specification |
 | --- | --- | --- | --- | --- |
@@ -146,4 +174,4 @@ Let’s shape the future of cultural tourism and outdoor lodging together! 🌍
 
 ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/11E5-pressed.2h8hsk1hca.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/10E5-pressed.icb27vz0n.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/4E5-pressed.23221ot6fl.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/3E5-pressed.5xatknb4ce.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/2E5-pressed.5mnzrhvw6g.webp) ![space capsule house E5 moded](https://github.com/roryshanshan/picx-images-hosting/raw/master/1E5-pressed.3uv0wlcja4.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/0E5-pressed.3k873fxb4h.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/6E5-pressed.1ovmatkvl4.webp) ![space capsule house E5 mode](https://github.com/roryshanshan/picx-images-hosting/raw/master/5E5-pressed.3yemub5m1n.webp)
 
-## **Tags:** #ModularHomes #CulturalTourism #HospitalityInnovation #EcoLodging #Glamping #SpaceCapsule #AppleCabin
+## **Tags:** #ModularHomes #CulturalTourism #HospitalityInnovation #EcoLodging #Glamping #SpaceCapsule #AppleCabin #mobileSpaceCapsule #spaceCapsuleHomestay #spaceCapsuleFactory #modularCapsule #customSpaceCapsule #mobileHomestay #spaceCapsuleCompany #highQualityCapsule

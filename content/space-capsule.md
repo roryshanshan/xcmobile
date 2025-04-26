@@ -16,6 +16,8 @@ tags:
 ---
 # For now only E5 model is available
 
+
+
 > ## 🏭 We are currently producing 100 units E5 models
 > ## <center>You are welcome to visit our factory for process and quality inspection.
 
@@ -76,3 +78,10 @@ tags:
 ## [Please check here for E5 MODEL(Space capsule) details](https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/)
 
 ## [Please check here for E7 MODEL(Space capsule) details](https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/)
+
+![Space capsule](https://i.postimg.cc/v8dKwb4t/20250418144450297.png?dl=1)
+
+> ## <center>It can be transported in bulk and assembled at the place of purchase (with paid drawings provided).</center>
+
+<img src="https://i.postimg.cc/fD4BBbbw/20250426104346268.png?dl=1"/>
+<img src="https://i.postimg.cc/7wgXcyCS/20250426104404597.png?dl=1"/>

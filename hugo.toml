@@ -10,6 +10,8 @@ enableMenu = true
 github = { href = "https://github.com/g1eny0ung", title = "GitHub" }
 favicon = "https://i.postimg.cc/sjj7ZykN/202504120804853.png"
 
+description = "XC Mobile House - Innovative modular space capsule homes. 移动太空舱，文旅胶囊房定制专家。"
+
 lightTheme = "emerald"
 darkTheme = "forest"
 
@@ -17,7 +19,6 @@ darkTheme = "forest"
 # backgroundImageDark = ""
 
 author = "Gavin"
-description = "XC MOBILE HOUSE--Manufacturer for mobile house"
 avatar = "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
 headerTitle = "XC MOBILE HOUSE--Manufacturer for mobile house"
 # motto = "Be your best supplier--Made IN CHINA"
@@ -38,6 +39,8 @@ footerBottomText = "Qingzhou County, Weifang City, Shandong Province"
 email = "roryshanshan@gmail.com"
 
 siteStartYear = 2016
+
+
 
 
 # Syntax highlighting
@@ -95,10 +98,17 @@ jsDateFormat = "yyyy年MM月dd日"
     weight = 4
 
   [[menu.main]]
-  name = "Other"
-  identifier = "other"
-  url = "/other/"
-  weight = 5
+   identifier = "other"
+   name = "Other"
+   url = "/other/"
+   weight = 5
+
+  [[menu.main]]
+   identifier = "project"
+   name = "Project"
+   url = "/other/project/"
+   parent = "other"
+   weight = 1
 
 
 enableRobotsTXT = true  # 详见 Dream 作者 docs 目录下文档
