@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Category1 on XC Mobile House</title>
-    <link>https://roryshanshan.github.io/xcmobile/categories/category1/</link>
+    <link>http://localhost:1313/xcmobile/categories/category1/</link>
     <description>Recent content in Category1 on XC Mobile House</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 11 Apr 2025 08:53:15 +0800</lastBuildDate>
-    <atom:link href="https://roryshanshan.github.io/xcmobile/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/xcmobile/categories/category1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catalog for apple cabin</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/</link>
+      <link>http://localhost:1313/xcmobile/posts/catalog-for-apple-cabin/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/catalog-for-apple-cabin/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/catalog-for-apple-cabin/</guid>
       <description></description>
     </item>
     <item>
       <title>Detachable Container House</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/detachable-container-house/</link>
+      <link>http://localhost:1313/xcmobile/posts/detachable-container-house/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/detachable-container-house/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/detachable-container-house/</guid>
       <description></description>
     </item>
     <item>
       <title>E5 MODEL (Space capsule) details</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</link>
+      <link>http://localhost:1313/xcmobile/posts/e5-modelspace-capsule-details/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/e5-modelspace-capsule-details/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/e5-modelspace-capsule-details/</guid>
       <description></description>
     </item>
     <item>
       <title>E7 MODEL (Space capsule) details</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</link>
+      <link>http://localhost:1313/xcmobile/posts/e7-modelspace-capsule-details-/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/e7-modelspace-capsule-details-/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/e7-modelspace-capsule-details-/</guid>
       <description></description>
     </item>
     <item>
       <title>Prefab Portable A Fram Aframe Triangle Cabin House Home</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</link>
+      <link>http://localhost:1313/xcmobile/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/</guid>
       <description></description>
     </item>
     <item>
       <title>What model we can do</title>
-      <link>https://roryshanshan.github.io/xcmobile/posts/what-model-for-mobile-house-we-can-do/</link>
+      <link>http://localhost:1313/xcmobile/posts/what-model-for-mobile-house-we-can-do/</link>
       <pubDate>Fri, 11 Apr 2025 08:53:15 +0800</pubDate>
-      <guid>https://roryshanshan.github.io/xcmobile/posts/what-model-for-mobile-house-we-can-do/</guid>
+      <guid>http://localhost:1313/xcmobile/posts/what-model-for-mobile-house-we-can-do/</guid>
       <description></description>
     </item>
   </channel>
