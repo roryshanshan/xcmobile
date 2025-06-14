@@ -1,1 +1,31 @@
-<link rel="stylesheet" href="/css/custom.css">
+/* 二级菜单下拉样式 */
+.main-menu li {
+  position: relative;
+}
+.main-menu ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+.main-menu li:hover > ul {
+  display: block;
+}
+.main-menu ul li a {
+  padding: 0.4rem 1rem !important;    /* 可适当缩小内边距 */
+  color: #333;
+  font-weight: normal;
+  display: block;
+  font-size: 0.95rem !important;      /* 调小字体 */
+  line-height: 1.2 !important;        /* 调整行高 */
+  white-space: nowrap !important;     /* 强制单行显示，超出不换行 */
+  overflow: hidden !important;        /* 超出部分隐藏 */
+  text-overflow: ellipsis !important; /* 超出部分显示省略号 */
+}
+.main-menu ul li a:hover {
+  background: #f0f0f0;
+}
