@@ -29,3 +29,42 @@
 .main-menu ul li a:hover {
   background: #f0f0f0;
 }
+
+/* 美化 Google 翻译下拉菜单 */
+#google_translate_element {
+  position: fixed;
+  top: 16px;
+  right: 60px; /* 或更大 */
+  z-index: 9999;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  font-size: 0;
+  width: 140px;   /* 或更大，如160px，根据实际需要调整 */
+  min-width: 140px;
+}
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+.goog-te-combo {
+  font-size: 14px !important;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  width: 140px !important;  /* 保证下拉框本身宽度足够 */
+  min-width: 140px !important;
+  color: #333 !important;
+  background: #fff !important;
+}
+
+/* 隐藏 Google logo、选择语言、由...驱动等 */
+#google_translate_element span,
+.goog-te-gadget span,
+.goog-logo-link,
+.goog-te-gadget .goog-te-combo + span,
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.goog-te-gadget .goog-te-menu-value {
+  display: none !important;
+}

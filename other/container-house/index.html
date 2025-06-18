@@ -81,6 +81,36 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
+
+
+<div id="google-translate-trigger" style="position:fixed;top:16px;right:16px;z-index:9999;cursor:pointer;">
+  <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Translate" width="28" height="28">
+</div>
+<div id="google_translate_element" style="display:none;position:fixed;top:56px;right:16px;z-index:9999;"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: true
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var trigger = document.getElementById('google-translate-trigger');
+    var box = document.getElementById('google_translate_element');
+    trigger.onclick = function() {
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    };
+    
+    document.addEventListener('click', function(e) {
+      if (!trigger.contains(e.target) && !box.contains(e.target)) {
+        box.style.display = 'none';
+      }
+    });
+  });
+</script>
     
 
 
@@ -559,9 +589,9 @@
         <li><a href="#strictly-speaking-this-series-is-more-appropriately-categorized-as-modular-prefabricated-houses-for-container-type-houses-please-refer-to-the-fourth-category">Strictly speaking, this series is more appropriately categorized as modular (prefabricated) houses. For container type houses, please refer to the fourth category.</a></li>
       </ul>
     </li>
-    <li><a href="#31-standard-container-houses"><center><a href="HAHAHUGOSHORTCODE9s0HBHB">3.1 Standard Container Houses</a></a></li>
-    <li><a href="#311-standard-container-houses-with-glass-curtain-wall"><center><a href="HAHAHUGOSHORTCODE9s1HBHB">3.1.1 Standard Container Houses with Glass curtain wall</a></a></li>
-    <li><a href="#312-flat-pack-container-house"><center><a href="HAHAHUGOSHORTCODE9s2HBHB">3.1.2 Flat Pack Container House</a></a></li>
+    <li><a href="#31-standard-container-houses"><center><a href="HAHAHUGOSHORTCODE12s0HBHB">3.1 Standard Container Houses</a></a></li>
+    <li><a href="#311-standard-container-houses-with-glass-curtain-wall"><center><a href="HAHAHUGOSHORTCODE12s1HBHB">3.1.1 Standard Container Houses with Glass curtain wall</a></a></li>
+    <li><a href="#312-flat-pack-container-house"><center><a href="HAHAHUGOSHORTCODE12s2HBHB">3.1.2 Flat Pack Container House</a></a></li>
     <li><a href="#32-expandable-container-houses"><center>3.2 Expandable Container Houses</a>
       <ul>
         <li><a href="#321--z-type--expandable-container-houses">3.2.1  Z type  Expandable Container Houses</a></li>
@@ -569,7 +599,7 @@
         <li><a href="#323-expandable-type">3.2.3 Expandable type</a></li>
       </ul>
     </li>
-    <li><a href="#prefabricated-modular-expandable-container-houses-with-bedroom"><a href="HAHAHUGOSHORTCODE9s3HBHB">Prefabricated Modular Expandable Container Houses with Bedroom </a></a>
+    <li><a href="#prefabricated-modular-expandable-container-houses-with-bedroom"><a href="HAHAHUGOSHORTCODE12s3HBHB">Prefabricated Modular Expandable Container Houses with Bedroom </a></a>
       <ul>
         <li><a href="#prefab-construction-container-for">Prefab Construction Container for:</a></li>
       </ul>

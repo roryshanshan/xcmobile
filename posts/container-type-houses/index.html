@@ -84,6 +84,36 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
+
+
+<div id="google-translate-trigger" style="position:fixed;top:16px;right:16px;z-index:9999;cursor:pointer;">
+  <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Translate" width="28" height="28">
+</div>
+<div id="google_translate_element" style="display:none;position:fixed;top:56px;right:16px;z-index:9999;"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: true
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var trigger = document.getElementById('google-translate-trigger');
+    var box = document.getElementById('google_translate_element');
+    trigger.onclick = function() {
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    };
+    
+    document.addEventListener('click', function(e) {
+      if (!trigger.contains(e.target) && !box.contains(e.target)) {
+        box.style.display = 'none';
+      }
+    });
+  });
+</script>
     
 
 
@@ -548,7 +578,7 @@
   <ul>
     <li><a href="#sizes-are-same-with-global-standard-shipping-containers">Sizes are same with global standard shipping containers</a></li>
     <li><a href="#insulate----tested-four-seasons---rainy-snowy-and-hot-summer">Insulate -  tested four seasons - rainy, snowy, and hot summer</a></li>
-    <li><a href="#some-models-can-made-as-same-as-the-above-container-houses">Some models can made as same as the above <a href="HAHAHUGOSHORTCODE30s0HBHB">Container houses</a></a></li>
+    <li><a href="#some-models-can-made-as-same-as-the-above-container-houses">Some models can made as same as the above <a href="HAHAHUGOSHORTCODE28s0HBHB">Container houses</a></a></li>
   </ul>
 
   <ul>
