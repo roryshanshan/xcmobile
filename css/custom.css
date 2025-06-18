@@ -68,3 +68,27 @@
 .goog-te-gadget .goog-te-menu-value {
   display: none !important;
 }
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon,
+.goog-te-gadget-simple {
+  display: none !important;
+}
+body > .goog-te-banner-frame {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* Google 翻译触发器样式 */
+#google-translate-trigger {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#google-translate-trigger img {
+  width: 28px;
+  height: 28px;
+}

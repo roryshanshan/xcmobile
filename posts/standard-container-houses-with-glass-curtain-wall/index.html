@@ -86,34 +86,6 @@
 
 
 
-<div id="google-translate-trigger" style="position:fixed;top:16px;right:16px;z-index:9999;cursor:pointer;">
-  <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Translate" width="28" height="28">
-</div>
-<div id="google_translate_element" style="display:none;position:fixed;top:56px;right:16px;z-index:9999;"></div>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      autoDisplay: true
-    }, 'google_translate_element');
-  }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var trigger = document.getElementById('google-translate-trigger');
-    var box = document.getElementById('google_translate_element');
-    trigger.onclick = function() {
-      box.style.display = box.style.display === 'none' ? 'block' : 'none';
-    };
-    
-    document.addEventListener('click', function(e) {
-      if (!trigger.contains(e.target) && !box.contains(e.target)) {
-        box.style.display = 'none';
-      }
-    });
-  });
-</script>
     
 
 
@@ -610,6 +582,37 @@
     });
   }
 </script>
+
+
+<div id="google-translate-trigger" style="position:fixed;top:16px;right:16px;z-index:9999;cursor:pointer;">
+  <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Translate" width="28" height="28">
+</div>
+<div id="google_translate_element" style="display:none;position:fixed;top:56px;right:16px;z-index:9999;"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var trigger = document.getElementById('google-translate-trigger');
+    var box = document.getElementById('google_translate_element');
+    trigger.onclick = function(e) {
+      e.stopPropagation();
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    };
+    document.addEventListener('click', function(e) {
+      if (!trigger.contains(e.target) && !box.contains(e.target)) {
+        box.style.display = 'none';
+      }
+    });
+  });
+</script>
           </div>
         </div>
         <div class="back">
@@ -851,6 +854,37 @@ Our team is always ready to support you, quickly answering questions and process
       },
     });
   }
+</script>
+
+
+<div id="google-translate-trigger" style="position:fixed;top:16px;right:16px;z-index:9999;cursor:pointer;">
+  <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Translate" width="28" height="28">
+</div>
+<div id="google_translate_element" style="display:none;position:fixed;top:56px;right:16px;z-index:9999;"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var trigger = document.getElementById('google-translate-trigger');
+    var box = document.getElementById('google_translate_element');
+    trigger.onclick = function(e) {
+      e.stopPropagation();
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    };
+    document.addEventListener('click', function(e) {
+      if (!trigger.contains(e.target) && !box.contains(e.target)) {
+        box.style.display = 'none';
+      }
+    });
+  });
 </script>
           </div>
         </div>
