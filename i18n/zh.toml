@@ -1,0 +1,272 @@
+[nav_get_quote]
+other = "获取报价"
+
+[menu_products]
+other = "产品中心"
+
+[menu_solutions]
+other = "解决方案"
+
+[menu_projects]
+other = "项目案例"
+
+[menu_factory_quality]
+other = "工厂与质控"
+
+[menu_shipping_installation]
+other = "运输与安装"
+
+[menu_faq]
+other = "常见问题"
+
+[menu_catalog]
+other = "电子目录"
+
+[menu_contact]
+other = "联系我们"
+
+[float_whatsapp]
+other = "WhatsApp 咨询"
+
+[footer_brand_title]
+other = "从产品选择到交付沟通，都可以从这里开始。"
+
+[footer_brand_body]
+other = "你可以在这里查看核心产品、应用场景、案例、运输与安装信息，并快速发起询盘。"
+
+[footer_start_inquiry]
+other = "发起询盘"
+
+[footer_open_catalog]
+other = "查看目录"
+
+[footer_explore]
+other = "快速入口"
+
+[footer_core_lines]
+other = "核心产品线"
+
+[footer_location]
+other = "中国山东省潍坊市青州市"
+
+[home_eyebrow]
+other = "模块化客房解决方案"
+
+[home_title]
+other = "为度假村、景区与营地打造特色模块化客房"
+
+[home_lead]
+other = "适用于文旅住宿、营地配套、办公与项目部署等不同场景。"
+
+[home_cta_primary]
+other = "获取报价"
+
+[home_cta_secondary]
+other = "查看目录"
+
+[home_kpi_1_title]
+other = "适合哪些项目"
+
+[home_kpi_1_body]
+other = "度假客房、景区住宿、营地宿舍与配套空间"
+
+[home_kpi_1_link]
+other = "查看解决方案"
+
+[home_kpi_2_title]
+other = "怎么推进"
+
+[home_kpi_2_body]
+other = "从选型、定制到运输与安装，沟通路径更直接"
+
+[home_kpi_2_link]
+other = "查看合作流程"
+
+[home_process_kicker]
+other = "合作方式"
+
+[home_process_title]
+other = "支持选型建议、方案沟通、运输规划与安装配合"
+
+[home_process_link]
+other = "了解合作流程"
+
+[home_strip_1_title]
+other = "适合对象"
+
+[home_strip_1_body]
+other = "开发商、运营方、渠道商与项目承包方"
+
+[home_strip_1_link]
+other = "打开解决方案"
+
+[home_strip_2_title]
+other = "产品方向"
+
+[home_strip_2_body]
+other = "太空舱、苹果舱、木屋与集装箱模块产品"
+
+[home_strip_2_link]
+other = "浏览产品体系"
+
+[home_strip_3_title]
+other = "服务支持"
+
+[home_strip_3_body]
+other = "选型建议、案例参考、运输说明与快速询盘入口"
+
+[home_strip_3_link]
+other = "查看资料中心"
+
+[home_solutions_title]
+other = "按项目类型找到更合适的产品方向"
+
+[home_solutions_body]
+other = "先看场景，再看产品，会更容易判断哪条产品线更适合。"
+
+[home_solution_1_kicker]
+other = "文旅项目"
+
+[home_solution_1_title]
+other = "度假村与露营地"
+
+[home_solution_1_body]
+other = "适合需要高颜值客房、提升入住吸引力、并让房型本身成为卖点的项目。"
+
+[home_solution_1_link]
+other = "查看该方案"
+
+[home_solution_2_kicker]
+other = "高端目的地"
+
+[home_solution_2_title]
+other = "景区与精品酒店"
+
+[home_solution_2_body]
+other = "适合注重景观、品牌感和住客体验，而不是普通标准化箱体的住宿项目。"
+
+[home_solution_2_link]
+other = "查看高端住宿匹配"
+
+[home_solution_3_kicker]
+other = "功能型部署"
+
+[home_solution_3_title]
+other = "营地与宿舍项目"
+
+[home_solution_3_body]
+other = "适合更看重运输效率、实用布局和可复制部署逻辑的项目。"
+
+[home_solution_3_link]
+other = "查看模块化方案"
+
+[home_story_kicker]
+other = "为什么选择 XC Mobile House"
+
+[home_story_title]
+other = "项目方向更清晰，沟通效率也更高"
+
+[home_story_body]
+other = "如果你已经有目的地、数量、预算或场地条件，我们可以更快帮你缩小到更合适的产品与配置方向。"
+
+[home_story_primary]
+other = "浏览产品线"
+
+[home_story_secondary]
+other = "查看工厂与交付"
+
+[home_metric_1_kicker]
+other = "产品覆盖"
+
+[home_metric_1_title]
+other = "四大产品线覆盖住宿、办公与模块部署"
+
+[home_metric_1_body]
+other = "不同项目对外观、空间、装配效率和预算结构的要求不同，对应的产品方向也不一样。"
+
+[home_metric_1_link]
+other = "查看产品系列"
+
+[home_metric_2_kicker]
+other = "交付支持"
+
+[home_metric_2_title]
+other = "运输、安装与定制边界可以提前说清楚"
+
+[home_metric_2_body]
+other = "这样报价会更准确，后续沟通也会更高效。"
+
+[home_metric_2_link]
+other = "查看运输与安装"
+
+[home_products_title]
+other = "核心产品家族"
+
+[home_products_body]
+other = "按产品定位、应用场景和视觉风格来了解不同系列。"
+
+[home_product_1_kicker]
+other = "高端住宿"
+
+[home_product_1_body]
+other = "适合想让产品本身具备强视觉吸引力的度假村和景区住宿项目。"
+
+[home_product_2_kicker]
+other = "目的地设计"
+
+[home_product_2_body]
+other = "适合希望外观更柔和、但依旧有辨识度和品牌感的景区与文旅项目。"
+
+[home_product_3_kicker]
+other = "生态度假"
+
+[home_product_3_body]
+other = "适合营地、疗愈型项目和需要更自然建筑表达的生态住宿。"
+
+[home_product_4_kicker]
+other = "实用模块化"
+
+[home_product_4_body]
+other = "适合营地宿舍、办公、工地配套和更强调效率与成本控制的模块化用途。"
+
+[home_product_link]
+other = "打开产品页"
+
+[home_workflow_kicker]
+other = "合作步骤"
+
+[home_workflow_title]
+other = "从需求到报价，一般这样推进"
+
+[home_workflow_step_1]
+other = "从产品家族或解决方案路径开始。"
+
+[home_workflow_step_2]
+other = "确认目的地、数量和项目用途。"
+
+[home_workflow_step_3]
+other = "缩小到型号、图纸方向和配置范围。"
+
+[home_workflow_step_4]
+other = "讨论运输路线、现场通行和安装条件。"
+
+[home_confidence_kicker]
+other = "配套资料"
+
+[home_confidence_title]
+other = "帮助你更快进入项目沟通的资料"
+
+[home_final_kicker]
+other = "开始沟通"
+
+[home_final_title]
+other = "把项目地点、数量和使用场景告诉我们"
+
+[home_final_body]
+other = "如果你已经有场地图、平面方案或目标客群定位，一并发送会更快拿到更合适的建议与报价方向。"
+
+[home_final_primary]
+other = "联系 XC Mobile House"
+
+[home_final_secondary]
+other = "查看目录"

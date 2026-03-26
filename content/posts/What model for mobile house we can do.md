@@ -5,7 +5,7 @@ lastmod: 2025-04-11T08:53:15+08:00
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
 avatar: https://i.postimg.cc/G3tYDFp6/202504112221048.png
 authorlink: 
-cover: https://i.postimg.cc/G3tYDFp6/202504112221048.png
+
 images:
   - https://i.postimg.cc/G3tYDFp6/202504112221048.png
 categories:
@@ -16,10 +16,24 @@ tags:
   - tag2
 # nolastmod: true
 draft: false
+seo_title: What model we can do - Mobile Housing Solutions
+seo_description: Explore our range of mobile housing models designed for comfort, efficiency, and flexibility. Perfect solutions for modern living spaces.
+seo_keywords: mobile housing, modular homes, portable houses, mobile cabins, customizable homes
+seo_image: https://i.postimg.cc/G3tYDFp6/202504112221048.png
 ---
 
 
 <!--more-->
+<meta name="description" content="Explore our range of mobile housing models designed for comfort, efficiency, and flexibility. Perfect solutions for modern living spaces.">
+<meta name="keywords" content="mobile housing, modular homes, portable houses, mobile cabins, customizable homes">
+<meta property="og:title" content="What model we can do - Mobile Housing Solutions">
+<meta property="og:description" content="Explore our range of mobile housing models designed for comfort, efficiency, and flexibility. Perfect solutions for modern living spaces.">
+<meta property="og:image" content="https://i.postimg.cc/G3tYDFp6/202504112221048.png">
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="What model we can do - Mobile Housing Solutions">
+<meta name="twitter:description" content="Explore our range of mobile housing models designed for comfort, efficiency, and flexibility. Perfect solutions for modern living spaces.">
+<meta name="twitter:image" content="https://i.postimg.cc/G3tYDFp6/202504112221048.png">
+<meta name="twitter:card" content="summary_large_image">
 
 ![](https://i.postimg.cc/XVNyj5ry/0-what-we-can-do.jpg?dl=1)
 ![](https://i.postimg.cc/TRk5pPbN/1-what-we-can-do.jpg?dl=1)

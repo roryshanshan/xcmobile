@@ -1,5 +1,16 @@
 <ul class="menu">
   {{ range site.Menus.main }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ if and (not .Parent) (ne .Identifier "other") (ne (lower .Name) "other") }}
+      <li>
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        {{ if .Children }}
+          <ul>
+            {{ range .Children }}
+              <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
   {{ end }}
 </ul>

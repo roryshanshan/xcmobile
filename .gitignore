@@ -8,12 +8,15 @@
 
 # 系统和编辑器文件
 .DS_Store
+._*
 Thumbs.db
 *.log
 *.bak
 *.swp
 *.swo
 *.swn
+__pycache__/
+*.pyc
 .idea/
 .vscode/
 *.code-workspace

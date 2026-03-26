@@ -4,12 +4,25 @@ date: 2025-04-11T08:53:15+08:00
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
 avatar: https://i.postimg.cc/G3tYDFp6/202504112221048.png
 authorlink: 
-cover: https://i.postimg.cc/G3tYDFp6/202504112221048.png
-
-
+seo_title: Villa - Modern and Efficient Living Spaces
+seo_description: Discover our Villa mobile homes with modern design and energy-efficient features. Ideal for comfortable living with customizable options.
+seo_keywords: villa mobile homes, modern villa, energy-efficient living, customizable homes, mobile housing solutions
+seo_image: https://i.postimg.cc/Fmx8LwpS/202504121533110.png
 ---
 
+<!-- Place your meta tags below, inside the content -->
+<meta name="description" content="Discover our Villa mobile homes with modern design and energy-efficient features. Ideal for comfortable living with customizable options.">
+<meta name="keywords" content="villa mobile homes, modern villa, energy-efficient living, customizable homes, mobile housing solutions">
+<meta property="og:title" content="Villa - Modern and Efficient Living Spaces">
+<meta property="og:description" content="Discover our Villa mobile homes with modern design and energy-efficient features. Ideal for comfortable living with customizable options.">
+<meta property="og:image" content="https://i.postimg.cc/Fmx8LwpS/202504121533110.png">
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="Villa - Modern and Efficient Living Spaces">
+<meta name="twitter:description" content="Discover our Villa mobile homes with modern design and energy-efficient features. Ideal for comfortable living with customizable options.">
+<meta name="twitter:image" content="https://i.postimg.cc/Fmx8LwpS/202504121533110.png">
+<meta name="twitter:card" content="summary_large_image">
 
+---
 
 <!--more-->
 

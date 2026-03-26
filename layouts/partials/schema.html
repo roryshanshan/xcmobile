@@ -1,0 +1,630 @@
+{{- if ne .Kind "404" -}}
+  {{- $siteRoot := strings.TrimSuffix "/" .Site.BaseURL -}}
+  {{- $homeURL := .Site.Home.Permalink -}}
+  {{- $pageURL := default $homeURL .Permalink -}}
+  {{- $orgID := printf "%s#organization" $siteRoot -}}
+  {{- $websiteID := printf "%s#website" $homeURL -}}
+  {{- $pageID := printf "%s#webpage" $pageURL -}}
+  {{- $breadcrumbID := printf "%s#breadcrumb" $pageURL -}}
+  {{- $itemListID := printf "%s#itemlist" $pageURL -}}
+  {{- $langCode := .Site.Language.LanguageCode | default .Site.Language.Lang -}}
+  {{- $langPrefix := cond (eq .Site.Language.Lang "zh") "/zh" "" -}}
+  {{- $schemaPath := replaceRE "^/zh/" "/" .RelPermalink -}}
+  {{- $schemaPathNormalized := replaceRE "-+" "-" $schemaPath -}}
+  {{- $collectionPagePaths := slice "/products/" "/solutions/" "/resources/" "/catalog/" -}}
+  {{- $pageTitle := site.Title -}}
+  {{- if not .IsHome -}}
+    {{- $pageTitle = default site.Title (or .LinkTitle .Title) -}}
+  {{- end -}}
+  {{- $description := (or .Description (or .Summary .Site.Params.description) .Site.Params.description) | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace -}}
+  {{- $imageURL := "" -}}
+  {{- with .Params.cover -}}
+    {{- $imageURL = . -}}
+  {{- end -}}
+  {{- if and (eq $imageURL "") .Params.hero -}}
+    {{- with .Params.hero.image -}}
+      {{- $imageURL = . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and (eq $imageURL "") .Site.Params.avatar -}}
+    {{- $imageURL = .Site.Params.avatar -}}
+  {{- end -}}
+  {{- if and $imageURL (not (or (hasPrefix $imageURL "http://") (hasPrefix $imageURL "https://"))) -}}
+    {{- $imageURL = $imageURL | absURL -}}
+  {{- end -}}
+  {{- $logoURL := .Site.Params.avatar | default $imageURL -}}
+  {{- if and $logoURL (not (or (hasPrefix $logoURL "http://") (hasPrefix $logoURL "https://"))) -}}
+    {{- $logoURL = $logoURL | absURL -}}
+  {{- end -}}
+  {{- $availableLanguages := slice $langCode -}}
+  {{- range .Site.Home.AllTranslations -}}
+    {{- $translationLang := .Language.LanguageCode | default .Language.Lang -}}
+    {{- if not (in $availableLanguages $translationLang) -}}
+      {{- $availableLanguages = $availableLanguages | append $translationLang -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $keywordValues := slice -}}
+  {{- with .Params.keywords -}}
+    {{- if reflect.IsSlice . -}}
+      {{- range . -}}
+        {{- $keywordValues = $keywordValues | append (printf "%v" .) -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $keywordValues = $keywordValues | append (printf "%v" .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with .Params.tags -}}
+    {{- if reflect.IsSlice . -}}
+      {{- range . -}}
+        {{- if not (in $keywordValues (printf "%v" .)) -}}
+          {{- $keywordValues = $keywordValues | append (printf "%v" .) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- else -}}
+      {{- if not (in $keywordValues (printf "%v" .)) -}}
+        {{- $keywordValues = $keywordValues | append (printf "%v" .) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $keywordText := "" -}}
+  {{- if gt (len $keywordValues) 0 -}}
+    {{- $keywordText = delimit $keywordValues ", " -}}
+  {{- end -}}
+  {{- $organization := dict
+    "@type" "Organization"
+    "@id" $orgID
+    "name" (default site.Title .Site.Params.organizationName)
+    "url" .Site.BaseURL
+    "email" .Site.Params.email
+    "telephone" (.Site.Params.telephone | default "+8619906365856")
+    "logo" (dict "@type" "ImageObject" "url" $logoURL)
+    "contactPoint" (slice (dict
+      "@type" "ContactPoint"
+      "contactType" "sales"
+      "email" .Site.Params.email
+      "telephone" (.Site.Params.telephone | default "+8619906365856")
+      "availableLanguage" $availableLanguages
+      "areaServed" "Worldwide"
+      "url" (.Site.Params.whatsappURL | default "https://wa.me/8619906365856")
+    ))
+    "address" (dict
+      "@type" "PostalAddress"
+      "addressLocality" (.Site.Params.addressLocality | default "Qingzhou")
+      "addressRegion" (.Site.Params.addressRegion | default "Shandong")
+      "addressCountry" (.Site.Params.addressCountry | default "CN")
+    )
+  -}}
+  {{- $sameAs := slice -}}
+  {{- with .Site.Params.linkedinURL -}}
+    {{- $sameAs = $sameAs | append . -}}
+  {{- end -}}
+  {{- if gt (len $sameAs) 0 -}}
+    {{- $organization = merge $organization (dict "sameAs" $sameAs) -}}
+  {{- end -}}
+  {{- $website := dict
+    "@type" "WebSite"
+    "@id" $websiteID
+    "url" $homeURL
+    "name" site.Title
+    "description" ((or .Site.Params.description site.Title) | plainify | htmlUnescape | strings.TrimSpace)
+    "inLanguage" $langCode
+    "publisher" (dict "@id" $orgID)
+  -}}
+  {{- $pageType := "WebPage" -}}
+  {{- with .Params.schema_type -}}
+    {{- $pageType = . -}}
+  {{- else -}}
+    {{- if hasSuffix .RelPermalink "/contact/" -}}
+      {{- $pageType = "ContactPage" -}}
+    {{- else if or .IsSection (eq .Kind "taxonomy") (eq .Kind "term") (in $collectionPagePaths $schemaPathNormalized) -}}
+      {{- $pageType = "CollectionPage" -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $breadcrumbItems := slice -}}
+  {{- $homeName := cond (eq .Site.Language.Lang "zh") "首页" "Home" -}}
+  {{- $position := 1 -}}
+  {{- $breadcrumbItems = $breadcrumbItems | append (dict
+    "@type" "ListItem"
+    "position" $position
+    "name" $homeName
+    "item" $homeURL
+  ) -}}
+  {{- if not .IsHome -}}
+    {{- range .Ancestors.Reverse -}}
+      {{- if not .IsHome -}}
+        {{- $position = add $position 1 -}}
+        {{- $breadcrumbItems = $breadcrumbItems | append (dict
+          "@type" "ListItem"
+          "position" $position
+          "name" (default .Title .LinkTitle)
+          "item" .Permalink
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $position = add $position 1 -}}
+    {{- $breadcrumbItems = $breadcrumbItems | append (dict
+      "@type" "ListItem"
+      "position" $position
+      "name" $pageTitle
+      "item" $pageURL
+    ) -}}
+  {{- end -}}
+  {{- $pageSchema := dict
+    "@type" $pageType
+    "@id" $pageID
+    "url" $pageURL
+    "name" $pageTitle
+    "description" $description
+    "inLanguage" $langCode
+    "isPartOf" (dict "@id" $websiteID)
+    "about" (dict "@id" $orgID)
+  -}}
+  {{- if $imageURL -}}
+    {{- $pageSchema = merge $pageSchema (dict
+      "primaryImageOfPage" (dict "@type" "ImageObject" "url" $imageURL)
+    ) -}}
+  {{- end -}}
+  {{- if $keywordText -}}
+    {{- $pageSchema = merge $pageSchema (dict "keywords" $keywordText) -}}
+  {{- end -}}
+  {{- if .IsPage -}}
+    {{- with .Date -}}
+      {{- $pageSchema = merge $pageSchema (dict "datePublished" (.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    {{- with .Lastmod -}}
+      {{- $pageSchema = merge $pageSchema (dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $graph := slice $organization $website $pageSchema -}}
+  {{- if gt (len $breadcrumbItems) 1 -}}
+    {{- $pageSchema = merge $pageSchema (dict "breadcrumb" (dict "@id" $breadcrumbID)) -}}
+    {{- $graph = slice $organization $website $pageSchema (dict
+      "@type" "BreadcrumbList"
+      "@id" $breadcrumbID
+      "itemListElement" $breadcrumbItems
+    ) -}}
+  {{- end -}}
+  {{- $productPaths := slice
+    "/space-capsule/"
+    "/apple-cabin/"
+    "/wooden-cabin/"
+    "/container-solutions/"
+    "/kitchen-house/"
+    "/posts/360-panoramic-bubble-hotel-star-room/"
+    "/posts/container-type-houses/"
+    "/posts/double-story-gable-roof-house-details/"
+    "/posts/internet-celebrity-container/"
+    "/posts/prefab-portable-a-fram-aframe-triangle-cabin-house-home/"
+    "/posts/standard-container-houses/"
+    "/posts/standard-container-houses-with-glass-curtain-wall/"
+    "/posts/flat-pack-container-house/"
+    "/posts/container-house/"
+    "/posts/z-type-expandable-container-houses/"
+    "/posts/x-type-expandable-container-houses/"
+    "/posts/prefabricated-modular-expandable-container-houses-with-bedroom/"
+    "/posts/outdoor-fully-assembled-office-pod/"
+    "/posts/office-apple-pod/"
+    "/posts/soundproof-studio-pod/"
+    "/posts/steel-structure-workshop/"
+    "/posts/villa/"
+    "/posts/e5-modelspace-capsule-details/"
+    "/posts/e6-modelspace-capsule-details/"
+    "/posts/e7-modelspace-capsule-details/"
+  -}}
+  {{- $isProductPage := false -}}
+  {{- with .Params.schema_kind -}}
+    {{- if eq . "product" -}}
+      {{- $isProductPage = true -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and (not $isProductPage) .IsPage -}}
+    {{- if or (hasPrefix $schemaPathNormalized "/other/") (in $productPaths $schemaPathNormalized) -}}
+      {{- $isProductPage = true -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and .IsPage (eq .Type "posts") -}}
+    {{- $author := dict
+      "@type" "Person"
+      "name" (default (.Site.Params.author | default site.Title) .Params.author)
+    -}}
+    {{- with .Params.authorlink -}}
+      {{- $author = merge $author (dict "url" .) -}}
+    {{- end -}}
+    {{- $article := dict
+      "@type" "Article"
+      "@id" (printf "%s#article" $pageURL)
+      "headline" $pageTitle
+      "description" $description
+      "url" $pageURL
+      "inLanguage" $langCode
+      "mainEntityOfPage" (dict "@id" $pageID)
+      "author" $author
+      "publisher" (dict "@id" $orgID)
+    -}}
+    {{- with .Date -}}
+      {{- $article = merge $article (dict "datePublished" (.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    {{- with .Lastmod -}}
+      {{- $article = merge $article (dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00")) -}}
+    {{- end -}}
+    {{- if $imageURL -}}
+      {{- $article = merge $article (dict "image" (slice $imageURL)) -}}
+    {{- end -}}
+    {{- if $keywordText -}}
+      {{- $article = merge $article (dict "keywords" $keywordText) -}}
+    {{- end -}}
+    {{- if $isProductPage -}}
+      {{- $article = merge $article (dict "about" (dict "@id" (printf "%s#product" $pageURL))) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $article -}}
+  {{- end -}}
+  {{- if $isProductPage -}}
+    {{- $product := dict
+      "@type" "Product"
+      "@id" (printf "%s#product" $pageURL)
+      "name" $pageTitle
+      "description" $description
+      "url" $pageURL
+      "brand" (dict "@type" "Brand" "name" (default site.Title .Site.Params.organizationName))
+      "manufacturer" (dict "@id" $orgID)
+      "category" (default "Modular Building Product" .Params.schema_category)
+    -}}
+    {{- if $imageURL -}}
+      {{- $product = merge $product (dict "image" (slice $imageURL)) -}}
+    {{- end -}}
+    {{- if $keywordText -}}
+      {{- $product = merge $product (dict "keywords" $keywordText) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $product -}}
+  {{- end -}}
+  {{- $hubCatalogType := "" -}}
+  {{- $hubCatalogItems := slice -}}
+  {{- $hubCatalogItemType := "Thing" -}}
+  {{- if eq $schemaPathNormalized "/products/" -}}
+    {{- $hubCatalogType = "OfferCatalog" -}}
+    {{- $hubCatalogItemType = "Product" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "太空舱" "url" ((printf "%s%s" $langPrefix "/space-capsule/") | absURL))
+        (dict "name" "苹果舱" "url" ((printf "%s%s" $langPrefix "/apple-cabin/") | absURL))
+        (dict "name" "木屋系列" "url" ((printf "%s%s" $langPrefix "/wooden-cabin/") | absURL))
+        (dict "name" "集装箱方案" "url" ((printf "%s%s" $langPrefix "/container-solutions/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Space Capsule" "url" ((printf "%s%s" $langPrefix "/space-capsule/") | absURL))
+        (dict "name" "Apple Cabin" "url" ((printf "%s%s" $langPrefix "/apple-cabin/") | absURL))
+        (dict "name" "Wooden Cabin" "url" ((printf "%s%s" $langPrefix "/wooden-cabin/") | absURL))
+        (dict "name" "Container Solutions" "url" ((printf "%s%s" $langPrefix "/container-solutions/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/other/" -}}
+    {{- $hubCatalogType = "OfferCatalog" -}}
+    {{- $hubCatalogItemType = "Product" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "360 全景泡泡房" "url" ((printf "%s%s" $langPrefix "/other/360-panoramic-bubble-hotel-star-room/") | absURL))
+        (dict "name" "模块化别墅" "url" ((printf "%s%s" $langPrefix "/other/villa/") | absURL))
+        (dict "name" "A-Frame 三角木屋" "url" ((printf "%s%s" $langPrefix "/other/prefab-portable-a-fram-aframe-triangle-cabin-house-home/") | absURL))
+        (dict "name" "网红集装箱产品" "url" ((printf "%s%s" $langPrefix "/other/internet-celebrity-container/") | absURL))
+        (dict "name" "标准箱式房" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses/") | absURL))
+        (dict "name" "玻璃幕墙标准箱式房" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses-with-glass-curtain-wall/") | absURL))
+        (dict "name" "平板式集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/flat-pack-container-house/") | absURL))
+        (dict "name" "可拆装集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/container-house/") | absURL))
+        (dict "name" "Z 型可扩展集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/z-type-expandable-container-houses/") | absURL))
+        (dict "name" "X 型可扩展集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/x-type-expandable-container-houses/") | absURL))
+        (dict "name" "带卧室的可扩展模块房" "url" ((printf "%s%s" $langPrefix "/posts/prefabricated-modular-expandable-container-houses-with-bedroom/") | absURL))
+        (dict "name" "传统集装箱改造产品" "url" ((printf "%s%s" $langPrefix "/other/container-type-houses/") | absURL))
+        (dict "name" "成品办公舱" "url" ((printf "%s%s" $langPrefix "/posts/outdoor-fully-assembled-office-pod/") | absURL))
+        (dict "name" "苹果办公舱" "url" ((printf "%s%s" $langPrefix "/posts/office-apple-pod/") | absURL))
+        (dict "name" "静音工作舱" "url" ((printf "%s%s" $langPrefix "/posts/soundproof-studio-pod/") | absURL))
+        (dict "name" "钢结构车间" "url" ((printf "%s%s" $langPrefix "/posts/steel-structure-workshop/") | absURL))
+        (dict "name" "双层坡顶模块房" "url" ((printf "%s%s" $langPrefix "/other/double-story-gable-roof-house-details/") | absURL))
+        (dict "name" "联排式可拆装组合房" "url" ((printf "%s%s" $langPrefix "/other/townhouse-build-with-detachable-container-house/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "360 Panoramic Bubble Hotel Room" "url" ((printf "%s%s" $langPrefix "/other/360-panoramic-bubble-hotel-star-room/") | absURL))
+        (dict "name" "Villa House" "url" ((printf "%s%s" $langPrefix "/other/villa/") | absURL))
+        (dict "name" "A-Frame Cabin" "url" ((printf "%s%s" $langPrefix "/other/prefab-portable-a-fram-aframe-triangle-cabin-house-home/") | absURL))
+        (dict "name" "Internet Celebrity Container" "url" ((printf "%s%s" $langPrefix "/other/internet-celebrity-container/") | absURL))
+        (dict "name" "Standard Container Houses" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses/") | absURL))
+        (dict "name" "Glass Curtain Wall Container Houses" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses-with-glass-curtain-wall/") | absURL))
+        (dict "name" "Flat Pack Container House" "url" ((printf "%s%s" $langPrefix "/posts/flat-pack-container-house/") | absURL))
+        (dict "name" "Detachable Container House" "url" ((printf "%s%s" $langPrefix "/posts/container-house/") | absURL))
+        (dict "name" "Z Type Expandable Container House" "url" ((printf "%s%s" $langPrefix "/posts/z-type--expandable-container-houses/") | absURL))
+        (dict "name" "X Type Expandable Container House" "url" ((printf "%s%s" $langPrefix "/posts/x-type--expandable-container-houses/") | absURL))
+        (dict "name" "Expandable Unit with Bedroom Layout" "url" ((printf "%s%s" $langPrefix "/posts/prefabricated-modular-expandable-container-houses-with-bedroom/") | absURL))
+        (dict "name" "Container Type Houses" "url" ((printf "%s%s" $langPrefix "/other/container-type-houses/") | absURL))
+        (dict "name" "Outdoor Fully Assembled Office Pod" "url" ((printf "%s%s" $langPrefix "/posts/outdoor-fully-assembled-office-pod/") | absURL))
+        (dict "name" "Office Apple Pod" "url" ((printf "%s%s" $langPrefix "/posts/office-apple-pod/") | absURL))
+        (dict "name" "Soundproof Studio Pod" "url" ((printf "%s%s" $langPrefix "/posts/soundproof-studio-pod/") | absURL))
+        (dict "name" "Steel Structure Workshop" "url" ((printf "%s%s" $langPrefix "/posts/steel-structure-workshop/") | absURL))
+        (dict "name" "Double-Story Gable Roof House" "url" ((printf "%s%s" $langPrefix "/other/double-story-gable-roof-house-details/") | absURL))
+        (dict "name" "Townhouse with Detachable Container House" "url" ((printf "%s%s" $langPrefix "/other/townhouse-build-with-detachable-container-house/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/container-solutions/" -}}
+    {{- $hubCatalogType = "OfferCatalog" -}}
+    {{- $hubCatalogItemType = "Product" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "标准箱式房" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses/") | absURL))
+        (dict "name" "玻璃幕墙标准箱式房" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses-with-glass-curtain-wall/") | absURL))
+        (dict "name" "平板式集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/flat-pack-container-house/") | absURL))
+        (dict "name" "可拆装集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/container-house/") | absURL))
+        (dict "name" "Z 型可扩展集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/z-type-expandable-container-houses/") | absURL))
+        (dict "name" "X 型可扩展集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/x-type-expandable-container-houses/") | absURL))
+        (dict "name" "带卧室的可扩展模块房" "url" ((printf "%s%s" $langPrefix "/posts/prefabricated-modular-expandable-container-houses-with-bedroom/") | absURL))
+        (dict "name" "成品办公舱" "url" ((printf "%s%s" $langPrefix "/posts/outdoor-fully-assembled-office-pod/") | absURL))
+        (dict "name" "苹果办公舱" "url" ((printf "%s%s" $langPrefix "/posts/office-apple-pod/") | absURL))
+        (dict "name" "静音工作舱" "url" ((printf "%s%s" $langPrefix "/posts/soundproof-studio-pod/") | absURL))
+        (dict "name" "钢结构车间" "url" ((printf "%s%s" $langPrefix "/posts/steel-structure-workshop/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Standard Container Houses" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses/") | absURL))
+        (dict "name" "Standard Container Houses with Glass Curtain Wall" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses-with-glass-curtain-wall/") | absURL))
+        (dict "name" "Flat Pack Container House" "url" ((printf "%s%s" $langPrefix "/posts/flat-pack-container-house/") | absURL))
+        (dict "name" "Detachable Container House" "url" ((printf "%s%s" $langPrefix "/posts/container-house/") | absURL))
+        (dict "name" "Z Type Expandable Container House" "url" ((printf "%s%s" $langPrefix "/posts/z-type--expandable-container-houses/") | absURL))
+        (dict "name" "X Type Expandable Container House" "url" ((printf "%s%s" $langPrefix "/posts/x-type--expandable-container-houses/") | absURL))
+        (dict "name" "Expandable Unit with Bedroom Layout" "url" ((printf "%s%s" $langPrefix "/posts/prefabricated-modular-expandable-container-houses-with-bedroom/") | absURL))
+        (dict "name" "Outdoor Fully Assembled Office Pod" "url" ((printf "%s%s" $langPrefix "/posts/outdoor-fully-assembled-office-pod/") | absURL))
+        (dict "name" "Office Apple Pod" "url" ((printf "%s%s" $langPrefix "/posts/office-apple-pod/") | absURL))
+        (dict "name" "Soundproof Studio Pod" "url" ((printf "%s%s" $langPrefix "/posts/soundproof-studio-pod/") | absURL))
+        (dict "name" "Steel Structure Workshop" "url" ((printf "%s%s" $langPrefix "/posts/steel-structure-workshop/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/solutions/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Service" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "度假村与营地" "url" ((printf "%s%s" $langPrefix "/resort-glamping/") | absURL))
+        (dict "name" "景区与精品酒店" "url" ((printf "%s%s" $langPrefix "/scenic-boutique-hotel/") | absURL))
+        (dict "name" "营地与宿舍项目" "url" ((printf "%s%s" $langPrefix "/workforce-camp/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Resorts & Glamping" "url" ((printf "%s%s" $langPrefix "/resort-glamping/") | absURL))
+        (dict "name" "Scenic Area & Boutique Hotel" "url" ((printf "%s%s" $langPrefix "/scenic-boutique-hotel/") | absURL))
+        (dict "name" "Camp & Workforce Housing" "url" ((printf "%s%s" $langPrefix "/workforce-camp/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/resources/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "WebPage" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "电子目录" "url" ((printf "%s%s" $langPrefix "/catalog/") | absURL))
+        (dict "name" "常见问题" "url" ((printf "%s%s" $langPrefix "/faq/") | absURL))
+        (dict "name" "运输与安装" "url" ((printf "%s%s" $langPrefix "/shipping-installation/") | absURL))
+        (dict "name" "项目案例" "url" ((printf "%s%s" $langPrefix "/projects/") | absURL))
+        (dict "name" "博客" "url" ((printf "%s%s" $langPrefix "/posts/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Catalog" "url" ((printf "%s%s" $langPrefix "/catalog/") | absURL))
+        (dict "name" "FAQ" "url" ((printf "%s%s" $langPrefix "/faq/") | absURL))
+        (dict "name" "Shipping & Installation" "url" ((printf "%s%s" $langPrefix "/shipping-installation/") | absURL))
+        (dict "name" "Projects" "url" ((printf "%s%s" $langPrefix "/projects/") | absURL))
+        (dict "name" "Blog" "url" ((printf "%s%s" $langPrefix "/posts/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/catalog/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "DigitalDocument" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "全站产品总目录" "url" ("/xcmobile/files/XC-mobilehouse.pdf" | absURL))
+        (dict "name" "苹果舱产品图册" "url" ("/xcmobile/files/XC-Apple-Cabin.pdf" | absURL))
+        (dict "name" "苹果舱参考图纸" "url" ("/xcmobile/files/N5.pdf" | absURL))
+        (dict "name" "E5 布局图纸" "url" ("/xcmobile/files/E5.pdf" | absURL))
+        (dict "name" "E6 布局图纸" "url" ("/xcmobile/files/E6.pdf" | absURL))
+        (dict "name" "E7 布局图纸" "url" ("/xcmobile/files/E7.pdf" | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "XC Mobile House Brochure" "url" ("/xcmobile/files/XC-mobilehouse.pdf" | absURL))
+        (dict "name" "Apple Cabin Product Brochure" "url" ("/xcmobile/files/XC-Apple-Cabin.pdf" | absURL))
+        (dict "name" "Apple Cabin Drawing Example" "url" ("/xcmobile/files/N5.pdf" | absURL))
+        (dict "name" "E5 Space Capsule Drawing" "url" ("/xcmobile/files/E5.pdf" | absURL))
+        (dict "name" "E6 Space Capsule Drawing" "url" ("/xcmobile/files/E6.pdf" | absURL))
+        (dict "name" "E7 Space Capsule Drawing" "url" ("/xcmobile/files/E7.pdf" | absURL))
+      -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $hubCatalogItems) 0 -}}
+    {{- $hubCatalogElements := slice -}}
+    {{- range $index, $item := $hubCatalogItems -}}
+      {{- $hubItem := dict
+        "@type" $hubCatalogItemType
+        "name" $item.name
+        "url" $item.url
+      -}}
+      {{- if eq $hubCatalogItemType "DigitalDocument" -}}
+        {{- $hubItem = merge $hubItem (dict "encodingFormat" "application/pdf") -}}
+      {{- end -}}
+      {{- $hubCatalogElements = $hubCatalogElements | append (dict
+        "@type" "ListItem"
+        "position" (add $index 1)
+        "item" $hubItem
+      ) -}}
+    {{- end -}}
+    {{- $hubCatalog := dict
+      "@type" $hubCatalogType
+      "@id" (printf "%s#catalog" $pageURL)
+      "name" $pageTitle
+      "url" $pageURL
+      "numberOfItems" (len $hubCatalogItems)
+      "itemListElement" $hubCatalogElements
+    -}}
+    {{- with $description -}}
+      {{- $hubCatalog = merge $hubCatalog (dict "description" .) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $hubCatalog -}}
+  {{- end -}}
+  {{- $serviceType := "" -}}
+  {{- $serviceAudience := "" -}}
+  {{- $serviceOfferItems := slice -}}
+  {{- if eq $schemaPathNormalized "/solutions/" -}}
+    {{- $serviceType = cond (eq .Site.Language.Lang "zh") "模块化项目方案匹配" "Modular project solution matching" -}}
+    {{- $serviceAudience = cond (eq .Site.Language.Lang "zh") "项目型买家与开发商" "Project buyers and developers" -}}
+  {{- else if eq $schemaPathNormalized "/resort-glamping/" -}}
+    {{- $serviceType = cond (eq .Site.Language.Lang "zh") "度假村与营地住宿方案" "Resort and glamping accommodation planning" -}}
+    {{- $serviceAudience = cond (eq .Site.Language.Lang "zh") "度假村、营地与景区项目方" "Resort, glamping, and tourism project buyers" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $serviceOfferItems = slice
+        (dict "name" "太空舱" "url" ((printf "%s%s" $langPrefix "/space-capsule/") | absURL))
+        (dict "name" "苹果舱" "url" ((printf "%s%s" $langPrefix "/apple-cabin/") | absURL))
+        (dict "name" "木屋系列" "url" ((printf "%s%s" $langPrefix "/wooden-cabin/") | absURL))
+        (dict "name" "360 全景泡泡房" "url" ((printf "%s%s" $langPrefix "/other/360-panoramic-bubble-hotel-star-room/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $serviceOfferItems = slice
+        (dict "name" "Space Capsule" "url" ((printf "%s%s" $langPrefix "/space-capsule/") | absURL))
+        (dict "name" "Apple Cabin" "url" ((printf "%s%s" $langPrefix "/apple-cabin/") | absURL))
+        (dict "name" "Wooden Cabin" "url" ((printf "%s%s" $langPrefix "/wooden-cabin/") | absURL))
+        (dict "name" "360 Panoramic Bubble Hotel Room" "url" ((printf "%s%s" $langPrefix "/other/360-panoramic-bubble-hotel-star-room/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/scenic-boutique-hotel/" -}}
+    {{- $serviceType = cond (eq .Site.Language.Lang "zh") "景区与精品酒店模块化住宿方案" "Scenic area and boutique hotel modular hospitality planning" -}}
+    {{- $serviceAudience = cond (eq .Site.Language.Lang "zh") "景区、精品酒店与高端住宿项目方" "Scenic destination and boutique hotel buyers" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $serviceOfferItems = slice
+        (dict "name" "太空舱" "url" ((printf "%s%s" $langPrefix "/space-capsule/") | absURL))
+        (dict "name" "苹果舱" "url" ((printf "%s%s" $langPrefix "/apple-cabin/") | absURL))
+        (dict "name" "木屋系列" "url" ((printf "%s%s" $langPrefix "/wooden-cabin/") | absURL))
+        (dict "name" "模块化别墅" "url" ((printf "%s%s" $langPrefix "/other/villa/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $serviceOfferItems = slice
+        (dict "name" "Space Capsule" "url" ((printf "%s%s" $langPrefix "/space-capsule/") | absURL))
+        (dict "name" "Apple Cabin" "url" ((printf "%s%s" $langPrefix "/apple-cabin/") | absURL))
+        (dict "name" "Wooden Cabin" "url" ((printf "%s%s" $langPrefix "/wooden-cabin/") | absURL))
+        (dict "name" "Villa House" "url" ((printf "%s%s" $langPrefix "/other/villa/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/workforce-camp/" -}}
+    {{- $serviceType = cond (eq .Site.Language.Lang "zh") "营地与宿舍部署方案" "Camp and workforce housing deployment planning" -}}
+    {{- $serviceAudience = cond (eq .Site.Language.Lang "zh") "营地宿舍、临建和工程型买家" "Camp, dormitory, and project deployment buyers" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $serviceOfferItems = slice
+        (dict "name" "集装箱方案" "url" ((printf "%s%s" $langPrefix "/container-solutions/") | absURL))
+        (dict "name" "标准箱式房" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses/") | absURL))
+        (dict "name" "平板式集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/flat-pack-container-house/") | absURL))
+        (dict "name" "可拆装集装箱房" "url" ((printf "%s%s" $langPrefix "/posts/container-house/") | absURL))
+        (dict "name" "钢结构车间" "url" ((printf "%s%s" $langPrefix "/posts/steel-structure-workshop/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $serviceOfferItems = slice
+        (dict "name" "Container Solutions" "url" ((printf "%s%s" $langPrefix "/container-solutions/") | absURL))
+        (dict "name" "Standard Container Houses" "url" ((printf "%s%s" $langPrefix "/posts/standard-container-houses/") | absURL))
+        (dict "name" "Flat Pack Container House" "url" ((printf "%s%s" $langPrefix "/posts/flat-pack-container-house/") | absURL))
+        (dict "name" "Detachable Container House" "url" ((printf "%s%s" $langPrefix "/posts/container-house/") | absURL))
+        (dict "name" "Steel Structure Workshop" "url" ((printf "%s%s" $langPrefix "/posts/steel-structure-workshop/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/factory-quality/" -}}
+    {{- $serviceType = cond (eq .Site.Language.Lang "zh") "工厂协同与质量沟通支持" "Factory coordination and quality support" -}}
+    {{- $serviceAudience = cond (eq .Site.Language.Lang "zh") "项目型采购与分销客户" "Project buyers and channel customers" -}}
+  {{- else if eq $schemaPathNormalized "/shipping-installation/" -}}
+    {{- $serviceType = cond (eq .Site.Language.Lang "zh") "运输规划与安装支持" "Shipping planning and installation support" -}}
+    {{- $serviceAudience = cond (eq .Site.Language.Lang "zh") "需要落地运输与现场协同的买家" "Buyers preparing shipping and on-site deployment" -}}
+  {{- end -}}
+  {{- if ne $serviceType "" -}}
+    {{- $service := dict
+      "@type" "Service"
+      "@id" (printf "%s#service" $pageURL)
+      "name" $pageTitle
+      "description" $description
+      "url" $pageURL
+      "serviceType" $serviceType
+      "provider" (dict "@id" $orgID)
+      "areaServed" "Worldwide"
+      "availableChannel" (dict
+        "@type" "ServiceChannel"
+        "serviceUrl" ((printf "%s%s" $langPrefix "/contact/") | absURL)
+      )
+    -}}
+    {{- if ne $serviceAudience "" -}}
+      {{- $service = merge $service (dict "audience" (dict "@type" "Audience" "audienceType" $serviceAudience)) -}}
+    {{- end -}}
+    {{- if gt (len $serviceOfferItems) 0 -}}
+      {{- $serviceOfferElements := slice -}}
+      {{- range $index, $item := $serviceOfferItems -}}
+        {{- $serviceOfferElements = $serviceOfferElements | append (dict
+          "@type" "ListItem"
+          "position" (add $index 1)
+          "item" (dict
+            "@type" "Product"
+            "name" $item.name
+            "url" $item.url
+          )
+        ) -}}
+      {{- end -}}
+      {{- $service = merge $service (dict
+        "hasOfferCatalog" (dict
+          "@type" "OfferCatalog"
+          "name" (cond (eq .Site.Language.Lang "zh") "推荐产品方向" "Recommended product directions")
+          "itemListElement" $serviceOfferElements
+        )
+      ) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $service -}}
+  {{- end -}}
+  {{- if and .Params.schema_faq .IsPage -}}
+    {{- $mainEntity := slice -}}
+    {{- range .Params.schema_faq -}}
+      {{- $mainEntity = $mainEntity | append (dict
+        "@type" "Question"
+        "name" .question
+        "acceptedAnswer" (dict
+          "@type" "Answer"
+          "text" .answer
+        )
+      ) -}}
+    {{- end -}}
+    {{- if gt (len $mainEntity) 0 -}}
+      {{- $graph = $graph | append (dict
+        "@type" "FAQPage"
+        "@id" (printf "%s#faq" $pageURL)
+        "url" $pageURL
+        "mainEntity" $mainEntity
+      ) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if or .IsSection (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $listElements := slice -}}
+    {{- if eq .Kind "taxonomy" -}}
+      {{- range $index, $term := .Data.Terms.Alphabetical -}}
+        {{- $listElements = $listElements | append (dict
+          "@type" "ListItem"
+          "position" (add $index 1)
+          "name" $term.Page.LinkTitle
+          "url" $term.Page.Permalink
+        ) -}}
+      {{- end -}}
+    {{- else -}}
+      {{- range $index, $page := first 24 .Pages -}}
+        {{- $listElements = $listElements | append (dict
+          "@type" "ListItem"
+          "position" (add $index 1)
+          "name" (default $page.Title $page.LinkTitle)
+          "url" $page.Permalink
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt (len $listElements) 0 -}}
+      {{- $graph = $graph | append (dict
+        "@type" "ItemList"
+        "@id" $itemListID
+        "name" $pageTitle
+        "itemListElement" $listElements
+      ) -}}
+    {{- end -}}
+  {{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{- end -}}

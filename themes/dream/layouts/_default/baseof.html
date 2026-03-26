@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}"
+<html lang="{{ .Site.Language.LanguageCode }}"
 
   x-data
   :class="$store.darkMode.class()"
@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . -}} {{ T "home" }} {{- end }} | {{ site.Title }}</title>
 
+    <!-- 其他 head 元素 -->
     {{ partial "head.html" . }}
-
     {{ block "css" . }} {{ end }}
 
     {{ range site.Params.Advanced.customCSS }}
@@ -20,36 +20,22 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
   </head>
 
-  <body x-data="{
-    flip: false,
-  }">
-    <!-- If backgroundImage defined -->
+  <body x-data class="xc-body">
     <div id="dream-global-bg"></div>
+    <div class="xc-ambient xc-ambient--one"></div>
+    <div class="xc-ambient xc-ambient--two"></div>
+    <div class="xc-noise-layer"></div>
 
     {{ partial "nav.html" . }}
 
-    <div class="flip-container" :class="{ 'flip-it': flip }">
-      <div class="flipper">
-        <div class="front">
-          <div class="container">
-            {{ block "main" . }} {{ end }}
-
-            {{ partial "footer.html" . }}
-          </div>
-        </div>
-        <div class="back">
-          <div class="container">
-            {{ if site.Params.zenMode }}
-            {{ partial "zen-back.html" . }}
-            {{ else }}
-            {{ partial "back.html" . }}
-            {{ end }}
-
-            {{ partial "footer.html" . }}
-          </div>
-        </div>
+    <main class="xc-site-main">
+      <div class="container xc-site-container">
+        {{ block "main" . }} {{ end }}
+        {{ partial "footer.html" . }}
       </div>
-    </div>
+    </main>
+
+    {{ partial "floating-whatsapp.html" . }}
 
     {{ partial "scripts.html" . }}
     {{ block "js" . }} {{ end }}
@@ -77,6 +63,3 @@
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
   </body>
 </html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">

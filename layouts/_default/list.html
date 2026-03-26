@@ -1,0 +1,160 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+<div class="xc-single xc-single--page">
+  <div class="xc-single__content">
+    {{ $hasPageHero := .Params.hero }}
+    {{ if $hasPageHero }}
+    <section class="xc-page-hero xc-page-hero--{{ with .Params.hero.theme }}{{ . }}{{ else }}default{{ end }}">
+      <div class="xc-page-hero__copy">
+        <p class="xc-page-hero__eyebrow">{{ with .Params.hero.eyebrow }}{{ . }}{{ else }}Section Overview{{ end }}</p>
+        <h1 class="xc-page-hero__title">{{ with .Params.hero.headline }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+        <p class="xc-page-hero__lede">
+          {{ with .Params.hero.lede }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}Explore this section of XC Mobile House for product, project, and planning information.{{ end }}{{ end }}
+        </p>
+
+        {{ with .Params.hero.highlights }}
+        <div class="xc-page-hero__badges">
+          {{ range . }}
+          <span>{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.hero.actions }}
+        <div class="xc-inline-actions xc-inline-actions--hero">
+          {{ range . }}
+          {{ $url := .url }}
+          {{ if not (or (hasPrefix $url "http://") (hasPrefix $url "https://") (hasPrefix $url "mailto:") (hasPrefix $url "#")) }}
+            {{ $url = $url | relLangURL }}
+          {{ end }}
+          <a class="xc-chip-link{{ if eq .style "primary" }} xc-chip-link--primary{{ end }}" href="{{ $url }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.hero.metrics }}
+        <div class="xc-page-hero__metrics">
+          {{ range . }}
+          <div class="xc-page-hero__metric">
+            <strong>{{ .value }}</strong>
+            <span>{{ .label }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="xc-page-hero__visual">
+        <div class="xc-page-hero__image-shell">
+          <img
+            class="xc-page-hero__image"
+            src="{{ with .Params.hero.image }}{{ . }}{{ else }}{{ .Params.Cover }}{{ end }}"
+            alt="{{ with .Params.hero.image_alt }}{{ . }}{{ else }}{{ .Title }}{{ end }}"
+            {{ with .Params.hero.image_position }}style="object-position: {{ . }};"{{ end }} />
+
+          {{ with .Params.hero.floating }}
+          <div class="xc-page-hero__floating">
+            {{ with .kicker }}<span>{{ . }}</span>{{ end }}
+            {{ with .title }}<strong>{{ . }}</strong>{{ end }}
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="xc-page-hero__support">
+          {{ with .Params.hero.secondary_image }}
+          <div class="xc-page-hero__secondary">
+            <img
+              src="{{ . }}"
+              alt="{{ with $.Params.hero.secondary_image_alt }}{{ . }}{{ else }}{{ $.Title }} supporting image{{ end }}"
+              {{ with $.Params.hero.secondary_image_position }}style="object-position: {{ . }};"{{ end }} />
+          </div>
+          {{ end }}
+
+          {{ with .Params.hero.panel }}
+          <div class="xc-page-hero__panel">
+            {{ with .kicker }}<span>{{ . }}</span>{{ end }}
+            {{ with .title }}<strong>{{ . }}</strong>{{ end }}
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+            {{ with .items }}
+            <ul>
+              {{ range . }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+
+    <article class="xc-landing-article{{ if $hasPageHero }} xc-landing-article--hero{{ end }} mx-auto prose prose-quoteless dark:prose-invert">
+      {{ if not $hasPageHero }}
+      <header class="xc-page-header">
+        <p class="xc-page-kicker">Section Overview</p>
+        <p class="xc-page-title">{{ .Title }}</p>
+        <p class="xc-page-intro">
+          {{ with .Description }}{{ . }}{{ else }}Explore this section of XC Mobile House for product, project, and planning information.{{ end }}
+        </p>
+      </header>
+      {{ end }}
+
+      <section id="dream-single-post-content"{{ if $hasPageHero }} class="xc-page-body"{{ end }}>
+        {{ .Content | emojify }}
+
+        {{ if and .Params.show_children (gt (len .Pages) 0) }}
+        <section class="xc-section-shell">
+          <h2>{{ with .Params.children_title }}{{ . }}{{ else }}Browse Pages in This Section{{ end }}</h2>
+          <div class="xc-family-grid">
+            {{ range .Pages }}
+            <article class="xc-family-card">
+              {{ with .Params.cover }}
+              <img src="{{ . }}" alt="{{ $.Title }}" />
+              {{ end }}
+              <div class="xc-family-card__body">
+                <span class="xc-family-card__eyebrow">{{ .Section }}</span>
+                <h3 class="xc-family-card__title">{{ .Title }}</h3>
+                <p>{{ with .Description }}{{ . }}{{ else }}Open this page for more details.{{ end }}</p>
+                <a class="xc-family-card__link" href="{{ .RelPermalink }}">Open page</a>
+              </div>
+            </article>
+            {{ end }}
+          </div>
+        </section>
+        {{ end }}
+
+        {{ if or (eq .Section "posts") (eq .RelPermalink "/posts/") (eq .RelPermalink "/zh/posts/") }}
+        {{ $postPages := .Pages.ByDate.Reverse }}
+        {{ if gt (len $postPages) 0 }}
+        <section class="xc-section-shell" id="article-archive">
+          <h2>{{ if eq .Site.Language.Lang "zh" }}全部文章归档{{ else }}Article Archive{{ end }}</h2>
+          <p class="xc-section-note">
+            {{ if eq .Site.Language.Lang "zh" }}
+              当前共 {{ len $postPages }} 篇文章，按发布时间倒序展示，方便直接进入新增内容页。
+            {{ else }}
+              {{ len $postPages }} articles are currently available below, ordered by publish date.
+            {{ end }}
+          </p>
+          <div class="xc-download-grid">
+            {{ range $postPages }}
+            <article class="xc-download-card">
+              <span>{{ .Date.Format "2006-01-02" }}</span>
+              <strong>{{ .Title }}</strong>
+              <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</p>
+              <a href="{{ .RelPermalink }}">
+                {{ if eq $.Site.Language.Lang "zh" }}查看文章{{ else }}Read article{{ end }}
+              </a>
+            </article>
+            {{ end }}
+          </div>
+        </section>
+        {{ end }}
+        {{ end }}
+      </section>
+    </article>
+  </div>
+</div>
+{{ end }}

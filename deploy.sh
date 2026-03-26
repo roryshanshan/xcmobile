@@ -23,4 +23,4 @@ git push -f origin gh-pages
 # 6. 返回根目录
 cd ..
 
-echo "✅ 部署完成！请访问：https://roryshanshan.github.io/xcmobile/"
+echo "✅ 部署完成！请访问：https://mobilehouse.asia"

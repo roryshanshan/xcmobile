@@ -1,12 +1,24 @@
-{{ with site.Params.favicon }}
-  {{ if hasPrefix . "<link" }}
-    {{ . | safeHTML }}
-  {{ else }}
-    <link href="{{ . | relURL }}" rel="icon" type="image/x-icon" />
-  {{ end }}
-{{ end }}
+<!-- Favicon Icons -->
+<link rel="icon" href="https://i.postimg.cc/sjj7ZykN/202504120804853.png" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#14352b">
 
-<link rel="canonical" href="{{ .Permalink }}" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SW79DGRXN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SW79DGRXN');
+  gtag('config', 'G-V634PEVNZN');  // GitHub Pages 的 GA 属性
+</script>
+
+{{ if ne .Kind "404" }}
+  <link rel="canonical" href="{{ .RelPermalink | absLangURL }}">
+{{ end }}
 
 {{ if eq .Type "posts" }}
 <!-- Page Author & Description -->
@@ -32,7 +44,10 @@
 {{ else }}
 <!-- Site Author & Description -->
 <meta name="author" content="{{ site.Params.author }}" />
-<meta name="description" content="{{ site.Params.description | plainify }}" />
+<meta name="description" content="{{ (or .Description site.Params.description) | plainify }}" />
+{{ with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . `,` }}">
+{{ end }}
 {{ end }}
 
 <!-- Site Generator -->
@@ -44,11 +59,18 @@
 <!-- Twitter Cards -->
 {{ template "_internal/twitter_cards.html" . }}
 
+{{ partial "schema.html" . }}
+
 {{ $outputCss := resources.Get "css/output.css" }}
 {{ if hugo.IsProduction }}
   {{ $outputCss = $outputCss | minify }}
 {{ end }}
 <link rel="stylesheet" href="{{ $outputCss.RelPermalink }}" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="/css/custom.css">
 
 {{ if or site.Params.backgroundImage site.Params.backgroundImageDark }}
 <style>

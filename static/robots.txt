@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
 
-Sitemap: https://roryshanshan.github.io/xcmobile/sitemap.xml
+Sitemap: https://mobilehouse.asia/sitemap.xml

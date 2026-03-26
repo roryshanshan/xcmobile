@@ -1,0 +1,26 @@
+{{ $page := .page }}
+{{ $variant := .variant }}
+{{ $scratch := newScratch }}
+
+{{ range $page.AllTranslations }}
+  {{ if ne .Language.Lang $page.Language.Lang }}
+    {{ $scratch.Set "target" . }}
+  {{ end }}
+{{ end }}
+
+{{ if not ($scratch.Get "target") }}
+  {{ range $page.Site.Home.AllTranslations }}
+    {{ if ne .Language.Lang $page.Language.Lang }}
+      {{ $scratch.Set "target" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ with $scratch.Get "target" }}
+  <a
+    href="{{ .RelPermalink }}"
+    class="xc-lang-toggle{{ if $variant }} xc-lang-toggle--{{ $variant }}{{ end }}"
+    aria-label="Switch language to {{ .Language.LanguageName }}">
+    <span>{{ if eq .Language.Lang "zh" }}中文{{ else }}EN{{ end }}</span>
+  </a>
+{{ end }}

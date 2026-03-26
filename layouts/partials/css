@@ -19,30 +19,71 @@ li:hover > ul {
   display: block;
 }
 
+nav > ul {
+  display: flex;
+  background: #fff;
+  padding: 0 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 2rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* 一级菜单样式 */
+nav ul li > a {
+  display: block;
+  padding: 1rem 0.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 二级菜单样式 */
 nav ul ul {
-    display: none;
-    position: absolute;
-    /* 其他样式 */
-  }
-  
-  nav ul li:hover > ul {
-    display: block;
-  }
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 100;
+}
 
-  .sidebar a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #25D366; /* WhatsApp 标准绿色 */
-  }
-  
-  .sidebar a i {
-    margin-right: 8px;
-    font-size: 24px;
-  }
+nav ul li:hover > ul {
+  display: block;
+}
 
-  @media screen and (max-width: 768px) {
-    .sidebar {
-      display: block;  /* 确保侧边栏在小屏设备上显示 */
-    }
+nav ul ul li a {
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-weight: normal;
+}
+
+nav ul ul li a:hover {
+  background: #f0f0f0;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #25D366; /* WhatsApp 标准绿色 */
+}
+
+.sidebar a i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: block;  /* 确保侧边栏在小屏设备上显示 */
   }
+}

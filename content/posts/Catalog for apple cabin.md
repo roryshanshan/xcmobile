@@ -1,11 +1,10 @@
 ---
 title: Catalog for apple cabin
-date: 2025-04-11T08:53:15+08:00
-lastmod: 2025-04-11T08:53:15+08:00
+date: 2025-05-04
+lastmod: 2025-05-04T08:53:15+08:00
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
 avatar: https://i.postimg.cc/G3tYDFp6/202504112221048.png
 authorlink: 
-cover: https://i.postimg.cc/G3tYDFp6/202504112221048.png
 images:
   - https://i.postimg.cc/G3tYDFp6/202504112221048.png
 categories:

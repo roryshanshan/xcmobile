@@ -1,65 +1,308 @@
-baseURL = "https://xcmobile.roryshanshan.workers.dev"
+baseURL = "https://mobilehouse.asia/"
 defaultContentLanguage = "en"
-languageCode = "en"
-title = "XC Mobile House"
+defaultContentLanguageInSubdir = false
 theme = "dream"
+title = "XC Mobile House"
 
+[languages]
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 1
+    title = "XC Mobile House"
+
+  [languages.en.params]
+    description = "XC Mobile House is a China-based manufacturer of prefab capsule houses, apple cabins, wooden cabins, and modular container solutions for export projects."
+    headerTitle = "XC Mobile House"
+    motto = "Modular Cabins & Capsule Houses"
+    footerBottomText = "Qingzhou, Weifang, Shandong, China"
+
+  [[languages.en.menu.main]]
+    identifier = "products"
+    name = "Products"
+    url = "/products/"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "space-capsule"
+    name = "Space Capsule"
+    url = "/space-capsule/"
+    parent = "products"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "apple-cabin"
+    name = "Apple Cabin"
+    url = "/apple-cabin/"
+    parent = "products"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "wooden-cabin"
+    name = "Wooden Cabin"
+    url = "/wooden-cabin/"
+    parent = "products"
+    weight = 3
+
+  [[languages.en.menu.main]]
+    identifier = "container-solutions"
+    name = "Container Solutions"
+    url = "/container-solutions/"
+    parent = "products"
+    weight = 4
+
+  [[languages.en.menu.main]]
+    identifier = "more-models"
+    name = "More Models"
+    url = "/other/"
+    parent = "products"
+    weight = 5
+
+  [[languages.en.menu.main]]
+    identifier = "solutions"
+    name = "Solutions"
+    url = "/solutions/"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "resort-glamping"
+    name = "Resorts & Glamping"
+    url = "/resort-glamping/"
+    parent = "solutions"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "scenic-hospitality"
+    name = "Scenic Area & Boutique Hotel"
+    url = "/scenic-boutique-hotel/"
+    parent = "solutions"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "workforce-camp"
+    name = "Camp & Workforce Housing"
+    url = "/workforce-camp/"
+    parent = "solutions"
+    weight = 3
+
+  [[languages.en.menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[languages.en.menu.main]]
+    identifier = "factory-quality"
+    name = "Factory QA"
+    url = "/factory-quality/"
+    weight = 4
+
+  [[languages.en.menu.main]]
+    identifier = "shipping-installation"
+    name = "Shipping & Installation"
+    url = "/shipping-installation/"
+    parent = "factory-quality"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "faq"
+    name = "FAQ"
+    url = "/faq/"
+    parent = "factory-quality"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    url = "/resources/"
+    weight = 5
+
+  [[languages.en.menu.main]]
+    identifier = "catalog"
+    name = "Catalog"
+    url = "/catalog/"
+    parent = "resources"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    parent = "resources"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+  [languages.zh]
+    languageCode = "zh-CN"
+    languageName = "中文"
+    weight = 2
+    title = "XC Mobile House"
+
+  [languages.zh.params]
+    description = "XC Mobile House 专注于太空舱、苹果舱、木屋和模块化集装箱建筑方案。"
+    headerTitle = "XC Mobile House"
+    motto = "模块化舱体与房屋"
+    footerBottomText = "中国山东省潍坊市青州市"
+
+  [[languages.zh.menu.main]]
+    identifier = "products"
+    name = "产品中心"
+    url = "/products/"
+    weight = 1
+
+  [[languages.zh.menu.main]]
+    identifier = "space-capsule"
+    name = "太空舱"
+    url = "/space-capsule/"
+    parent = "products"
+    weight = 1
+
+  [[languages.zh.menu.main]]
+    identifier = "apple-cabin"
+    name = "苹果舱"
+    url = "/apple-cabin/"
+    parent = "products"
+    weight = 2
+
+  [[languages.zh.menu.main]]
+    identifier = "wooden-cabin"
+    name = "木屋系列"
+    url = "/wooden-cabin/"
+    parent = "products"
+    weight = 3
+
+  [[languages.zh.menu.main]]
+    identifier = "container-solutions"
+    name = "集装箱方案"
+    url = "/container-solutions/"
+    parent = "products"
+    weight = 4
+
+  [[languages.zh.menu.main]]
+    identifier = "more-models"
+    name = "更多产品"
+    url = "/other/"
+    parent = "products"
+    weight = 5
+
+  [[languages.zh.menu.main]]
+    identifier = "solutions"
+    name = "解决方案"
+    url = "/solutions/"
+    weight = 2
+
+  [[languages.zh.menu.main]]
+    identifier = "resort-glamping"
+    name = "度假村与营地"
+    url = "/resort-glamping/"
+    parent = "solutions"
+    weight = 1
+
+  [[languages.zh.menu.main]]
+    identifier = "scenic-hospitality"
+    name = "景区与精品酒店"
+    url = "/scenic-boutique-hotel/"
+    parent = "solutions"
+    weight = 2
+
+  [[languages.zh.menu.main]]
+    identifier = "workforce-camp"
+    name = "营地与宿舍项目"
+    url = "/workforce-camp/"
+    parent = "solutions"
+    weight = 3
+
+  [[languages.zh.menu.main]]
+    identifier = "projects"
+    name = "项目案例"
+    url = "/projects/"
+    weight = 3
+
+  [[languages.zh.menu.main]]
+    identifier = "factory-quality"
+    name = "工厂质控"
+    url = "/factory-quality/"
+    weight = 4
+
+  [[languages.zh.menu.main]]
+    identifier = "shipping-installation"
+    name = "运输与安装"
+    url = "/shipping-installation/"
+    parent = "factory-quality"
+    weight = 1
+
+  [[languages.zh.menu.main]]
+    identifier = "faq"
+    name = "常见问题"
+    url = "/faq/"
+    parent = "factory-quality"
+    weight = 2
+
+  [[languages.zh.menu.main]]
+    identifier = "resources"
+    name = "资料中心"
+    url = "/resources/"
+    weight = 5
+
+  [[languages.zh.menu.main]]
+    identifier = "catalog"
+    name = "电子目录"
+    url = "/catalog/"
+    parent = "resources"
+    weight = 1
+
+  [[languages.zh.menu.main]]
+    identifier = "blog"
+    name = "博客"
+    url = "/posts/"
+    parent = "resources"
+    weight = 2
+
+  [[languages.zh.menu.main]]
+    identifier = "contact"
+    name = "联系我们"
+    url = "/contact/"
+    weight = 6
 
 [params]
 enableMenu = true
 github = { href = "https://github.com/g1eny0ung", title = "GitHub" }
-favicon = "https://i.postimg.cc/sjj7ZykN/202504120804853.png"
-
-description = "XC Mobile House - Innovative modular space capsule homes. 移动太空舱，文旅胶囊房定制专家。"
+favicon = "favicon.ico"
 
 lightTheme = "emerald"
 darkTheme = "forest"
 
-# backgroundImage = "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
-# backgroundImageDark = ""
-
 author = "Gavin"
 avatar = "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
-headerTitle = "XC MOBILE HOUSE--Manufacturer for mobile house"
-# motto = "Be your best supplier--Made IN CHINA"
-
-footerBottomText = "Qingzhou County, Weifang City, Shandong Province"
-
-# rss = true
-
-# utterancesRepo = ""
-
-# valine = true
-# LEANCLOUD_APP_ID = ""
-# LEANCLOUD_APP_KEY = ""
-
-# waline = true
-# walineServer = ""
-
-email = "roryshanshan@gmail.com"
-
+email = "gavin@mobilehouse.asia"
+organizationName = "XC Mobile House"
+telephone = "+8619906365856"
+whatsappURL = "https://wa.me/8619906365856"
+linkedinURL = "https://www.linkedin.com/newsletters/7311612702156603393/?displayConfirmation=true"
+addressLocality = "Qingzhou"
+addressRegion = "Shandong"
+addressCountry = "CN"
+addressCountryName = "China"
 siteStartYear = 2016
-
-
-
 
 # Syntax highlighting
 # customSyntaxHighlighting = true
 
-# options
 stickyNav = true
-# reorderNavItems =  ["about", "search", "rss", "posts", "categories", "tags"]
-collapseNavItems = ["posts", "categories", "tags"]
+collapseNavItems = ["posts"]
 noDefaultSummaryCover = true
 showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
-# showPrevNextPost = true
 reorderShares = ["x", "facebook", "whatsapp"]
 
-
 [params.twikoo]
-enabled = true
+enabled = false
 envID = ""
 region = ""
 lang = "en"
@@ -72,51 +315,23 @@ lang = "en"
 jsDate = true
 jsDateFormat = "yyyy年MM月dd日"
 
-[menu]
-   [[menu.main]]
-    identifier = "xc-catalog"
-    name = "XC Catalog"
-    url = "/xc-catalog"  # 指向站内页面或外部链接
-    weight = 1
+disableRobotsTXT = false
+disableKinds = ["taxonomy", "term"]
 
-  [[menu.main]]
-    identifier = "space-capsule"
-    name = "Space Capsule"
-    url = "/space-capsule/"  # 指向站内页面或外部链接
-    weight = 2
+[outputs]
+home = ["HTML", "RSS", "SITEMAP"]
 
-  [[menu.main]]
-    identifier = "apple-cabin"
-    name = "Apple Cabin"
-    url = "/apple-cabin/"
-    weight = 3
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
 
-  [[menu.main]]
-    identifier = "kitchen-house"
-    name = "Kitchen House"
-    url = "/kitchen-house/"
-    weight = 4
-
-  [[menu.main]]
-   identifier = "other"
-   name = "Other"
-   url = "/other/"
-   weight = 5
-
-  [[menu.main]]
-   identifier = "project"
-   name = "Project"
-   url = "/other/project/"
-   parent = "other"
-   weight = 1
-
-
-enableRobotsTXT = true  # 详见 Dream 作者 docs 目录下文档
-enableEmoji = true    
+enableEmoji = true
 hasCJKLanguage = true
+
+[taxonomies]
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-

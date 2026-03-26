@@ -1,7 +1,15 @@
 ---
 title: "Kitchen House"
 date: 2025-04-11T08:53:15+08:00
+description: "Explore our Kitchen House mobile units designed for functionality and modern living. Ideal for flexible kitchen setups in mobile housing."
+keywords: ["kitchen house", "mobile kitchen", "modular kitchen", "container kitchen", "mobile housing solutions"]
 ---
+
+<meta name="description" content="Explore our Kitchen House mobile units designed for functionality and modern living. Ideal for flexible kitchen setups in mobile housing.">
+<meta name="keywords" content="kitchen house, mobile kitchen, modular kitchen, container kitchen, mobile housing solutions">
+<meta property="og:title" content="Kitchen House - Flexible Mobile Kitchen Units">
+<meta property="og:description" content="Explore our Kitchen House mobile units designed for functionality and modern living. Ideal for flexible kitchen setups in mobile housing.">
+
 ## Video for kitchen house
 
 <style>

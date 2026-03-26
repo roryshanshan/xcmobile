@@ -1,0 +1,31 @@
+name: Deploy Hugo Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.145.0"
+          extended: true
+
+      - name: Build the site
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
+        with:
+          branch: gh-pages
+          folder: public

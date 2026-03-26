@@ -1,0 +1,272 @@
+[nav_get_quote]
+other = "Get Quote"
+
+[menu_products]
+other = "Products"
+
+[menu_solutions]
+other = "Solutions"
+
+[menu_projects]
+other = "Projects"
+
+[menu_factory_quality]
+other = "Factory & Quality"
+
+[menu_shipping_installation]
+other = "Shipping & Installation"
+
+[menu_faq]
+other = "FAQ"
+
+[menu_catalog]
+other = "Catalog"
+
+[menu_contact]
+other = "Contact"
+
+[float_whatsapp]
+other = "WhatsApp"
+
+[footer_brand_title]
+other = "Start from product selection, project fit, and delivery planning."
+
+[footer_brand_body]
+other = "Use this site to review product families, applications, case references, shipping guidance, and inquiry options."
+
+[footer_start_inquiry]
+other = "Start an Inquiry"
+
+[footer_open_catalog]
+other = "Open Catalog"
+
+[footer_explore]
+other = "Explore"
+
+[footer_core_lines]
+other = "Core Lines"
+
+[footer_location]
+other = "Qingzhou, Weifang, Shandong, China"
+
+[home_eyebrow]
+other = "Factory-Direct Modular Housing"
+
+[home_title]
+other = "Prefab Capsule Houses and Modular Cabins with a Stronger Hospitality Presence"
+
+[home_lead]
+other = "XC Mobile House helps resorts, scenic destinations, camp developers, and project buyers source modular accommodation products that feel more premium than a standard prefab catalog."
+
+[home_cta_primary]
+other = "Request a Quote"
+
+[home_cta_secondary]
+other = "Open Catalog"
+
+[home_kpi_1_title]
+other = "Hospitality-first"
+
+[home_kpi_1_body]
+other = "For resorts, glamping, scenic lodging, and project buyers"
+
+[home_kpi_1_link]
+other = "Explore solution paths"
+
+[home_kpi_2_title]
+other = "Factory-direct"
+
+[home_kpi_2_body]
+other = "Drawings, product selection, shipment planning, and project coordination in one workflow"
+
+[home_kpi_2_link]
+other = "See shipping workflow"
+
+[home_process_kicker]
+other = "Project workflow"
+
+[home_process_title]
+other = "Model selection, drawings, shipment planning, and installation guidance"
+
+[home_process_link]
+other = "Open shipping & installation"
+
+[home_strip_1_title]
+other = "Who We Serve"
+
+[home_strip_1_body]
+other = "Developers, operators, importers, and project contractors"
+
+[home_strip_1_link]
+other = "Open solutions"
+
+[home_strip_2_title]
+other = "Where We Fit"
+
+[home_strip_2_body]
+other = "Resorts, glamping, scenic areas, camps, offices, and modular support buildings"
+
+[home_strip_2_link]
+other = "Browse product families"
+
+[home_strip_3_title]
+other = "Support"
+
+[home_strip_3_body]
+other = "Product guidance, case references, shipping notes, and fast inquiry access"
+
+[home_strip_3_link]
+other = "See buyer resources"
+
+[home_solutions_title]
+other = "Start from the project outcome, not only the model number"
+
+[home_solutions_body]
+other = "Whether you are planning resort rooms, scenic lodging, or workforce housing, start from the use case to find the right product direction."
+
+[home_solution_1_kicker]
+other = "Tourism Projects"
+
+[home_solution_1_title]
+other = "Resorts & Glamping"
+
+[home_solution_1_body]
+other = "For projects that need high-appeal guest rooms, stronger occupancy storytelling, and a more memorable room product."
+
+[home_solution_1_link]
+other = "Explore this solution"
+
+[home_solution_2_kicker]
+other = "Premium Destinations"
+
+[home_solution_2_title]
+other = "Scenic Area & Boutique Hotel"
+
+[home_solution_2_body]
+other = "For destination hospitality concepts where panoramic views, branding, and guest experience matter more than a generic prefab box."
+
+[home_solution_2_link]
+other = "See the hospitality fit"
+
+[home_solution_3_kicker]
+other = "Functional Deployment"
+
+[home_solution_3_title]
+other = "Camp & Workforce Housing"
+
+[home_solution_3_body]
+other = "For projects that prioritize transport efficiency, practical room planning, and repeatable modular deployment logic."
+
+[home_solution_3_link]
+other = "See the modular fit"
+
+[home_story_kicker]
+other = "What Matters"
+
+[home_story_title]
+other = "From product selection to delivery planning, clarify the key decisions early"
+
+[home_story_body]
+other = "Different projects prioritize design, budget, shipment, installation, and fit-out differently. We present that information in a clearer way so you can shortlist the right product line faster."
+
+[home_story_primary]
+other = "View product lines"
+
+[home_story_secondary]
+other = "View factory & delivery"
+
+[home_metric_1_kicker]
+other = "Product Fit"
+
+[home_metric_1_title]
+other = "Shortlist the right product direction by use case"
+
+[home_metric_1_body]
+other = "Space Capsule, Apple Cabin, Wooden Cabin, and Container Solutions each fit different project goals, budgets, and visual priorities."
+
+[home_metric_1_link]
+other = "Compare product lines"
+
+[home_metric_2_kicker]
+other = "Delivery Planning"
+
+[home_metric_2_title]
+other = "Clarify factory, shipping, installation, and customization scope early"
+
+[home_metric_2_body]
+other = "That makes quotations more accurate and the next conversation more productive."
+
+[home_metric_2_link]
+other = "See delivery info"
+
+[home_products_title]
+other = "Core product families"
+
+[home_products_body]
+other = "Review each family by positioning, use case, and visual style."
+
+[home_product_1_kicker]
+other = "Premium Hospitality"
+
+[home_product_1_body]
+other = "For resort and scenic accommodation projects that want a product with strong visual pull."
+
+[home_product_2_kicker]
+other = "Destination Design"
+
+[home_product_2_body]
+other = "For branded scenic projects that want a softer but still distinctive accommodation concept."
+
+[home_product_3_kicker]
+other = "Eco-Lodging"
+
+[home_product_3_body]
+other = "For retreat, eco-resort, and nature-oriented projects that need a warmer architectural expression."
+
+[home_product_4_kicker]
+other = "Modular Practicality"
+
+[home_product_4_body]
+other = "For camps, support buildings, site deployment, offices, and practical modular use cases."
+
+[home_product_link]
+other = "Open product family"
+
+[home_workflow_kicker]
+other = "Process"
+
+[home_workflow_title]
+other = "How a project inquiry usually moves"
+
+[home_workflow_step_1]
+other = "Start from product family or solution path."
+
+[home_workflow_step_2]
+other = "Confirm destination, quantity, and project use case."
+
+[home_workflow_step_3]
+other = "Shortlist model, drawing direction, and configuration scope."
+
+[home_workflow_step_4]
+other = "Discuss shipping route, site access, and installation conditions."
+
+[home_confidence_kicker]
+other = "Support Pages"
+
+[home_confidence_title]
+other = "The pages that help you move faster"
+
+[home_final_kicker]
+other = "Start the Conversation"
+
+[home_final_title]
+other = "Tell us the destination, quantity, and use case"
+
+[home_final_body]
+other = "If you already have site images, floor plans, or a target market in mind, include them in the inquiry. That is the fastest way to get a useful recommendation instead of a generic answer."
+
+[home_final_primary]
+other = "Contact XC Mobile House"
+
+[home_final_secondary]
+other = "Open Catalog"

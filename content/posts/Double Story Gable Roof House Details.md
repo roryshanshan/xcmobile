@@ -3,11 +3,14 @@ title: Double-Story Gable Roof House Details
 
 draft: false
 
-date: 2025-04-11T08:53:15+08:00
+date: 2025-05-04T08:53:15+08:00
+
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
 avatar: https://i.postimg.cc/G3tYDFp6/202504112221048.png
 authorlink: 
-cover: https://i.postimg.cc/G3tYDFp6/202504112221048.png
+
+description: "Discover detailed specifications of our Double-Story Gable Roof House, featuring a modern galvanized steel structure, smart home integration, and premium interior finishes. Ideal for cold regions with floor heating options."
+keywords: ["Double-Story House", "Gable Roof", "Modular Home", "Smart Home", "Steel Structure", "Prefabricated House", "Container House", "Mobile House"]
 
 ---
 

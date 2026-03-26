@@ -25,26 +25,124 @@
 </style>
 {{ end }}
 
-{{ partialCached "commentSystemHeads.html" . }}
-
 {{ end }}
 
 {{ define "main" }}
-<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
-  <div class="hidden lg:block">
-    {{ if fileExists "layouts/partials/adsense.html" }}
-      <div class="dream-adsense w-2/3">
-        {{ partialCached "adsense.html" . }}
+{{ $isPost := eq .Type "posts" }}
+{{ $hasPageHero := and (not $isPost) .Params.hero }}
+<div class="{{ if $isPost }}xc-single xc-single--post{{ else }}xc-single xc-single--page{{ end }}">
+  <div class="xc-single__content">
+    {{ if $hasPageHero }}
+    <section class="xc-page-hero xc-page-hero--{{ with .Params.hero.theme }}{{ . }}{{ else }}default{{ end }}">
+      <div class="xc-page-hero__copy">
+        <p class="xc-page-hero__eyebrow">{{ with .Params.hero.eyebrow }}{{ . }}{{ else }}Product Family{{ end }}</p>
+        <h1 class="xc-page-hero__title" itemprop="headline">{{ with .Params.hero.headline }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+        <p class="xc-page-hero__lede">
+          {{ with .Params.hero.lede }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}Explore this XC Mobile House page for product, project, and planning information.{{ end }}{{ end }}
+        </p>
+
+        {{ with .Params.hero.highlight_links }}
+        <div class="xc-page-hero__badges">
+          {{ range . }}
+          {{ $url := .url }}
+          {{ if not (or (hasPrefix $url "http://") (hasPrefix $url "https://") (hasPrefix $url "mailto:") (hasPrefix $url "#")) }}
+            {{ $url = $url | relLangURL }}
+          {{ end }}
+          <a href="{{ $url }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ if not .Params.hero.highlight_links }}
+        {{ with .Params.hero.highlights }}
+        <div class="xc-page-hero__badges">
+          {{ range . }}
+          <span>{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ with .Params.hero.actions }}
+        <div class="xc-inline-actions xc-inline-actions--hero">
+          {{ range . }}
+          {{ $url := .url }}
+          {{ if not (or (hasPrefix $url "http://") (hasPrefix $url "https://") (hasPrefix $url "mailto:") (hasPrefix $url "#")) }}
+            {{ $url = $url | relLangURL }}
+          {{ end }}
+          <a class="xc-chip-link{{ if eq .style "primary" }} xc-chip-link--primary{{ end }}" href="{{ $url }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.hero.metrics }}
+        <div class="xc-page-hero__metrics">
+          {{ range . }}
+          <div class="xc-page-hero__metric">
+            <strong>{{ .value }}</strong>
+            <span>{{ .label }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
+
+      <div class="xc-page-hero__visual">
+        <div class="xc-page-hero__image-shell">
+          <img
+            class="xc-page-hero__image"
+            src="{{ with .Params.hero.image }}{{ . }}{{ else }}{{ .Params.Cover }}{{ end }}"
+            alt="{{ with .Params.hero.image_alt }}{{ . }}{{ else }}{{ .Title }}{{ end }}"
+            {{ with .Params.hero.image_position }}style="object-position: {{ . }};"{{ end }} />
+
+          {{ with .Params.hero.floating }}
+          <div class="xc-page-hero__floating">
+            {{ with .kicker }}<span>{{ . }}</span>{{ end }}
+            {{ with .title }}<strong>{{ . }}</strong>{{ end }}
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="xc-page-hero__support">
+          {{ with .Params.hero.secondary_image }}
+          <div class="xc-page-hero__secondary">
+            <img
+              src="{{ . }}"
+              alt="{{ with $.Params.hero.secondary_image_alt }}{{ . }}{{ else }}{{ $.Title }} supporting image{{ end }}"
+              {{ with $.Params.hero.secondary_image_position }}style="object-position: {{ . }};"{{ end }} />
+          </div>
+          {{ end }}
+
+          {{ with .Params.hero.panel }}
+          <div class="xc-page-hero__panel">
+            {{ with .kicker }}<span>{{ . }}</span>{{ end }}
+            {{ with .title }}<strong>{{ . }}</strong>{{ end }}
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+            {{ with .items }}
+            <ul>
+              {{ range . }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
     {{ end }}
-  </div>
 
-  <div class="lg:col-span-2">
-    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
-      {{ template "_internal/schema.html" . }}
-
-      <header>
+    <article class="{{ if $isPost }}xc-post-article{{ else }}xc-landing-article{{ end }}{{ if $hasPageHero }} xc-landing-article--hero{{ end }} mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      {{ if or $isPost (not $hasPageHero) }}
+      <header class="{{ if not $isPost }}xc-page-header{{ end }}">
+        {{ if not $isPost }}
+        <p class="xc-page-kicker">Featured Page</p>
+        <p class="xc-page-title">{{ .Title }}</p>
+        {{ else }}
         <h1 itemprop="headline">{{ .Title }}</h1>
+        {{ end }}
+        {{ if $isPost }}
         <p class="text-sm">
           {{ if site.Params.Experimental.jsDate }}
             <span data-format="luxon">{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</span>
@@ -63,20 +161,30 @@
             {{ end }}</span>
           {{ end }}
         </p>
+        {{ else }}
+        <p class="xc-page-intro">
+          {{ with .Description }}{{ . }}{{ else }}Explore this XC Mobile House page for product, project, and planning information.{{ end }}
+        </p>
+        {{ end }}
 
         {{ $hasAuthor := or .Params.author site.Params.author }}
-        <div class="flex justify-between">
+        <div class="flex justify-between {{ if not $isPost }}xc-page-header__meta{{ end }}">
           {{ if $hasAuthor }}
-            {{ partial "author.html" (dict "Params" .Params "template" "single") }}
+            {{ if $isPost }}
+              {{ partial "author.html" (dict "Params" .Params "template" "single") }}
+            {{ end }}
           {{ end }}
 
-          {{ partial "share.html" . }}
+          {{ if $isPost }}
+            {{ partial "share.html" . }}
+          {{ end }}
         </div>
       </header>
+      {{ end }}
 
-      <section id="dream-single-post-content" itemprop="articleBody">
-        {{ if and .Params.Cover site.Params.showSummaryCoverInPost }}
-          <img class="w-full z-30" src="{{ .Params.Cover }}" alt="{{ .Title }}" />
+      <section id="dream-single-post-content" itemprop="articleBody"{{ if $hasPageHero }} class="xc-page-body"{{ end }}>
+        {{ if and .Params.Cover site.Params.showSummaryCoverInPost (not $hasPageHero) }}
+          <img class="w-full z-30 xc-page-cover" src="{{ .Params.Cover }}" alt="{{ .Title }}" />
         {{ end }}
 
         {{ .Content | emojify }}
@@ -117,24 +225,17 @@
       </div>
       {{ end }}
 
-      {{ if or site.Config.Services.Disqus.Shortname site.Params.utterancesRepo site.Params.valine site.Params.waline site.Params.twikoo.enabled }}
-      <div class="divider"></div>
-
-      <section class="space-y-4">
-        {{ partialCached "commentSystems.html" . .RelPermalink }}
-      </section>
-      {{ end }}
     </article>
   </div>
 
+  {{ if and $isPost site.Params.showTableOfContents }}
   <div
     x-data="tocHighlighter()"
     @scroll.window="debouncedScroll"
-    class="hidden lg:flex lg:flex-col lg:items-end">
-    {{ if site.Params.showTableOfContents }}
+    class="xc-single__toc hidden xl:flex xl:flex-col xl:items-end">
       {{ .TableOfContents }}
-    {{ end }}
   </div>
+  {{ end }}
 </div>
 {{ end }}
 
@@ -171,7 +272,7 @@
 <script src="{{ $tocJs.RelPermalink }}"></script>
 
 {{ if site.Params.imageZoomableInPost }}
-  {{ if fileExists "layouts/partials/medium-zoom.html" }}
+  {{ if templates.Exists "partials/medium-zoom.html" }}
     {{ partialCached "medium-zoom.html" . }}
   {{ else }}
     <script type="module">

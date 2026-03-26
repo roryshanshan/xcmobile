@@ -1,86 +1,115 @@
-{{ if site.Params.stickyNav }}
-<nav x-data="{ isSticky: false }"
-  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
-  class="sticky top-0 z-30 mt-0 py-4 bg-white shadow-lg"
-  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
-{{ else }}
-<nav class="fixed top-0 left-0 right-0 z-30 mt-0 py-4 bg-white shadow-lg">
-{{ end }}
-  <div class="container flex justify-between items-center px-4 md:px-0">
-    <section class="flex items-center gap-4">
-      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="{{ T "flip" }}">
-        <div class="h-10 rounded-full">
+<nav
+  x-data="{ isSticky: false, mobileOpen: false }"
+  x-init="
+    const onScroll = () => { isSticky = window.scrollY > 12 };
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    $watch('mobileOpen', value => document.body.classList.toggle('xc-mobile-nav-open', value));
+  "
+  class="xc-nav-shell"
+  :class="{ 'xc-nav-shell--sticky': isSticky, 'xc-nav-shell--open': mobileOpen }">
+  <div class="container xc-nav">
+    <section class="xc-brand-wrap">
+      <a href="{{ .Site.Home.RelPermalink }}" class="xc-brand">
+        <span class="xc-brand__avatar">
           <img src="{{ site.Params.avatar | relURL }}" alt="{{ site.Params.headerTitle }}" />
-        </div>
-      </div>
-
-      {{ if or site.Params.headerTitle site.Params.motto }}
-      <div>
-        {{ if site.Params.headerTitle }}
-        <a href="{{ site.BaseURL }}" class="text-lg font-semibold cursor-pointer">
-          {{ site.Params.headerTitle }}
-        </a>
+        </span>
+        {{ if or site.Params.headerTitle site.Params.motto }}
+        <span class="xc-brand__copy">
+          {{ if site.Params.headerTitle }}
+          <strong>{{ site.Params.headerTitle }}</strong>
+          {{ end }}
+          {{ if site.Params.motto }}
+          <em>{{ site.Params.motto }}</em>
+          {{ end }}
+        </span>
         {{ end }}
-        {{ if site.Params.motto }}
-        <div class="text-base-content/60 text-sm">{{ site.Params.motto }}</div>
-        {{ end }}
-      </div>
-      {{ end }}
+      </a>
     </section>
 
     {{ $navItems := site.Menus.main }}
 
-    <div class="dropdown dropdown-end sm:hidden">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
-        <ion-icon name="menu" class="text-2xl"></ion-icon>
-      </div>
-      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
-        {{ partial "navMobileMenu.html" (dict "navItems" $navItems) }}
+    <section class="xc-nav-desktop">
+      <ul class="main-menu xc-main-menu">
+        {{ range $navItems }}
+          {{ if and (not .Parent) (ne .Identifier "other") (ne (lower .Name) "other") }}
+            <li class="xc-main-menu__item">
+              <a href="{{ .URL | relLangURL }}" class="xc-main-menu__link">
+                {{ .Name }}
+                {{ if .Children }}
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                {{ end }}
+              </a>
+              {{ if .Children }}
+                <ul class="submenu xc-submenu">
+                  {{ range .Children }}
+                    <li>
+                      <a href="{{ .URL | relLangURL }}" class="xc-submenu__link">
+                        {{ .Name }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{ end }}
+        {{ end }}
       </ul>
-    </div>
-
-    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
-      {{ if not site.Params.collapseNavItems }}
-
-      {{ range $navItems }}
-      <a href="{{ .URL | relLangURL }}" class="btn btn-ghost text-base-content hover:bg-base-content/10">
-        {{ .Name }}
-      </a>
-      {{ end }}
-
-      {{ with site.Params.navItems }}
-      {{ partial "navCustomItems.html" (dict "navItems" $navItems "mobile" false) }}
-      {{ end }}
-
-      {{ else }}
-
-      {{ $collapseNavItems := site.Params.collapseNavItems }}
-      {{ $items := complement $collapseNavItems $navItems }}
-      {{ range $items }}
-      <a href="{{ .URL | relLangURL }}" class="btn btn-ghost text-base-content hover:bg-base-content/10">
-        {{ .Name }}
-      </a>
-      {{ end }}
-
-      <div class="dropdown dropdown-end dropdown-hover">
-        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
-          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
-        </div>
-        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-xl">
-          {{ range $collapseNavItems }}
-          {{ partial "renderMobileNavItem.html" . }}
-          {{ end }}
-
-          {{ with site.Params.navItems }}
-          {{ partial "navCustomItems.html" (dict "navItems" $navItems "mobile" true) }}
-          {{ end }}
-        </ul>
+      <div class="xc-nav-actions">
+        {{ partial "language-switcher.html" (dict "page" . "variant" "desktop") }}
+        <a href="{{ "/contact/" | relLangURL }}" class="xc-nav-cta">{{ T "nav_get_quote" }}</a>
       </div>
-      {{ end }}
-
-      <a href="https://wa.me/8619906365856" target="_blank" class="btn btn-ghost text-green-500 hover:bg-green-100">
-        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-      </a>
     </section>
+
+    <div class="xc-nav-mobile-actions" style="display: none;">
+      {{ partial "language-switcher.html" (dict "page" . "variant" "mobile") }}
+      <button
+        type="button"
+        class="xc-mobile-trigger"
+        aria-label="Toggle site menu"
+        :aria-expanded="mobileOpen.toString()"
+        @click="mobileOpen = !mobileOpen">
+        <span class="xc-mobile-trigger__bars" :class="{ 'is-open': mobileOpen }">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <div x-cloak x-show="mobileOpen" class="xc-mobile-backdrop" style="display: none;" @click="mobileOpen = false"></div>
+
+  <div class="container xc-mobile-panel-wrap" x-cloak x-show="mobileOpen" style="display: none;" x-transition.opacity.duration.150ms>
+    <div class="xc-mobile-panel">
+      <div class="xc-mobile-panel__top">
+        <div>
+          <span class="xc-mobile-panel__eyebrow">{{ .Site.Params.headerTitle }}</span>
+          <strong>{{ T "home_eyebrow" }}</strong>
+        </div>
+        <a href="{{ "/contact/" | relLangURL }}" class="xc-mobile-panel__quote" @click="mobileOpen = false">{{ T "nav_get_quote" }}</a>
+      </div>
+
+      <div class="xc-mobile-sections">
+        {{ range $navItems }}
+          {{ if and (not .Parent) (ne .Identifier "other") (ne (lower .Name) "other") }}
+            <section class="xc-mobile-section">
+              <a href="{{ .URL | relLangURL }}" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>{{ .Name }}</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              {{ if .Children }}
+                <div class="xc-mobile-links">
+                  {{ range .Children }}
+                    <a href="{{ .URL | relLangURL }}" @click="mobileOpen = false">{{ .Name }}</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </section>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
   </div>
 </nav>

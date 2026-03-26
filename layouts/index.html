@@ -1,141 +1,227 @@
-{{ define "main"}}
+{{ define "main" }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<div class="xc-home">
+  <section class="xc-hero">
+    <div class="xc-hero__inner">
+      <div class="xc-hero__copy">
+        <p class="xc-eyebrow">{{ T "home_eyebrow" }}</p>
+        <h1>{{ T "home_title" }}</h1>
+        <p class="xc-lead">
+          {{ T "home_lead" }}
+        </p>
 
-<!-- 轮播图部分 -->
-<div class="relative overflow-hidden rounded-2xl shadow-lg carousel-wrapper">
-  <div id="carousel" class="carousel flex transition-transform duration-500 ease-in-out">
-    <img class="carousel-img" src="https://i.postimg.cc/nHBmRW5B/79392e224812ea8e198ac0aafcae3299.jpg?dl=1" />
-    <img class="carousel-img" src="https://i.postimg.cc/0kCwxw9N/20250416102628601.png?dl=1" />
-    <img class="carousel-img" src="https://i.postimg.cc/BJ8HDbBh/fa2623135b9513ac365ff8855aa06dfe.jpg?dl=1" />
-    <img class="carousel-img" src="https://i.postimg.cc/VmkjfDrP/edbec8b7b6c76ebf4692ff57f0af8c07.jpg?dl=1" />
-    <img class="carousel-img" src="https://i.postimg.cc/R9R7xj0T/4a35acd2a486b7a2fe929e6279addd3b.jpg?dl=1" />
-    <img class="carousel-img" src="https://i.postimg.cc/hggLwSKj/f711f81e9bd8fd227d027f634e4b773c.jpg?dl=1" />
-  </div>
-  <button onclick="changeSlide(-1)" class="carousel-btn carousel-btn-left">❮</button>
-  <button onclick="changeSlide(1)" class="carousel-btn carousel-btn-right">❯</button>
-</div>
+        <div class="xc-actions">
+          <a class="xc-btn xc-btn--primary" href="{{ "/contact/" | relLangURL }}">{{ T "home_cta_primary" }}</a>
+          <a class="xc-btn xc-btn--secondary" href="{{ "/catalog/" | relLangURL }}">{{ T "home_cta_secondary" }}</a>
+        </div>
 
-<!-- JavaScript 部分 -->
-<script>
-  let currentIndex = 0;
-  const carousel = document.getElementById("carousel");
-  const slides = carousel.querySelectorAll(".carousel-img");
-  const total = slides.length;
+        <div class="xc-hero__badges">
+          <a href="{{ "/space-capsule/" | relLangURL }}">{{ if $isZh }}太空舱{{ else }}Space Capsule{{ end }}</a>
+          <a href="{{ "/apple-cabin/" | relLangURL }}">{{ if $isZh }}苹果舱{{ else }}Apple Cabin{{ end }}</a>
+          <a href="{{ "/wooden-cabin/" | relLangURL }}">{{ if $isZh }}木屋系列{{ else }}Wooden Cabin{{ end }}</a>
+          <a href="{{ "/container-solutions/" | relLangURL }}">{{ if eq .Site.Language.Lang "zh" }}集装箱方案{{ else }}Container Solutions{{ end }}</a>
+        </div>
 
-  function updateSlide() {
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
+        <div class="xc-hero__kpis">
+          <a class="xc-kpi" href="{{ "/solutions/" | relLangURL }}">
+            <strong>{{ T "home_kpi_1_title" }}</strong>
+            <span>{{ T "home_kpi_1_body" }}</span>
+            <em class="xc-kpi__link">{{ T "home_kpi_1_link" }}</em>
+          </a>
+          <a class="xc-kpi" href="{{ "/shipping-installation/" | relLangURL }}">
+            <strong>{{ T "home_kpi_2_title" }}</strong>
+            <span>{{ T "home_kpi_2_body" }}</span>
+            <em class="xc-kpi__link">{{ T "home_kpi_2_link" }}</em>
+          </a>
+        </div>
+      </div>
 
-  function changeSlide(n) {
-    currentIndex = (currentIndex + n + total) % total;
-    updateSlide();
-  }
+      <div class="xc-hero__visual">
+        <div class="xc-visual-grid">
+          <figure class="xc-visual-card xc-visual-card--tall">
+            <img src="/media/space-capsule-hero.webp" alt="Space capsule exterior project view" />
+            <figcaption>{{ if $isZh }}太空舱{{ else }}Space Capsule{{ end }}</figcaption>
+          </figure>
+          <figure class="xc-visual-card">
+            <img src="/media/apple-cabin-hero.jpg" alt="Apple Cabin for scenic projects" />
+            <figcaption>{{ if $isZh }}苹果舱{{ else }}Apple Cabin{{ end }}</figcaption>
+          </figure>
+          <figure class="xc-visual-card">
+            <img src="/media/wooden-cabin-interior.png" alt="Wooden cabin resort concept" />
+            <figcaption>{{ if $isZh }}木屋系列{{ else }}Wooden Cabin{{ end }}</figcaption>
+          </figure>
+        </div>
 
-  setInterval(() => changeSlide(1), 6000);
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.nav.navbar-nav');
-
-    if (toggle && menu) {
-      toggle.addEventListener('click', function () {
-        menu.classList.toggle('active');
-      });
-    }
-  });
-</script>
-
-<!-- 样式部分 -->
-<style>
-  .carousel-wrapper {
-    width: 100%;
-    max-width: 100%;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
-  }
-
-  .carousel {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carousel-img {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border: 2px solid #ccc;
-    padding: 0 2rem;
-    box-sizing: border-box;
-  }
-
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 0.75rem 1rem;
-    border-radius: 9999px;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-
-  .carousel-btn-left {
-    left: 10px;
-  }
-
-  .carousel-btn-right {
-    right: 10px;
-  }
-
-  /* 菜单样式 */
-  .nav.navbar-nav {
-    display: none;
-  }
-
-  .nav.navbar-nav.active {
-    display: block;
-  }
-</style>
-
-{{ $paginator := .Paginate (where site.RegularPages "Type" "posts") }}
-
-{{ if site.Params.zenMode }}
-<div class="dream-zen-posts max-w-[65ch] mt-8 mx-auto px-4 space-y-8">
-{{ range $paginator.Pages }}
-  {{ .Render "zen-summary" }}
-{{ end }}
-</div>
-{{ else }}
-<div class="dream-grid opacity-0">
-  {{ range $paginator.Pages }}
-    <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
-      {{ .Render "summary" }}
+        <a class="xc-floating-panel" href="{{ "/shipping-installation/" | relLangURL }}">
+          <span>{{ T "home_process_kicker" }}</span>
+          <strong>{{ T "home_process_title" }}</strong>
+          <em class="xc-floating-panel__link">{{ T "home_process_link" }}</em>
+        </a>
+      </div>
     </div>
-  {{ end }}
+  </section>
+
+  <section class="xc-strip">
+    <a class="xc-strip__item" href="{{ "/solutions/" | relLangURL }}">
+      <span>{{ T "home_strip_1_title" }}</span>
+      <strong>{{ T "home_strip_1_body" }}</strong>
+      <em class="xc-strip__link">{{ T "home_strip_1_link" }}</em>
+    </a>
+    <a class="xc-strip__item" href="{{ "/products/" | relLangURL }}">
+      <span>{{ T "home_strip_2_title" }}</span>
+      <strong>{{ T "home_strip_2_body" }}</strong>
+      <em class="xc-strip__link">{{ T "home_strip_2_link" }}</em>
+    </a>
+    <a class="xc-strip__item" href="{{ "/resources/" | relLangURL }}">
+      <span>{{ T "home_strip_3_title" }}</span>
+      <strong>{{ T "home_strip_3_body" }}</strong>
+      <em class="xc-strip__link">{{ T "home_strip_3_link" }}</em>
+    </a>
+  </section>
+
+  <section class="xc-section">
+    <div class="xc-section__head">
+      <p class="xc-eyebrow">{{ T "menu_solutions" }}</p>
+      <h2>{{ T "home_solutions_title" }}</h2>
+      <p>
+        {{ T "home_solutions_body" }}
+      </p>
+    </div>
+
+    <div class="xc-grid xc-grid--3">
+      <a class="xc-card xc-card--spotlight" href="{{ "/resort-glamping/" | relLangURL }}">
+        <span class="xc-card__index">01</span>
+        <span class="xc-card__kicker">{{ T "home_solution_1_kicker" }}</span>
+        <h3>{{ T "home_solution_1_title" }}</h3>
+        <p>{{ T "home_solution_1_body" }}</p>
+        <span class="xc-card__link">{{ T "home_solution_1_link" }}</span>
+      </a>
+
+      <a class="xc-card xc-card--spotlight" href="{{ "/scenic-boutique-hotel/" | relLangURL }}">
+        <span class="xc-card__index">02</span>
+        <span class="xc-card__kicker">{{ T "home_solution_2_kicker" }}</span>
+        <h3>{{ T "home_solution_2_title" }}</h3>
+        <p>{{ T "home_solution_2_body" }}</p>
+        <span class="xc-card__link">{{ T "home_solution_2_link" }}</span>
+      </a>
+
+      <a class="xc-card xc-card--spotlight" href="{{ "/workforce-camp/" | relLangURL }}">
+        <span class="xc-card__index">03</span>
+        <span class="xc-card__kicker">{{ T "home_solution_3_kicker" }}</span>
+        <h3>{{ T "home_solution_3_title" }}</h3>
+        <p>{{ T "home_solution_3_body" }}</p>
+        <span class="xc-card__link">{{ T "home_solution_3_link" }}</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="xc-section xc-section--split">
+    <div class="xc-story">
+      <p class="xc-eyebrow">{{ T "home_story_kicker" }}</p>
+      <h2>{{ T "home_story_title" }}</h2>
+      <p>
+        {{ T "home_story_body" }}
+      </p>
+      <div class="xc-inline-actions">
+        <a class="xc-chip-link xc-chip-link--primary" href="{{ "/products/" | relLangURL }}">{{ T "home_story_primary" }}</a>
+        <a class="xc-chip-link" href="{{ "/factory-quality/" | relLangURL }}">{{ T "home_story_secondary" }}</a>
+      </div>
+    </div>
+
+    <div class="xc-grid xc-grid--2">
+      <a class="xc-card xc-card--metric" href="{{ "/products/" | relLangURL }}">
+        <span class="xc-card__kicker">{{ T "home_metric_1_kicker" }}</span>
+        <h3>{{ T "home_metric_1_title" }}</h3>
+        <p>{{ T "home_metric_1_body" }}</p>
+        <span class="xc-card__link">{{ T "home_metric_1_link" }}</span>
+      </a>
+      <a class="xc-card xc-card--metric" href="{{ "/factory-quality/" | relLangURL }}">
+        <span class="xc-card__kicker">{{ T "home_metric_2_kicker" }}</span>
+        <h3>{{ T "home_metric_2_title" }}</h3>
+        <p>{{ T "home_metric_2_body" }}</p>
+        <span class="xc-card__link">{{ T "home_metric_2_link" }}</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="xc-section xc-section--dark">
+    <div class="xc-section__head xc-section__head--light">
+      <p class="xc-eyebrow">{{ T "menu_products" }}</p>
+      <h2>{{ T "home_products_title" }}</h2>
+      <p>
+        {{ T "home_products_body" }}
+      </p>
+    </div>
+
+    <div class="xc-grid xc-grid--4">
+      <a class="xc-card xc-card--product" href="{{ "/space-capsule/" | relLangURL }}">
+        <img src="/media/space-capsule-project.jpg" alt="Space Capsule product line" />
+        <span class="xc-card__kicker">{{ T "home_product_1_kicker" }}</span>
+        <h3>{{ if $isZh }}太空舱{{ else }}Space Capsule{{ end }}</h3>
+        <p>{{ T "home_product_1_body" }}</p>
+        <span class="xc-card__link">{{ T "home_product_link" }}</span>
+      </a>
+      <a class="xc-card xc-card--product" href="{{ "/apple-cabin/" | relLangURL }}">
+        <img src="/media/apple-cabin-hero.jpg" alt="Apple Cabin product line" />
+        <span class="xc-card__kicker">{{ T "home_product_2_kicker" }}</span>
+        <h3>{{ if $isZh }}苹果舱{{ else }}Apple Cabin{{ end }}</h3>
+        <p>{{ T "home_product_2_body" }}</p>
+        <span class="xc-card__link">{{ T "home_product_link" }}</span>
+      </a>
+      <a class="xc-card xc-card--product" href="{{ "/wooden-cabin/" | relLangURL }}">
+        <img src="/media/wooden-cabin-exterior.png" alt="Wooden Cabin product line" style="object-position: 86% center;" />
+        <span class="xc-card__kicker">{{ T "home_product_3_kicker" }}</span>
+        <h3>{{ if $isZh }}木屋系列{{ else }}Wooden Cabin{{ end }}</h3>
+        <p>{{ T "home_product_3_body" }}</p>
+        <span class="xc-card__link">{{ T "home_product_link" }}</span>
+      </a>
+      <a class="xc-card xc-card--product" href="{{ "/container-solutions/" | relLangURL }}">
+        <img src="https://i.postimg.cc/8pyrzfCx/20250429093310106.png?dl=1" alt="Container solutions product line" />
+        <span class="xc-card__kicker">{{ T "home_product_4_kicker" }}</span>
+        <h3>{{ if eq .Site.Language.Lang "zh" }}集装箱方案{{ else }}Container Solutions{{ end }}</h3>
+        <p>{{ T "home_product_4_body" }}</p>
+        <span class="xc-card__link">{{ T "home_product_link" }}</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="xc-section">
+    <div class="xc-grid xc-grid--2">
+      <div class="xc-card xc-card--panel">
+        <span class="xc-card__kicker">{{ T "home_workflow_kicker" }}</span>
+        <h3>{{ T "home_workflow_title" }}</h3>
+        <ol class="xc-list xc-list--ordered">
+          <li>{{ T "home_workflow_step_1" }}</li>
+          <li>{{ T "home_workflow_step_2" }}</li>
+          <li>{{ T "home_workflow_step_3" }}</li>
+          <li>{{ T "home_workflow_step_4" }}</li>
+        </ol>
+      </div>
+
+      <div class="xc-card xc-card--panel">
+        <span class="xc-card__kicker">{{ T "home_confidence_kicker" }}</span>
+        <h3>{{ T "home_confidence_title" }}</h3>
+        <ul class="xc-list">
+          <li><a href="{{ "/factory-quality/" | relLangURL }}">{{ T "menu_factory_quality" }}</a></li>
+          <li><a href="{{ "/shipping-installation/" | relLangURL }}">{{ T "menu_shipping_installation" }}</a></li>
+          <li><a href="{{ "/faq/" | relLangURL }}">{{ T "menu_faq" }}</a></li>
+          <li><a href="{{ "/catalog/" | relLangURL }}">{{ T "menu_catalog" }}</a></li>
+          <li><a href="{{ "/projects/" | relLangURL }}">{{ T "menu_projects" }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="xc-cta">
+    <p class="xc-eyebrow">{{ T "home_final_kicker" }}</p>
+    <h2>{{ T "home_final_title" }}</h2>
+    <p>
+      {{ T "home_final_body" }}
+    </p>
+    <div class="xc-actions xc-actions--center">
+      <a class="xc-btn xc-btn--primary" href="{{ "/contact/" | relLangURL }}">{{ T "home_final_primary" }}</a>
+      <a class="xc-btn xc-btn--secondary" href="{{ "/catalog/" | relLangURL }}">{{ T "home_final_secondary" }}</a>
+    </div>
+  </section>
 </div>
-{{ end }}
-
-{{ if gt $paginator.TotalPages 1 }}
-<div class="flex justify-center mt-8">
-  {{ partial "paginator.html" (dict "paginator" $paginator) }}
-</div>
-{{ end }}
-
-{{ end }}
-
-{{ define "js" }}
-
-{{ if site.Params.Experimental.jsDate }}
-{{ partial "luxon.html" . }}
-{{ end }}
-
-<script src="{{ "/js/menu-toggle.js" | relURL }}"></script>
-
 {{ end }}

@@ -2,6 +2,8 @@
 title: Prefab Portable A Fram Aframe Triangle Cabin House Home
 date: 2025-04-11T08:53:15+08:00
 lastmod: 2025-04-11T08:53:15+08:00
+description: "Discover our Prefab Portable A-Frame Triangle Cabin House: a stylish, eco-friendly tiny home ideal for glamping, cultural tourism, and modular living. Custom sizes and full amenities available."
+keywords: ["Prefab Cabin", "A-Frame House", "Modular Tiny Home", "Eco Lodging", "Glamping Cabin", "Portable Triangle House", "Light Steel Villa"]
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
 authorlink: 
 
@@ -21,12 +23,19 @@ tags:
   - Glamping 
 # nolastmod: true
 draft: false
+seo:
+  title: "Prefab Portable A-Frame Cabin House - Modular & Eco-friendly"
+  description: "Explore prefab portable A-Frame triangle cabin houses for eco-lodging, glamping, and modern tiny homes. Sustainable, versatile, and comfortable."
+  keywords: "Prefab A-Frame Cabin, Portable House, Eco-friendly Cabin, Modular Homes, Tiny Homes, Glamping, Sustainable Housing"
+  robots: "index, follow"
 ---
 <!--more-->      
 
 ---
 
 # Prefab Portable A Fram Aframe Triangle Cabin House Home
+
+<!--more-->     
 <div style="position: relative; width: 100%; overflow: hidden; max-width: 1000px; margin: auto;">
   <div id="carousel-track" style="display: flex; transition: transform 0.5s ease; gap: 20px;">
     <img src="https://i.postimg.cc/fZBk8KJk/20250417165742823.png" style="width: 300px; border: 2px solid #666; border-radius: 8px;" />
@@ -88,6 +97,3 @@ draft: false
   <tr><td style="border: 1px solid #ccc; padding: 8px;"><strong>Plumbing</strong></td><td style="border: 1px solid #ccc; padding: 8px;">Inlet and outlet pipes, toilet, shower, handbasin, bathtub</td></tr>
   <tr><td style="border: 1px solid #ccc; padding: 8px;"><strong>Electricity</strong></td><td style="border: 1px solid #ccc; padding: 8px;">Light, switch, socket, distribution panel, global standard</td></tr>
 </table>
-
-
-
