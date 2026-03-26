@@ -84,5 +84,23 @@ hero:
       <p>适合把落地总成本、替换周期、停运损失和二期扩容一起放进 ROI 判断。</p>
       <a href="/zh/posts/how-to-calculate-maintenance-cost-and-payback-during-procurement/">查看文章</a>
     </div>
+    <div class="xc-download-card">
+      <span>已完成 02</span>
+      <strong>从出厂价到落地价，模块化房屋项目最容易漏掉的 12 项成本</strong>
+      <p>适合把出厂报价、目的地运输、基础安装和接驳成本拆成可比较的预算层级。</p>
+      <a href="/zh/posts/the-12-cost-items-most-often-missed-between-factory-price-and-landed-cost/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>已完成 03</span>
+      <strong>项目开业前，怎样判断一个房型有没有真正的传播力</strong>
+      <p>适合在到达体验、取景面、夜景和价格承接之间提前判断房型价值。</p>
+      <a href="/zh/posts/how-to-judge-if-a-unit-type-has-real-marketing-pull-before-opening/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>已完成 04</span>
+      <strong>淡旺季差异下，哪些房型最容易空置，为什么</strong>
+      <p>适合把房价带、客群波动、能耗压力和房型抗淡季能力一起拉出来判断。</p>
+      <a href="/zh/posts/which-unit-types-are-most-likely-to-sit-empty-in-low-season-and-why/">查看文章</a>
+    </div>
   </div>
 </section>

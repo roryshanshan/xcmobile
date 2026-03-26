@@ -90,5 +90,11 @@ hero:
       <p>适合从反面先排除山路、吊装、预算和定位上的硬限制。</p>
       <a href="/zh/posts/which-projects-should-not-use-fully-assembled-space-capsules/">查看文章</a>
     </div>
+    <div class="xc-download-card">
+      <span>已完成 03</span>
+      <strong>一期样板项目，招牌房型和标准房型应该怎么组合</strong>
+      <p>适合把引流房型、主力房型和公区角色拆开，而不是整期只押一种房型。</p>
+      <a href="/zh/posts/how-to-combine-signature-units-and-standard-units-in-a-phase-one-project/">查看文章</a>
+    </div>
   </div>
 </section>

@@ -116,5 +116,40 @@ hero:
       <strong><a href="/zh/posts/how-to-evaluate-low-e-glazing-window-systems-and-insulation-together/">Low-E 玻璃、门窗和保温系统怎么一起判断</a></strong>
       <p>适合在气候、朝向和整窗性能之间做系统判断。</p>
     </div>
+    <div class="xc-feature-card">
+      <span>场地准备</span>
+      <strong><a href="/zh/posts/how-much-site-preparation-should-be-done-before-a-modular-cabin-arrives/">模块化客房到场前，场地要先准备到什么程度</a></strong>
+      <p>适合项目进入发货前阶段时，对基础、吊装和接口准备做统一检查。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>预算判断</span>
+      <strong><a href="/zh/posts/the-12-cost-items-most-often-missed-between-factory-price-and-landed-cost/">从出厂价到落地价，最容易漏掉的 12 项成本</a></strong>
+      <p>适合内部比价时把运输、基础、接驳和清关费用拆开看。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>项目策划</span>
+      <strong><a href="/zh/posts/how-to-combine-signature-units-and-standard-units-in-a-phase-one-project/">一期样板项目，招牌房型和标准房型怎么组合</a></strong>
+      <p>适合在一期项目里平衡引流房型、主力房型和公区配置。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>吊装基础</span>
+      <strong><a href="/zh/posts/what-foundation-and-placement-conditions-must-be-confirmed-before-lifting-a-modular-unit/">吊装前，模块化房屋必须确认哪些基础和落位条件</a></strong>
+      <p>适合在吊装窗口前把基础、标高、支撑点和落位路径全部核清。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>接口准备</span>
+      <strong><a href="/zh/posts/how-far-utilities-should-be-prepared-before-a-modular-unit-ships/">发货前，水、电、污水到底应该准备到什么程度</a></strong>
+      <p>适合项目进入执行阶段时，把接口方向和接入条件一次性理顺。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>淡旺季</span>
+      <strong><a href="/zh/posts/which-unit-types-are-most-likely-to-sit-empty-in-low-season-and-why/">淡旺季差异下，哪些房型最容易空置，为什么</a></strong>
+      <p>适合在房型判断阶段就把季节波动和抗空置能力纳入比较。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>增量改造</span>
+      <strong><a href="/zh/posts/how-to-add-modular-units-to-an-existing-scenic-area-or-hotel-without-breaking-operations/">老景区和老酒店，怎样做增量改造而不打乱运营</a></strong>
+      <p>适合老项目准备升级时，先把新增客房、公区和施工窗口一起想清楚。</p>
+    </div>
   </div>
 </section>

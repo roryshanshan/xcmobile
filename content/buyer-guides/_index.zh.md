@@ -166,6 +166,54 @@ hero:
       <p>把维护、替换、停运损失和扩容兼容性一起纳入 ROI。</p>
       <a href="/zh/posts/how-to-calculate-maintenance-cost-and-payback-during-procurement/">查看文章</a>
     </div>
+    <div class="xc-download-card">
+      <span>准备</span>
+      <strong>模块化客房到场前，场地到底要先准备到什么程度</strong>
+      <p>适合把道路、基础、吊装、水电和排污准备前置做完。</p>
+      <a href="/zh/posts/how-much-site-preparation-should-be-done-before-a-modular-cabin-arrives/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>组合</span>
+      <strong>一期样板项目，招牌房型和标准房型应该怎么组合</strong>
+      <p>适合把引流房型、主力房型和公区角色分开做，而不是只押一种房型。</p>
+      <a href="/zh/posts/how-to-combine-signature-units-and-standard-units-in-a-phase-one-project/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>成本</span>
+      <strong>从出厂价到落地价，模块化房屋项目最容易漏掉的 12 项成本</strong>
+      <p>适合把报价外最容易被低估的运输、基础、接驳和现场支出拆清楚。</p>
+      <a href="/zh/posts/the-12-cost-items-most-often-missed-between-factory-price-and-landed-cost/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>流量</span>
+      <strong>项目开业前，怎样判断一个房型有没有真正的传播力</strong>
+      <p>适合把外观记忆点、取景面、夜景和价格承接一起做前置判断。</p>
+      <a href="/zh/posts/how-to-judge-if-a-unit-type-has-real-marketing-pull-before-opening/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>基础</span>
+      <strong>吊装前，模块化房屋必须确认哪些基础和落位条件</strong>
+      <p>适合把基础、支撑点、标高和最终落位关系在发货前讲透。</p>
+      <a href="/zh/posts/what-foundation-and-placement-conditions-must-be-confirmed-before-lifting-a-modular-unit/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>接口</span>
+      <strong>发货前，水、电、污水到底应该准备到什么程度</strong>
+      <p>适合把接口方向、点位逻辑和临时/永久接入条件前置说清。</p>
+      <a href="/zh/posts/how-far-utilities-should-be-prepared-before-a-modular-unit-ships/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>淡季</span>
+      <strong>淡旺季差异下，哪些房型最容易空置，为什么</strong>
+      <p>适合把房价带、气候敏感度、能耗和客群变化一起纳入判断。</p>
+      <a href="/zh/posts/which-unit-types-are-most-likely-to-sit-empty-in-low-season-and-why/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>改造</span>
+      <strong>老景区和老酒店，怎样用模块化产品做增量改造而不打乱运营</strong>
+      <p>适合老项目做客房和配套升级时，先把施工窗口和动线风险看清。</p>
+      <a href="/zh/posts/how-to-add-modular-units-to-an-existing-scenic-area-or-hotel-without-breaking-operations/">查看文章</a>
+    </div>
   </div>
 </section>
 

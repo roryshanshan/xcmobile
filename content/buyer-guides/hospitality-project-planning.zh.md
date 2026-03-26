@@ -90,5 +90,11 @@ hero:
       <p>适合把睡眠、隔音、遮光、卫浴和保洁难度放回采购判断里。</p>
       <a href="/zh/posts/how-to-avoid-instagrammable-but-uncomfortable-modular-hospitality-projects/">查看文章</a>
     </div>
+    <div class="xc-download-card">
+      <span>已完成 03</span>
+      <strong>老景区和老酒店，怎样用模块化产品做增量改造而不打乱运营</strong>
+      <p>适合把增量客房、施工窗口、游客动线和新旧区域接口一起看。</p>
+      <a href="/zh/posts/how-to-add-modular-units-to-an-existing-scenic-area-or-hotel-without-breaking-operations/">查看文章</a>
+    </div>
   </div>
 </section>

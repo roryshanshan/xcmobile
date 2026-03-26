@@ -90,5 +90,23 @@ hero:
       <p>适合在吊装前把限高、限重、转弯半径和卸货条件前置查清。</p>
       <a href="/zh/posts/last-mile-site-survey-before-capsule-house-delivery/">查看文章</a>
     </div>
+    <div class="xc-download-card">
+      <span>已完成 03</span>
+      <strong>模块化客房到场前，场地到底要先准备到什么程度</strong>
+      <p>适合把基础、吊装、水电排污和现场工作面在发货前一次性核清。</p>
+      <a href="/zh/posts/how-much-site-preparation-should-be-done-before-a-modular-cabin-arrives/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>已完成 04</span>
+      <strong>吊装前，模块化房屋必须确认哪些基础和落位条件</strong>
+      <p>适合把基础形式、支撑点、标高复测和最终落位路径在吊装前讲透。</p>
+      <a href="/zh/posts/what-foundation-and-placement-conditions-must-be-confirmed-before-lifting-a-modular-unit/">查看文章</a>
+    </div>
+    <div class="xc-download-card">
+      <span>已完成 05</span>
+      <strong>发货前，水、电、污水到底应该准备到什么程度</strong>
+      <p>适合把接口方向、点位逻辑和临时/永久接入方式在发货前统一核清。</p>
+      <a href="/zh/posts/how-far-utilities-should-be-prepared-before-a-modular-unit-ships/">查看文章</a>
+    </div>
   </div>
 </section>
