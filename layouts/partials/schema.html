@@ -280,7 +280,25 @@
   {{- $hubCatalogType := "" -}}
   {{- $hubCatalogItems := slice -}}
   {{- $hubCatalogItemType := "Thing" -}}
-  {{- if eq $schemaPathNormalized "/products/" -}}
+  {{- if .IsHome -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "WebPage" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "产品中心" "url" ((printf "%s%s" $langPrefix "/products/") | absURL))
+        (dict "name" "解决方案" "url" ((printf "%s%s" $langPrefix "/solutions/") | absURL))
+        (dict "name" "项目案例" "url" ((printf "%s%s" $langPrefix "/projects/") | absURL))
+        (dict "name" "资料中心" "url" ((printf "%s%s" $langPrefix "/resources/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Products" "url" ((printf "%s%s" $langPrefix "/products/") | absURL))
+        (dict "name" "Solutions" "url" ((printf "%s%s" $langPrefix "/solutions/") | absURL))
+        (dict "name" "Projects" "url" ((printf "%s%s" $langPrefix "/projects/") | absURL))
+        (dict "name" "Resources" "url" ((printf "%s%s" $langPrefix "/resources/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/products/" -}}
     {{- $hubCatalogType = "OfferCatalog" -}}
     {{- $hubCatalogItemType = "Product" -}}
     {{- if eq .Site.Language.Lang "zh" -}}
@@ -412,6 +430,24 @@
         (dict "name" "Blog" "url" ((printf "%s%s" $langPrefix "/posts/") | absURL))
       -}}
     {{- end -}}
+  {{- else if eq $schemaPathNormalized "/projects/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "WebPage" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "精选项目案例" "url" ((printf "%s%s" $langPrefix "/posts/our-featured-projects/") | absURL))
+        (dict "name" "度假村与营地" "url" ((printf "%s%s" $langPrefix "/resort-glamping/") | absURL))
+        (dict "name" "景区与精品酒店" "url" ((printf "%s%s" $langPrefix "/scenic-boutique-hotel/") | absURL))
+        (dict "name" "营地与宿舍项目" "url" ((printf "%s%s" $langPrefix "/workforce-camp/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Featured Projects" "url" ((printf "%s%s" $langPrefix "/posts/our-featured-projects/") | absURL))
+        (dict "name" "Resorts & Glamping" "url" ((printf "%s%s" $langPrefix "/resort-glamping/") | absURL))
+        (dict "name" "Scenic Area & Boutique Hotel" "url" ((printf "%s%s" $langPrefix "/scenic-boutique-hotel/") | absURL))
+        (dict "name" "Camp & Workforce Housing" "url" ((printf "%s%s" $langPrefix "/workforce-camp/") | absURL))
+      -}}
+    {{- end -}}
   {{- else if eq $schemaPathNormalized "/catalog/" -}}
     {{- $hubCatalogType = "ItemList" -}}
     {{- $hubCatalogItemType = "DigitalDocument" -}}
@@ -434,7 +470,104 @@
         (dict "name" "E7 Space Capsule Drawing" "url" ("/xcmobile/files/E7.pdf" | absURL))
       -}}
     {{- end -}}
+  {{- else if eq $schemaPathNormalized "/buyer-guides/product-selection/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Article" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "景区、营地、度假村项目，太空舱、苹果舱、木屋该先看哪一条产品线" "url" ((printf "%s%s" $langPrefix "/posts/how-to-choose-the-right-product-line-for-scenic-camp-and-resort-projects/") | absURL))
+        (dict "name" "哪些项目根本不适合整装太空舱，应该早点换方向" "url" ((printf "%s%s" $langPrefix "/posts/which-projects-should-not-use-fully-assembled-space-capsules/") | absURL))
+        (dict "name" "一期样板项目，招牌房型和标准房型应该怎么组合" "url" ((printf "%s%s" $langPrefix "/posts/how-to-combine-signature-units-and-standard-units-in-a-phase-one-project/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Which Product Line Should Scenic, Camp, and Resort Projects Review First" "url" ((printf "%s%s" $langPrefix "/posts/how-to-choose-the-right-product-line-for-scenic-camp-and-resort-projects/") | absURL))
+        (dict "name" "Which Projects Should Not Use Fully Assembled Space Capsules" "url" ((printf "%s%s" $langPrefix "/posts/which-projects-should-not-use-fully-assembled-space-capsules/") | absURL))
+        (dict "name" "How to Combine Signature Units and Standard Units in a Phase One Project" "url" ((printf "%s%s" $langPrefix "/posts/how-to-combine-signature-units-and-standard-units-in-a-phase-one-project/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/buyer-guides/export-compliance/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Article" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "外销模块化住宿项目，在报价前就该确认哪些合规问题" "url" ((printf "%s%s" $langPrefix "/posts/modular-hospitality-export-compliance-checklist/") | absURL))
+        (dict "name" "模块化项目里的审图和第三方验审，通常是怎么推进的" "url" ((printf "%s%s" $langPrefix "/posts/how-plan-review-and-third-party-inspection-work-in-modular-projects/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Modular Hospitality Export Compliance Checklist" "url" ((printf "%s%s" $langPrefix "/posts/modular-hospitality-export-compliance-checklist/") | absURL))
+        (dict "name" "How Plan Review and Third-Party Inspection Work in Modular Projects" "url" ((printf "%s%s" $langPrefix "/posts/how-plan-review-and-third-party-inspection-work-in-modular-projects/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/buyer-guides/shipping-and-installation/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Article" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "整装舱体、40FR 和普通集装箱，海运方式应该怎么判断" "url" ((printf "%s%s" $langPrefix "/posts/how-to-choose-between-flat-rack-modular-and-containerized-shipping/") | absURL))
+        (dict "name" "太空舱或模块房发运前，港口到现场的最后一公里该怎么预勘查" "url" ((printf "%s%s" $langPrefix "/posts/last-mile-site-survey-before-capsule-house-delivery/") | absURL))
+        (dict "name" "模块化客房到场前，场地到底要先准备到什么程度" "url" ((printf "%s%s" $langPrefix "/posts/how-much-site-preparation-should-be-done-before-a-modular-cabin-arrives/") | absURL))
+        (dict "name" "吊装前，模块化房屋必须确认哪些基础和落位条件" "url" ((printf "%s%s" $langPrefix "/posts/what-foundation-and-placement-conditions-must-be-confirmed-before-lifting-a-modular-unit/") | absURL))
+        (dict "name" "发货前，水、电、污水到底应该准备到什么程度" "url" ((printf "%s%s" $langPrefix "/posts/how-far-utilities-should-be-prepared-before-a-modular-unit-ships/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "How to Choose Between Flat Rack, Modular, and Containerized Shipping" "url" ((printf "%s%s" $langPrefix "/posts/how-to-choose-between-flat-rack-modular-and-containerized-shipping/") | absURL))
+        (dict "name" "Last-Mile Site Survey Before Capsule House Delivery" "url" ((printf "%s%s" $langPrefix "/posts/last-mile-site-survey-before-capsule-house-delivery/") | absURL))
+        (dict "name" "How Much Site Preparation Should Be Done Before a Modular Cabin Arrives" "url" ((printf "%s%s" $langPrefix "/posts/how-much-site-preparation-should-be-done-before-a-modular-cabin-arrives/") | absURL))
+        (dict "name" "What Foundation and Placement Conditions Must Be Confirmed Before Lifting a Modular Unit" "url" ((printf "%s%s" $langPrefix "/posts/what-foundation-and-placement-conditions-must-be-confirmed-before-lifting-a-modular-unit/") | absURL))
+        (dict "name" "How Far Utilities Should Be Prepared Before a Modular Unit Ships" "url" ((printf "%s%s" $langPrefix "/posts/how-far-utilities-should-be-prepared-before-a-modular-unit-ships/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/buyer-guides/hospitality-project-planning/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Article" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "景区和营地项目，房型朝向与隐私布局应该怎么做" "url" ((printf "%s%s" $langPrefix "/posts/how-to-plan-orientation-and-privacy-layout-for-scenic-camp-projects/") | absURL))
+        (dict "name" "怎样避免把文旅住宿项目做成只适合拍照、不适合入住" "url" ((printf "%s%s" $langPrefix "/posts/how-to-avoid-instagrammable-but-uncomfortable-modular-hospitality-projects/") | absURL))
+        (dict "name" "老景区和老酒店，怎样用模块化产品做增量改造而不打乱运营" "url" ((printf "%s%s" $langPrefix "/posts/how-to-add-modular-units-to-an-existing-scenic-area-or-hotel-without-breaking-operations/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "How to Plan Orientation and Privacy Layout for Scenic Camp Projects" "url" ((printf "%s%s" $langPrefix "/posts/how-to-plan-orientation-and-privacy-layout-for-scenic-camp-projects/") | absURL))
+        (dict "name" "How to Avoid Instagrammable but Uncomfortable Modular Hospitality Projects" "url" ((printf "%s%s" $langPrefix "/posts/how-to-avoid-instagrammable-but-uncomfortable-modular-hospitality-projects/") | absURL))
+        (dict "name" "How to Add Modular Units to an Existing Scenic Area or Hotel Without Breaking Operations" "url" ((printf "%s%s" $langPrefix "/posts/how-to-add-modular-units-to-an-existing-scenic-area-or-hotel-without-breaking-operations/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/buyer-guides/systems-and-specs/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Article" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "Low-E 玻璃、门窗和保温系统，到底应该怎么一起判断" "url" ((printf "%s%s" $langPrefix "/posts/how-to-evaluate-low-e-glazing-window-systems-and-insulation-together/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "How to Evaluate Low-E Glazing, Window Systems, and Insulation Together" "url" ((printf "%s%s" $langPrefix "/posts/how-to-evaluate-low-e-glazing-window-systems-and-insulation-together/") | absURL))
+      -}}
+    {{- end -}}
+  {{- else if eq $schemaPathNormalized "/buyer-guides/operations-and-roi/" -}}
+    {{- $hubCatalogType = "ItemList" -}}
+    {{- $hubCatalogItemType = "Article" -}}
+    {{- if eq .Site.Language.Lang "zh" -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "采购阶段怎样把维护成本和回收周期一起算进去" "url" ((printf "%s%s" $langPrefix "/posts/how-to-calculate-maintenance-cost-and-payback-during-procurement/") | absURL))
+        (dict "name" "从出厂价到落地价，模块化房屋项目最容易漏掉的 12 项成本" "url" ((printf "%s%s" $langPrefix "/posts/the-12-cost-items-most-often-missed-between-factory-price-and-landed-cost/") | absURL))
+        (dict "name" "项目开业前，怎样判断一个房型有没有真正的传播力" "url" ((printf "%s%s" $langPrefix "/posts/how-to-judge-if-a-unit-type-has-real-marketing-pull-before-opening/") | absURL))
+        (dict "name" "淡旺季差异下，哪些房型最容易空置，为什么" "url" ((printf "%s%s" $langPrefix "/posts/which-unit-types-are-most-likely-to-sit-empty-in-low-season-and-why/") | absURL))
+      -}}
+    {{- else -}}
+      {{- $hubCatalogItems = slice
+        (dict "name" "How to Calculate Maintenance Cost and Payback During Procurement" "url" ((printf "%s%s" $langPrefix "/posts/how-to-calculate-maintenance-cost-and-payback-during-procurement/") | absURL))
+        (dict "name" "The 12 Cost Items Most Often Missed Between Factory Price and Landed Cost" "url" ((printf "%s%s" $langPrefix "/posts/the-12-cost-items-most-often-missed-between-factory-price-and-landed-cost/") | absURL))
+        (dict "name" "How to Judge if a Unit Type Has Real Marketing Pull Before Opening" "url" ((printf "%s%s" $langPrefix "/posts/how-to-judge-if-a-unit-type-has-real-marketing-pull-before-opening/") | absURL))
+        (dict "name" "Which Unit Types Are Most Likely to Sit Empty in Low Season and Why" "url" ((printf "%s%s" $langPrefix "/posts/which-unit-types-are-most-likely-to-sit-empty-in-low-season-and-why/") | absURL))
+      -}}
+    {{- end -}}
   {{- end -}}
+  {{- $hasExplicitHubCatalog := gt (len $hubCatalogItems) 0 -}}
   {{- if gt (len $hubCatalogItems) 0 -}}
     {{- $hubCatalogElements := slice -}}
     {{- range $index, $item := $hubCatalogItems -}}
@@ -596,7 +729,7 @@
       ) -}}
     {{- end -}}
   {{- end -}}
-  {{- if or .IsSection (eq .Kind "taxonomy") (eq .Kind "term") -}}
+  {{- if and (or .IsSection (eq .Kind "taxonomy") (eq .Kind "term")) (not $hasExplicitHubCatalog) -}}
     {{- $listElements := slice -}}
     {{- if eq .Kind "taxonomy" -}}
       {{- range $index, $term := .Data.Terms.Alphabetical -}}

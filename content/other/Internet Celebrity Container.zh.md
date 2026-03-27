@@ -22,7 +22,7 @@ cover: "https://i.postimg.cc/ssZ6j5HM/ec62d2114c3d96e0acd37aed6ebf1f72.jpg?dl=1"
   </div>
   <div class="xc-info-card">
     <span>项目重点</span>
-    <strong>外观、流量、场地和功能组合</strong>
+    <strong>外观吸引力、场地和功能组合</strong>
   </div>
 </div>
 

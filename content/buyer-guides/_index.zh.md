@@ -2,16 +2,16 @@
 title: "采购专题"
 date: 2026-03-25T20:10:00+08:00
 draft: false
-description: "围绕模块化房屋采购决策、出口交付、文旅项目策划和运营回报整理的专题结构页。"
+description: "围绕模块化房屋的产品选择、出口交付、项目策划和运营判断整理的专题入口页。"
 schema_type: "CollectionPage"
 show_children: true
 children_title: "六个专题方向"
 cover: "/media/space-capsule-project.jpg"
 hero:
   theme: "resources"
-  eyebrow: "采购商内容结构"
-  headline: "先把买家真正要解决的问题分清，再决定文章怎么写"
-  lede: "这一版先不急着批量写正文，而是先把适合本站的内容结构搭出来。六个方向都围绕采购决策链展开，每个方向先确定 5 个深度选题，再进入正式写作。"
+  eyebrow: "专题导览"
+  headline: "按项目判断路径查看模块化房屋的重点问题"
+  lede: "如果你正在比较产品方向、运输方式、目的地要求或项目运营问题，可以先从这 6 个专题进入，再逐步缩小方案。"
   highlights:
     - "采购决策"
     - "出口交付"
@@ -28,41 +28,41 @@ hero:
   metrics:
     - value: "6 个"
       label: "专题分类页"
-    - value: "30 个"
-      label: "优先深度选题"
-    - value: "先搭结构"
-      label: "再下笔正文"
+    - value: "按阶段看"
+      label: "更容易找到重点"
+    - value: "持续补充"
+      label: "围绕真实项目问题"
   image: "/media/space-capsule-project.jpg"
   image_alt: "采购专题结构页"
   secondary_image: "/media/apple-cabin-hero.jpg"
   secondary_image_alt: "采购与项目策划参考"
   panel:
-    kicker: "这版先解决什么"
-    title: "不是继续铺标题，而是把采购商问题和写作优先级先梳理清楚"
-    text: "后面真正要写的，是能帮买家缩短判断时间、减少失误和提高沟通效率的内容。"
+    kicker: "建议这样看"
+    title: "先按项目阶段进入，再看对应专题"
+    text: "这样更容易先找到和当前项目最相关的判断依据，而不是在零散页面之间来回切换。"
     items:
-      - "先定内容分类"
-      - "再定优先问题"
-      - "最后定文章深度"
+      - "先看产品选择"
+      - "再看交付与合规"
+      - "最后看运营与扩容"
 ---
 
 <section class="xc-section-shell">
-  <h2>为什么先做专题结构</h2>
+  <h2>建议先从专题入口开始</h2>
   <div class="xc-feature-grid">
     <div class="xc-feature-card">
-      <span>避免泛文章</span>
-      <strong>不再围绕“什么是模块化房屋”反复铺浅层内容</strong>
-      <p>真正值得写的内容，应该能帮助采购商缩小产品方向、看懂交付边界，并更快推进内部决策。</p>
+      <span>按问题查看</span>
+      <strong>不用从零散页面开始，也能先抓住重点</strong>
+      <p>从产品选择、交付条件和项目运营三层切入，会比随机翻看页面更省时间。</p>
     </div>
     <div class="xc-feature-card">
-      <span>按决策链组织</span>
-      <strong>从选型、合规、运输、安装、运营一路往下串</strong>
-      <p>这比按产品堆博客更接近真实采购路径，也更方便后续做专题页、内链和 SEO 聚合。</p>
+      <span>按阶段判断</span>
+      <strong>从早期选型到现场落地，再到运营回报一路往下看</strong>
+      <p>这样更容易在不同阶段找到当前最需要确认的内容，不会把问题混在一起。</p>
     </div>
     <div class="xc-feature-card">
-      <span>方便后续扩写</span>
-      <strong>每个方向先抓 5 个高价值问题，再进入正文</strong>
-      <p>这样后面写出的文章会更像解决方案和判断依据，而不是表层介绍。</p>
+      <span>便于持续阅读</span>
+      <strong>相关问题会集中在同一专题里</strong>
+      <p>当你已经缩小产品方向后，可以继续顺着同一专题往下看交付、安装或运营判断。</p>
     </div>
   </div>
 </section>
@@ -104,7 +104,7 @@ hero:
 </section>
 
 <section class="xc-section-shell">
-  <h2>首批已完成的深度文章</h2>
+  <h2>已上线的重点指南</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
       <span>选型</span>
@@ -121,7 +121,7 @@ hero:
     <div class="xc-download-card">
       <span>合规</span>
       <strong>报价前就该确认哪些合规问题</strong>
-      <p>把用途属性、文件责任和目的地要求前置到询盘阶段。</p>
+      <p>把用途属性、文件责任和目的地要求前置到前期沟通阶段。</p>
       <a href="/zh/posts/modular-hospitality-export-compliance-checklist/">查看文章</a>
     </div>
     <div class="xc-download-card">
@@ -185,7 +185,7 @@ hero:
       <a href="/zh/posts/the-12-cost-items-most-often-missed-between-factory-price-and-landed-cost/">查看文章</a>
     </div>
     <div class="xc-download-card">
-      <span>流量</span>
+      <span>传播</span>
       <strong>项目开业前，怎样判断一个房型有没有真正的传播力</strong>
       <p>适合把外观记忆点、取景面、夜景和价格承接一起做前置判断。</p>
       <a href="/zh/posts/how-to-judge-if-a-unit-type-has-real-marketing-pull-before-opening/">查看文章</a>
@@ -218,9 +218,9 @@ hero:
 </section>
 
 <section class="xc-section-shell">
-  <h2>下一步怎么用这套结构</h2>
+  <h2>这套专题更适合这样使用</h2>
   <div class="xc-callout">
-    <strong>这 30 个题目先作为“待写清单”。</strong>
-    <p>后面每一篇正式文章，都应该围绕一个具体采购问题展开，并尽量带真实场景、运输交付条件、配置边界和目的地差异，而不是停留在介绍层面。</p>
+    <strong>先按当前项目阶段进入，再继续看对应问题。</strong>
+    <p>如果你已经有目标国家、数量、场地条件或平面方向，结合对应专题一起看，会更容易缩小到更合适的产品和推进路径。</p>
   </div>
 </section>

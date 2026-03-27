@@ -7,7 +7,7 @@ hero:
   theme: "resources"
   eyebrow: "资料与支持页面"
   headline: "把目录、FAQ、运输说明和采购资料放在同一入口"
-  lede: "当产品方向已经缩小到 1 到 2 条时，这些资料会帮助更快推进内部讨论、询盘准备和项目判断。"
+  lede: "当产品方向已经缩小到 1 到 2 条时，这些资料会帮助更快推进项目比较、前期资料准备和方案判断。"
   highlights:
     - "电子目录"
     - "运输说明"
@@ -28,7 +28,7 @@ hero:
     - value: "支持判断"
       label: "便于团队内部对齐"
     - value: "可直接带走"
-      label: "用于询盘准备"
+      label: "便于前期沟通"
   image: "/media/apple-cabin-hero.jpg"
   image_alt: "资料中心主图"
   secondary_image: "/media/space-capsule-project.jpg"
@@ -40,10 +40,10 @@ hero:
     items:
       - "先看电子目录和产品页"
       - "再补充 FAQ 与运输说明"
-      - "最后结合案例和采购文章"
+      - "最后结合案例和项目指南"
   floating:
-    kicker: "如果准备询盘"
-    title: "把参考文件名也一起发来"
+    kicker: "如果准备沟通项目"
+    title: "把参考文件名和基础信息一起整理"
     text: "这样更容易快速对齐你正在比较的产品方向。"
 ---
 
@@ -53,7 +53,7 @@ hero:
     <div class="xc-download-card">
       <span>专题</span>
       <strong>采购专题结构</strong>
-      <p>适合先看 6 个内容分类和 30 个深度选题，判断后续应该优先写哪些采购文章。</p>
+      <p>适合先看 6 个专题方向，再顺着当前项目阶段进入对应内容。</p>
       <a href="/zh/buyer-guides/">打开采购专题</a>
     </div>
     <div class="xc-download-card">
@@ -84,7 +84,7 @@ hero:
 </section>
 
 <section class="xc-section-shell">
-  <h2>推荐继续阅读的采购文章</h2>
+  <h2>推荐继续阅读的项目指南</h2>
   <div class="xc-feature-grid">
     <div class="xc-feature-card">
       <span>选型参考</span>

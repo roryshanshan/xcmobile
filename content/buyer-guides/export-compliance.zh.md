@@ -9,7 +9,7 @@ hero:
   theme: "resources"
   eyebrow: "专题 02"
   headline: "把外销最容易被低估的合规问题，提前放到前面谈"
-  lede: "这一组不讨论空泛的“出口能力”，而是直面采购商真正会卡住的地方：图纸审查、第三方验审、目的地电气消防要求、文件责任边界，以及怎样判断供应商是不是真的懂外销。"
+  lede: "这一组不讨论空泛的“出口能力”，而是直面跨境项目里最常卡住的地方：图纸审查、第三方验审、目的地电气消防要求、文件责任边界，以及怎样判断供应商是不是真的懂交付。"
   actions:
     - label: "回到采购专题"
       url: "/buyer-guides/"
@@ -28,60 +28,60 @@ hero:
     </div>
     <div class="xc-feature-card">
       <span>最容易产生争议</span>
-      <strong>买家、工厂、货代和本地顾问之间，最容易在责任边界上出现理解偏差</strong>
-      <p>站点如果能把这一层讲清楚，会比泛泛谈出口经验更有说服力。</p>
+      <strong>项目方、工厂、货代和本地顾问之间，最容易在责任边界上出现理解偏差</strong>
+      <p>这些边界越早说清楚，后面越不容易在文件和审批上反复。</p>
     </div>
     <div class="xc-feature-card">
-      <span>更像严肃买家在问的问题</span>
-      <strong>真正准备下单的人，迟早都会问到认证、图纸、文件和验审</strong>
-      <p>这类内容也更有机会承接高质量询盘，而不是纯比价流量。</p>
+      <span>前期就要确认</span>
+      <strong>真正准备推进项目的人，迟早都会问到认证、图纸、文件和验审</strong>
+      <p>这些问题越往后放，越容易直接影响交期和预算。</p>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>建议优先做的 5 个深度选题</h2>
+  <h2>本专题关注的 5 个核心问题</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
-      <span>选题 01</span>
+      <span>问题 01</span>
       <strong>出口到不同国家前，买家应该先问哪些合规问题</strong>
-      <p><strong>要解决：</strong>让采购商在立项或询盘阶段就知道目的地法规不能后置。</p>
-      <p><strong>写作重点：</strong>用途属性、电气、消防、结构、审批流程、本地顾问协同。</p>
+      <p>在立项和前期沟通阶段，就要知道目的地法规不能后置。</p>
+      <p><strong>重点看：</strong>用途属性、电气、消防、结构、审批流程、本地顾问协同。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 02</span>
+      <span>问题 02</span>
       <strong>模块化住宿项目的图纸审查和第三方验审，通常怎么安排</strong>
-      <p><strong>要解决：</strong>把 plan review、inspection、图纸冻结和生产节奏之间的关系讲清楚。</p>
-      <p><strong>写作重点：</strong>买家需要准备什么、工厂提供什么、第三方在哪个节点介入。</p>
+      <p>需要把 plan review、inspection、图纸冻结和生产节奏之间的关系讲清楚。</p>
+      <p><strong>重点看：</strong>项目方需要准备什么、工厂提供什么、第三方在哪个节点介入。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 03</span>
-      <strong>买家、工厂、货代分别该负责哪些文件和确认项</strong>
-      <p><strong>要解决：</strong>减少“我以为你会处理”的责任盲区。</p>
-      <p><strong>写作重点：</strong>商业文件、装箱资料、收货方信息、清关配合、目的地资料准备。</p>
+      <span>问题 03</span>
+      <strong>项目方、工厂、货代分别该负责哪些文件和确认项</strong>
+      <p>适合减少“我以为你会处理”的责任盲区。</p>
+      <p><strong>重点看：</strong>商业文件、装箱资料、收货方信息、清关配合、目的地资料准备。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 04</span>
+      <span>问题 04</span>
       <strong>目的地市场的电气、消防和能效要求，怎么在报价前就前置确认</strong>
-      <p><strong>要解决：</strong>避免到了生产或到港阶段才发现配置口径不对。</p>
-      <p><strong>写作重点：</strong>标准差异、插座电压、设备品牌、材料等级、当地顾问配合。</p>
+      <p>要避免到了生产或到港阶段才发现配置口径不对。</p>
+      <p><strong>重点看：</strong>标准差异、插座电压、设备品牌、材料等级、当地顾问配合。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 05</span>
-      <strong>询盘阶段怎样判断供应商是否真的懂外销交付，而不只是会卖产品</strong>
-      <p><strong>要解决：</strong>帮助买家筛掉只会讲产品、不懂出口流程的供应商。</p>
-      <p><strong>写作重点：</strong>问什么问题、看哪些资料、怎样判断对方有没有项目级经验。</p>
+      <span>问题 05</span>
+      <strong>前期沟通时，怎样判断供应商是否真的懂跨境交付</strong>
+      <p>适合区分只会介绍产品，和真正理解交付流程的合作方。</p>
+      <p><strong>重点看：</strong>问什么问题、看哪些资料、怎样判断对方有没有项目级经验。</p>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>这一组已完成的文章</h2>
+  <h2>已上线的相关文章</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
       <span>已完成 01</span>
       <strong>外销模块化住宿项目，在报价前就该确认哪些合规问题</strong>
-      <p>适合把用途属性、图纸审查、责任边界和目的地规范前置到询盘阶段。</p>
+      <p>适合把用途属性、图纸审查、责任边界和目的地规范前置到前期沟通阶段。</p>
       <a href="/zh/posts/modular-hospitality-export-compliance-checklist/">查看文章</a>
     </div>
     <div class="xc-download-card">

@@ -9,14 +9,14 @@ schema_faq:
     answer: "可以，但不同产品线和不同阶段的可定制范围并不一样。越早确认布局和配置方向，越容易得到准确报价和更顺畅的生产安排。"
   - question: "哪些产品更适合度假村、景区或宿舍项目？"
     answer: "太空舱、苹果舱和木屋更适合住宿与文旅场景；集装箱方案通常更适合营地、办公室、宿舍部署和实用型配套建筑。"
-  - question: "运输和安装能不能和产品询盘一起讨论？"
+  - question: "运输和安装能不能和产品咨询一起讨论？"
     answer: "可以，而且建议在报价阶段就一起讨论，把目的地、尺寸、数量和现场条件说清楚，这样产品、运输和安装判断会更准确。"
 cover: "/media/apple-cabin-hero.jpg"
 hero:
   theme: "resources"
   eyebrow: "常见问题"
   headline: "把第一次沟通里最常见的问题先说清楚"
-  lede: "如果你已经在比较产品、准备询盘或者推进一个项目，这一页可以帮助你更快排除基础疑问，把注意力集中到真正重要的决策上。"
+  lede: "如果你已经在比较产品、准备做前期沟通或者推进一个项目，这一页可以帮助你更快排除基础疑问，把注意力集中到真正重要的决策上。"
   highlights:
     - "报价信息"
     - "定制范围"
@@ -35,14 +35,14 @@ hero:
     - value: "适合第一轮"
       label: "快速建立基本判断"
     - value: "减少反复"
-      label: "提高询盘质量"
+      label: "提高沟通效率"
   image: "/media/apple-cabin-hero.jpg"
   image_alt: "常见问题主图"
   secondary_image: "/media/space-capsule-project.jpg"
   secondary_image_alt: "项目参考图"
   panel:
     kicker: "适合先看"
-    title: "如果你正在准备询盘，先看这里会更省时间"
+    title: "如果你正在准备前期沟通，先看这里会更省时间"
     text: "尤其适合还没完全确定产品，但已经知道项目用途和大致方向的团队。"
     items:
       - "先确认报价需要哪些信息"

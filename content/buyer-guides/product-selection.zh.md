@@ -33,50 +33,50 @@ hero:
     </div>
     <div class="xc-feature-card">
       <span>先看不适配</span>
-      <strong>比起“适合什么”，很多买家更需要先知道“不适合什么”</strong>
-      <p>这类文章最能减少采购误判，也更容易建立站点的专业度和可信度。</p>
+      <strong>比起“适合什么”，很多团队更需要先知道“不适合什么”</strong>
+      <p>先排除明显不适配的方案，往往比一开始就比型号更有效率。</p>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>建议优先做的 5 个深度选题</h2>
+  <h2>本专题关注的 5 个核心问题</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
-      <span>选题 01</span>
+      <span>问题 01</span>
       <strong>太空舱、苹果舱、木屋，什么项目该先看哪一条产品线</strong>
-      <p><strong>要解决：</strong>采购商第一轮怎么快速缩小方向，而不是把三条住宿产品线一起看乱。</p>
-      <p><strong>写作重点：</strong>客群、房价带、场地气质、运输与吊装条件、样板与批量的差异。</p>
+      <p>适合第一轮快速缩小方向，而不是把三条住宿产品线一起看乱。</p>
+      <p><strong>重点看：</strong>客群、房价带、场地气质、运输与吊装条件、样板与批量的差异。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 02</span>
+      <span>问题 02</span>
       <strong>招牌房型和基础房型应该怎么组合，才不会只好看不好做</strong>
-      <p><strong>要解决：</strong>度假项目如何把高辨识度产品和标准化产品放在同一个项目里。</p>
-      <p><strong>写作重点：</strong>引流房型、利润房型、批量复制房型和公区的关系。</p>
+      <p>适合判断高辨识度房型和标准化房型怎样放在同一个项目里。</p>
+      <p><strong>重点看：</strong>引流房型、利润房型、批量复制房型和公区的关系。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 03</span>
+      <span>问题 03</span>
       <strong>一期样板项目应该先上几套，先做什么类型更合理</strong>
-      <p><strong>要解决：</strong>很多项目想先试，但不知道样板数量、房型比例和展示重点怎么定。</p>
-      <p><strong>写作重点：</strong>验证目标、首期预算、示范效果、后续扩容接口。</p>
+      <p>很多项目想先试，但不知道样板数量、房型比例和展示重点怎么定。</p>
+      <p><strong>重点看：</strong>验证目标、首期预算、示范效果、后续扩容接口。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 04</span>
+      <span>问题 04</span>
       <strong>集装箱体系和成品舱体，到底该按什么条件判断</strong>
-      <p><strong>要解决：</strong>买家常常只按外观判断，却忽略运输、基础、安装和使用属性。</p>
-      <p><strong>写作重点：</strong>整装运输、flat pack、可拆装、现场条件、维护边界。</p>
+      <p>很多团队常常只按外观判断，却忽略运输、基础、安装和使用属性。</p>
+      <p><strong>重点看：</strong>整装运输、flat pack、可拆装、现场条件、维护边界。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 05</span>
+      <span>问题 05</span>
       <strong>哪些项目根本不适合整装太空舱，应该早点换方向</strong>
-      <p><strong>要解决：</strong>从反面建立信任，帮助买家识别道路、吊装、预算和项目定位上的硬限制。</p>
-      <p><strong>写作重点：</strong>山路、限高、目的地法规、房价承载力、场地基础条件。</p>
+      <p>适合先识别道路、吊装、预算和项目定位上的硬限制。</p>
+      <p><strong>重点看：</strong>山路、限高、目的地法规、房价承载力、场地基础条件。</p>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>这一组已完成的文章</h2>
+  <h2>已上线的相关文章</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
       <span>已完成 01</span>

@@ -28,55 +28,55 @@ hero:
     </div>
     <div class="xc-feature-card">
       <span>基础和安装需要前置</span>
-      <strong>很多买家把基础、水电和排污准备放得太后</strong>
-      <p>站点如果能把这一层讲透，会比简单写“提供安装指导”专业得多。</p>
+      <strong>很多项目把基础、水电和排污准备放得太后</strong>
+      <p>这些条件越早确认，后面越不容易在现场被动返工。</p>
     </div>
     <div class="xc-feature-card">
       <span>不同产品运输逻辑完全不同</span>
       <strong>整装太空舱、平板式箱房和可拆装体系不是同一种运输判断</strong>
-      <p>这类内容最能体现站点是“懂交付”的，而不只是“懂展示产品”。</p>
+      <p>产品不同，运输状态、吊装方式和现场组织逻辑也会完全不同。</p>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>建议优先做的 5 个深度选题</h2>
+  <h2>本专题关注的 5 个核心问题</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
-      <span>选题 01</span>
+      <span>问题 01</span>
       <strong>整装舱体海运、40FR、平板车和散货，应该怎么判断</strong>
-      <p><strong>要解决：</strong>不同产品为什么不能用同一种运输思路。</p>
-      <p><strong>写作重点：</strong>运输状态尺寸、装载方式、成本结构、目的地落位条件。</p>
+      <p>不同产品不能套用同一种运输思路。</p>
+      <p><strong>重点看：</strong>运输状态尺寸、装载方式、成本结构、目的地落位条件。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 02</span>
+      <span>问题 02</span>
       <strong>港口到现场的最后一公里，应该怎么做预勘查</strong>
-      <p><strong>要解决：</strong>让买家知道到港不是结束，真正的风险常常在最后一段。</p>
-      <p><strong>写作重点：</strong>道路、限高、限重、转弯、卸货区、吊车站位。</p>
+      <p>到港不是结束，真正的风险常常在最后一段。</p>
+      <p><strong>重点看：</strong>道路、限高、限重、转弯、卸货区、吊车站位。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 03</span>
+      <span>问题 03</span>
       <strong>吊装前必须确认哪些基础和落位条件</strong>
-      <p><strong>要解决：</strong>避免现场到了才发现基础、支撑面和吊装空间都没准备好。</p>
-      <p><strong>写作重点：</strong>基础形式、落位精度、吊装半径、临时支撑、现场协同。</p>
+      <p>避免现场到了才发现基础、支撑面和吊装空间都没准备好。</p>
+      <p><strong>重点看：</strong>基础形式、落位精度、吊装半径、临时支撑、现场协同。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 04</span>
+      <span>问题 04</span>
       <strong>水、电、污水在发货前应该准备到什么程度</strong>
-      <p><strong>要解决：</strong>很多项目货到了，但接入条件完全没跟上。</p>
-      <p><strong>写作重点：</strong>预埋点位、接口标准、热水与排水、临时与永久系统衔接。</p>
+      <p>很多项目货到了，但接入条件完全没跟上。</p>
+      <p><strong>重点看：</strong>预埋点位、接口标准、热水与排水、临时与永久系统衔接。</p>
     </div>
     <div class="xc-download-card">
-      <span>选题 05</span>
+      <span>问题 05</span>
       <strong>平板式和可拆装项目，怎样组织本地安装团队更稳妥</strong>
-      <p><strong>要解决：</strong>买家常常低估本地安装组织和工具准备的复杂度。</p>
-      <p><strong>写作重点：</strong>人手配置、工具、吊装设备、水电配合、现场负责人角色。</p>
+      <p>本地安装组织和工具准备，往往比想象中更复杂。</p>
+      <p><strong>重点看：</strong>人手配置、工具、吊装设备、水电配合、现场负责人角色。</p>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>这一组已完成的文章</h2>
+  <h2>已上线的相关文章</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
       <span>已完成 01</span>

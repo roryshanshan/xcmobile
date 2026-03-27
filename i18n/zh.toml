@@ -32,10 +32,10 @@ other = "WhatsApp 咨询"
 other = "从产品选择到交付沟通，都可以从这里开始。"
 
 [footer_brand_body]
-other = "你可以在这里查看核心产品、应用场景、案例、运输与安装信息，并快速发起询盘。"
+other = "你可以在这里查看核心产品、应用场景、案例、运输与安装信息，并快速进入项目沟通。"
 
 [footer_start_inquiry]
-other = "发起询盘"
+other = "联系咨询"
 
 [footer_open_catalog]
 other = "查看目录"
@@ -113,7 +113,7 @@ other = "浏览产品体系"
 other = "服务支持"
 
 [home_strip_3_body]
-other = "选型建议、案例参考、运输说明与快速询盘入口"
+other = "选型建议、案例参考、运输说明与快速联系入口"
 
 [home_strip_3_link]
 other = "查看资料中心"

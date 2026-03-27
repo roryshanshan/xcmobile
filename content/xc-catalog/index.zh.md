@@ -30,7 +30,7 @@ hero:
       style: "primary"
     - label: "查看太空舱图纸"
       url: "#catalog-capsule-drawings"
-    - label: "询盘前准备"
+    - label: "沟通前准备"
       url: "#catalog-inquiry-notes"
   metrics:
     - value: "总目录"
@@ -52,7 +52,7 @@ hero:
       - "再看对应图册和参考图纸"
       - "沟通时把文件名和页面链接一起发来"
   floating:
-    kicker: "准备询盘"
+    kicker: "准备沟通"
     title: "文件名、数量、用途和目的地"
     text: "把这几项信息一起发来，通常比只问价格更容易快速进入正题。"
 ---

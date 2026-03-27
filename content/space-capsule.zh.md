@@ -46,7 +46,7 @@ hero:
       - "更容易按型号逻辑快速缩小范围"
       - "便于把设计、运输和落地条件一起确认"
   floating:
-    kicker: "询盘建议"
+    kicker: "沟通建议"
     title: "目的地、型号、数量、落地场景"
     text: "把这四项信息一起发来，报价和运输讨论会更快进入正题。"
 ---
@@ -192,7 +192,7 @@ hero:
 </section>
 
 <section class="xc-section-shell">
-  <h2>发起询盘时建议一并发送</h2>
+  <h2>咨询时建议一并发送</h2>
   <div class="xc-feature-grid">
     <div class="xc-feature-card">
       <span>基础信息</span>

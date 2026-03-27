@@ -77,7 +77,7 @@ hero:
     <div class="xc-download-card">
       <span>联系人</span>
       <strong>Gavin</strong>
-      <p>适合产品咨询、项目沟通和询盘对接。</p>
+      <p>适合产品咨询、项目沟通和报价交流。</p>
       <a href="mailto:gavin@mobilehouse.asia">发送邮件</a>
     </div>
     <div class="xc-download-card">

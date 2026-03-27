@@ -1,13 +1,13 @@
 ---
 title: "博客"
 date: 2026-03-23T10:00:00+08:00
-description: "关于太空舱、木屋与模块化建筑项目的采购文章和应用说明。"
+description: "围绕太空舱、木屋与模块化建筑项目的指南、对比和案例参考。"
 cover: "/media/space-capsule-project.jpg"
 hero:
   theme: "resources"
-  eyebrow: "文章与参考"
-  headline: "把采购文章、对比内容和项目参考整理成更好转发的入口"
-  lede: "这里不再是旧式时间线归档，而是优先把更有决策价值的文章放在前面，方便团队内部先看重点内容。"
+  eyebrow: "指南与参考"
+  headline: "项目指南、产品对比与案例参考"
+  lede: "把更常用的项目判断内容放在前面，方便先看重点，再继续缩小方向。"
   highlights:
     - "采购文章"
     - "产品对比"
@@ -28,13 +28,13 @@ hero:
     - value: "先看重点"
       label: "减少旧归档感"
     - value: "便于转发"
-      label: "适合内部讨论"
+      label: "方便第一轮比较"
     - value: "围绕采购"
       label: "更贴近项目决策"
   image: "/media/space-capsule-project.jpg"
-  image_alt: "文章与采购参考"
+  image_alt: "项目指南与采购参考"
   secondary_image: "/media/apple-cabin-hero.jpg"
-  secondary_image_alt: "住宿项目文章参考"
+  secondary_image_alt: "住宿项目参考"
   panel:
     kicker: "建议先看"
     title: "产品比较、发运准备和案例页通常最先有帮助"
@@ -44,13 +44,13 @@ hero:
       - "发运前要先确认哪些条件"
       - "案例页怎样帮助缩小方向"
   floating:
-    kicker: "如果要内部分享"
-    title: "优先把这几页发给团队会更省时间"
-    text: "比直接翻旧文章列表更容易对齐重点。"
+    kicker: "如果准备做第一轮比较"
+    title: "优先从这几页开始会更省时间"
+    text: "比直接翻旧文章列表更容易抓到当前最相关的问题。"
 ---
 
 <section class="xc-section-shell">
-  <h2>建议优先打开的文章</h2>
+  <h2>建议优先打开的内容</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
       <span>项目参考</span>
@@ -68,19 +68,19 @@ hero:
       <span>发运准备</span>
       <strong>发运前应该先确认哪些事项</strong>
       <p>适合项目已接近执行阶段，需要更清晰内部检查清单的团队。</p>
-      <a href="{{< relref "/posts/what-overseas-buyers-should-confirm-before-shipping-a-modular-cabin.md" >}}">阅读文章</a>
+      <a href="{{< relref "/posts/what-overseas-buyers-should-confirm-before-shipping-a-modular-cabin.md" >}}">阅读指南</a>
     </div>
     <div class="xc-download-card">
       <span>度假项目选型</span>
       <strong>如何为度假项目选择合适的模块化单元</strong>
       <p>适合对不同住宿型产品线做第一轮判断时使用。</p>
-      <a href="{{< relref "/posts/how-to-choose-a-prefab-unit-for-resort-projects.md" >}}">阅读文章</a>
+      <a href="{{< relref "/posts/how-to-choose-a-prefab-unit-for-resort-projects.md" >}}">阅读指南</a>
     </div>
   </div>
 </section>
 
 <section class="xc-section-shell">
-  <h2>采购专题首批深写文章</h2>
+  <h2>重点指南</h2>
   <div class="xc-download-grid">
     <div class="xc-download-card">
       <span>选型</span>
@@ -175,10 +175,10 @@ hero:
     <div class="xc-feature-card">
       <span>专题结构</span>
       <strong><a href="/zh/buyer-guides/">采购专题</a></strong>
-      <p>先看 6 个分类页和 30 个深度选题，把真正值得写的采购内容结构先搭起来。</p>
+      <p>把产品选择、交付条件、项目策划和运营判断集中在 6 个专题里查看。</p>
     </div>
     <div class="xc-feature-card">
-      <span>产品图册文章</span>
+      <span>产品图册</span>
       <strong><a href="{{< relref "/posts/Catalog for apple cabin.md" >}}">苹果舱图册参考</a></strong>
       <p>适合继续查看苹果舱的图册级资料与早期产品信息。</p>
     </div>
@@ -190,7 +190,7 @@ hero:
     <div class="xc-feature-card">
       <span>想要更完整入口</span>
       <strong><a href="/zh/resources/">资料中心</a></strong>
-      <p>这里把目录、FAQ、项目案例和更有价值的采购文章集中在一个入口里。</p>
+      <p>这里把目录、FAQ、项目案例和项目指南集中在一个入口里。</p>
     </div>
   </div>
 </section>
