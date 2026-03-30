@@ -275,6 +275,13 @@
     {{- if $keywordText -}}
       {{- $product = merge $product (dict "keywords" $keywordText) -}}
     {{- end -}}
+    {{- $product = merge $product (dict "offers" (dict
+      "@type" "Offer"
+      "url" $pageURL
+      "priceCurrency" "USD"
+      "availability" "https://schema.org/InStock"
+      "seller" (dict "@id" $orgID)
+    )) -}}
     {{- $graph = $graph | append $product -}}
   {{- end -}}
   {{- $hubCatalogType := "" -}}
