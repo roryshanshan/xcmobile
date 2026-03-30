@@ -11,8 +11,27 @@ menu:
 date: 2025-05-04T08:53:15+08:00
 lastmod: 2025-07-02T08:53:15+08:00
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
-authorlink: 
+authorlink:
 description: Discover our Detachable Container House – a modern, prefabricated modular solution ideal for temporary housing, office, glamping, and more. Quick assembly, transportable design, and customizable layout.
+
+schema:
+  "@context": "https://schema.org"
+  "@type": "Product"
+  "name": "Townhouse build with Detachable Container House"
+  "description": "Discover our Detachable Container House – a modern, prefabricated modular solution ideal for temporary housing, office, glamping, and more. Quick assembly, transportable design, and customizable layout."
+  "brand":
+    "@type": "Brand"
+    "name": "XC Mobile House"
+  "category": "Modular Building Product"
+  "image":
+    - "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
+  "offers":
+    "@type": "Offer"
+    "url": "https://mobilehouse.asia/other/townhouse-build-with-detachable-container-house/"
+    "priceCurrency": "USD"
+    "availability": "https://schema.org/InStock"
+    "seller":
+      "@id": "https://mobilehouse.asia#organization"
 
 categories:
   - category1

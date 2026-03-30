@@ -10,10 +10,29 @@ menu:
 date: 2025-04-11T08:53:15+08:00
 lastmod: 2025-04-11T08:53:15+08:00
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
-authorlink: 
+authorlink:
 
 seo_description: Explore the modern, eco-friendly, and space-efficient design of standard container houses with glass curtain walls. Discover innovative mobile housing solutions like ADUs, tiny homes, and modular containers that are perfect for hospitality, tourism, and emergency housing needs.
 seo_keywords: Standard Container Houses, Glass Curtain Wall, Mobile House, ADU, Tiny House, Modular Homes, Eco-Friendly Housing, Prefabricated Housing, Expandable Container Homes, Glamping, EcoLodging, Modular Housing Solutions, Container Homes, Portable Housing, Quick Install Homes
+
+schema:
+  "@context": "https://schema.org"
+  "@type": "Product"
+  "name": "Container Houses with Glass Curtain Wall"
+  "description": "XC Mobile House is a China-based manufacturer of prefab capsule houses, apple cabins, wooden cabins, and modular container solutions for export projects."
+  "brand":
+    "@type": "Brand"
+    "name": "XC Mobile House"
+  "category": "Modular Building Product"
+  "image":
+    - "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
+  "offers":
+    "@type": "Offer"
+    "url": "https://mobilehouse.asia/other/standard-container-houses-with-glass-curtain-wall/"
+    "priceCurrency": "USD"
+    "availability": "https://schema.org/InStock"
+    "seller":
+      "@id": "https://mobilehouse.asia#organization"
 
 categories:
   - category1

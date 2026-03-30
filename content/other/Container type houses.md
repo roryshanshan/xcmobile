@@ -10,10 +10,29 @@ menu:
 date: 2025-05-04T08:53:15+08:00
 lastmod: 2025-05-04T08:53:15+08:00
 author: Gavin （Whatsapp/Wechat:+86 19906365856）
-authorlink: 
+authorlink:
 
 description: "Explore container type houses including 40ft turnkey container homes. Perfect for mobile living, eco-tourism, and prefab housing solutions."
 keywords: ["container homes", "turnkey container house", "prefab house", "modular homes", "eco lodging", "portable housing", "glamping units", "space capsule home"]
+
+schema:
+  "@context": "https://schema.org"
+  "@type": "Product"
+  "name": "Container type houses"
+  "description": "Explore container type houses including 40ft turnkey container homes. Perfect for mobile living, eco-tourism, and prefab housing solutions."
+  "brand":
+    "@type": "Brand"
+    "name": "XC Mobile House"
+  "category": "Modular Building Product"
+  "image":
+    - "https://i.postimg.cc/G3tYDFp6/202504112221048.png"
+  "offers":
+    "@type": "Offer"
+    "url": "https://mobilehouse.asia/other/container-type-houses/"
+    "priceCurrency": "USD"
+    "availability": "https://schema.org/InStock"
+    "seller":
+      "@id": "https://mobilehouse.asia#organization"
 
 categories:
   - category1
