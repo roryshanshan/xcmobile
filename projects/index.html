@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en-US"
+
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | XC Mobile House</title>
+
+    
+    
+<link rel="icon" href="https://i.postimg.cc/sjj7ZykN/202504120804853.png" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#14352b">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SW79DGRXN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SW79DGRXN');
+  gtag('config', 'G-V634PEVNZN');  
+</script>
+
+
+  <link rel="canonical" href="https://mobilehouse.asia/projects/">
+
+
+
+
+<meta name="author" content="Gavin" />
+<meta name="description" content="Browse project references and application scenarios for capsule houses, cabins, and modular building solutions." />
+
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="https://mobilehouse.asia/projects/">
+  <meta property="og:site_name" content="XC Mobile House">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Browse project references and application scenarios for capsule houses, cabins, and modular building solutions.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Projects">
+  <meta name="twitter:description" content="Browse project references and application scenarios for capsule houses, cabins, and modular building solutions.">
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://mobilehouse.asia#organization","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"CN","addressLocality":"Qingzhou","addressRegion":"Shandong"},"contactPoint":[{"@type":"ContactPoint","areaServed":"Worldwide","availableLanguage":["en-US","zh-CN"],"contactType":"sales","email":"gavin@mobilehouse.asia","telephone":"+8619906365856","url":"https://wa.me/8619906365856"}],"email":"gavin@mobilehouse.asia","logo":{"@type":"ImageObject","url":"https://i.postimg.cc/G3tYDFp6/202504112221048.png"},"name":"XC Mobile House","sameAs":["https://www.linkedin.com/newsletters/7311612702156603393/?displayConfirmation=true"],"telephone":"+8619906365856","url":"https://mobilehouse.asia/"},{"@id":"https://mobilehouse.asia/#website","@type":"WebSite","description":"XC Mobile House is a China-based manufacturer of prefab capsule houses, apple cabins, wooden cabins, and modular container solutions for export projects.","inLanguage":"en-US","name":"XC Mobile House","publisher":{"@id":"https://mobilehouse.asia#organization"},"url":"https://mobilehouse.asia/"},{"@id":"https://mobilehouse.asia/projects/#webpage","@type":"CollectionPage","about":{"@id":"https://mobilehouse.asia#organization"},"breadcrumb":{"@id":"https://mobilehouse.asia/projects/#breadcrumb"},"description":"Browse project references and application scenarios for capsule houses, cabins, and modular building solutions.","inLanguage":"en-US","isPartOf":{"@id":"https://mobilehouse.asia/#website"},"name":"Projects","primaryImageOfPage":{"@type":"ImageObject","url":"https://mobilehouse.asia/media/space-capsule-project.jpg"},"url":"https://mobilehouse.asia/projects/"},{"@id":"https://mobilehouse.asia/projects/#breadcrumb","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://mobilehouse.asia/","name":"Home","position":1},{"@type":"ListItem","item":"https://mobilehouse.asia/projects/","name":"Projects","position":2}]},{"@id":"https://mobilehouse.asia/projects/#catalog","@type":"ItemList","description":"Browse project references and application scenarios for capsule houses, cabins, and modular building solutions.","itemListElement":[{"@type":"ListItem","item":{"@type":"WebPage","name":"Featured Projects","url":"https://mobilehouse.asia/posts/our-featured-projects/"},"position":1},{"@type":"ListItem","item":{"@type":"WebPage","name":"Resorts \u0026 Glamping","url":"https://mobilehouse.asia/resort-glamping/"},"position":2},{"@type":"ListItem","item":{"@type":"WebPage","name":"Scenic Area \u0026 Boutique Hotel","url":"https://mobilehouse.asia/scenic-boutique-hotel/"},"position":3},{"@type":"ListItem","item":{"@type":"WebPage","name":"Camp \u0026 Workforce Housing","url":"https://mobilehouse.asia/workforce-camp/"},"position":4}],"name":"Projects","numberOfItems":4,"url":"https://mobilehouse.asia/projects/"}]}</script>
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data class="xc-body">
+    <div id="dream-global-bg"></div>
+    <div class="xc-ambient xc-ambient--one"></div>
+    <div class="xc-ambient xc-ambient--two"></div>
+    <div class="xc-noise-layer"></div>
+
+    <nav
+  x-data="{ isSticky: false, mobileOpen: false }"
+  x-init="
+    const onScroll = () => { isSticky = window.scrollY > 12 };
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    $watch('mobileOpen', value => document.body.classList.toggle('xc-mobile-nav-open', value));
+  "
+  class="xc-nav-shell"
+  :class="{ 'xc-nav-shell--sticky': isSticky, 'xc-nav-shell--open': mobileOpen }">
+  <div class="container xc-nav">
+    <section class="xc-brand-wrap">
+      <a href="/" class="xc-brand">
+        <span class="xc-brand__avatar">
+          <img src="https://i.postimg.cc/G3tYDFp6/202504112221048.png" alt="XC Mobile House" />
+        </span>
+        
+        <span class="xc-brand__copy">
+          
+          <strong>XC Mobile House</strong>
+          
+          
+          <em>Modular Cabins &amp; Capsule Houses</em>
+          
+        </span>
+        
+      </a>
+    </section>
+
+    
+
+    <section class="xc-nav-desktop">
+      <ul class="main-menu xc-main-menu">
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/products/" class="xc-main-menu__link">
+                Products
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/space-capsule/" class="xc-submenu__link">
+                        Space Capsule
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/apple-cabin/" class="xc-submenu__link">
+                        Apple Cabin
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/wooden-cabin/" class="xc-submenu__link">
+                        Wooden Cabin
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/container-solutions/" class="xc-submenu__link">
+                        Container Solutions
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/other/" class="xc-submenu__link">
+                        More Models
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/solutions/" class="xc-main-menu__link">
+                Solutions
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/resort-glamping/" class="xc-submenu__link">
+                        Resorts &amp; Glamping
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/scenic-boutique-hotel/" class="xc-submenu__link">
+                        Scenic Area &amp; Boutique Hotel
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/workforce-camp/" class="xc-submenu__link">
+                        Camp &amp; Workforce Housing
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/projects/" class="xc-main-menu__link">
+                Projects
+                
+              </a>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/factory-quality/" class="xc-main-menu__link">
+                Factory QA
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/shipping-installation/" class="xc-submenu__link">
+                        Shipping &amp; Installation
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/faq/" class="xc-submenu__link">
+                        FAQ
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/resources/" class="xc-main-menu__link">
+                Resources
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/catalog/" class="xc-submenu__link">
+                        Catalog
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/posts/" class="xc-submenu__link">
+                        Blog
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/contact/" class="xc-main-menu__link">
+                Contact
+                
+              </a>
+              
+            </li>
+          
+        
+          
+        
+      </ul>
+      <div class="xc-nav-actions">
+        
+
+
+
+
+  
+
+  
+    
+  
+
+
+
+
+
+  <a
+    href="/zh/projects/"
+    class="xc-lang-toggle xc-lang-toggle--desktop"
+    aria-label="Switch language to 中文">
+    <span>中文</span>
+  </a>
+
+
+        <a href="/contact/" class="xc-nav-cta">Get Quote</a>
+      </div>
+    </section>
+
+    <div class="xc-nav-mobile-actions" style="display: none;">
+      
+
+
+
+
+  
+
+  
+    
+  
+
+
+
+
+
+  <a
+    href="/zh/projects/"
+    class="xc-lang-toggle xc-lang-toggle--mobile"
+    aria-label="Switch language to 中文">
+    <span>中文</span>
+  </a>
+
+
+      <button
+        type="button"
+        class="xc-mobile-trigger"
+        aria-label="Toggle site menu"
+        :aria-expanded="mobileOpen.toString()"
+        @click="mobileOpen = !mobileOpen">
+        <span class="xc-mobile-trigger__bars" :class="{ 'is-open': mobileOpen }">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <div x-cloak x-show="mobileOpen" class="xc-mobile-backdrop" style="display: none;" @click="mobileOpen = false"></div>
+
+  <div class="container xc-mobile-panel-wrap" x-cloak x-show="mobileOpen" style="display: none;" x-transition.opacity.duration.150ms>
+    <div class="xc-mobile-panel">
+      <div class="xc-mobile-panel__top">
+        <div>
+          <span class="xc-mobile-panel__eyebrow">XC Mobile House</span>
+          <strong>Factory-Direct Modular Housing</strong>
+        </div>
+        <a href="/contact/" class="xc-mobile-panel__quote" @click="mobileOpen = false">Get Quote</a>
+      </div>
+
+      <div class="xc-mobile-sections">
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/products/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>Products</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/space-capsule/" @click="mobileOpen = false">Space Capsule</a>
+                  
+                    <a href="/apple-cabin/" @click="mobileOpen = false">Apple Cabin</a>
+                  
+                    <a href="/wooden-cabin/" @click="mobileOpen = false">Wooden Cabin</a>
+                  
+                    <a href="/container-solutions/" @click="mobileOpen = false">Container Solutions</a>
+                  
+                    <a href="/other/" @click="mobileOpen = false">More Models</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/solutions/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>Solutions</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/resort-glamping/" @click="mobileOpen = false">Resorts &amp; Glamping</a>
+                  
+                    <a href="/scenic-boutique-hotel/" @click="mobileOpen = false">Scenic Area &amp; Boutique Hotel</a>
+                  
+                    <a href="/workforce-camp/" @click="mobileOpen = false">Camp &amp; Workforce Housing</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/projects/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>Projects</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/factory-quality/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>Factory QA</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/shipping-installation/" @click="mobileOpen = false">Shipping &amp; Installation</a>
+                  
+                    <a href="/faq/" @click="mobileOpen = false">FAQ</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/resources/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>Resources</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/catalog/" @click="mobileOpen = false">Catalog</a>
+                  
+                    <a href="/posts/" @click="mobileOpen = false">Blog</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/contact/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>Contact</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+            </section>
+          
+        
+          
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <main class="xc-site-main">
+      <div class="container xc-site-container">
+        
+<div class="xc-single xc-single--page">
+  <div class="xc-single__content">
+    
+    
+    <section class="xc-page-hero xc-page-hero--projects">
+      <div class="xc-page-hero__copy">
+        <p class="xc-page-hero__eyebrow">Project References</p>
+        <h1 class="xc-page-hero__title">See how modular products fit real project types before comparing models</h1>
+        <p class="xc-page-hero__lede">
+          Project pages are most useful when they help buyers judge application fit, deployment scale, and execution logic, not just visuals. This section is organized to support that kind of decision-making.
+        </p>
+
+        
+        <div class="xc-page-hero__badges">
+          
+          <span>Hospitality projects</span>
+          
+          <span>Camp deployment</span>
+          
+          <span>Support spaces</span>
+          
+        </div>
+        
+
+        
+        <div class="xc-inline-actions xc-inline-actions--hero">
+          
+          
+          
+            
+          
+          <a class="xc-chip-link xc-chip-link--primary" href="/posts/our-featured-projects/">Open Featured Project</a>
+          
+          
+          
+            
+          
+          <a class="xc-chip-link" href="/solutions/">Browse Solutions</a>
+          
+          
+          
+            
+          
+          <a class="xc-chip-link" href="/contact/">Contact Us</a>
+          
+        </div>
+        
+
+        
+        <div class="xc-page-hero__metrics">
+          
+          <div class="xc-page-hero__metric">
+            <strong>Project-first</strong>
+            <span>A clearer way to compare fit</span>
+          </div>
+          
+          <div class="xc-page-hero__metric">
+            <strong>Product &#43; Use Case</strong>
+            <span>More practical than isolated SKUs</span>
+          </div>
+          
+          <div class="xc-page-hero__metric">
+            <strong>Useful for Early Screening</strong>
+            <span>Better first-round discussions</span>
+          </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="xc-page-hero__visual">
+        <div class="xc-page-hero__image-shell">
+          <img
+            class="xc-page-hero__image"
+            src="/media/space-capsule-project.jpg"
+            alt="Project reference overview"
+             />
+
+          
+          <div class="xc-page-hero__floating">
+            <span>For faster communication</span>
+            <strong>Share your location, quantity, and a reference case</strong>
+            <p>That usually makes the first discussion much more specific.</p>
+          </div>
+          
+        </div>
+
+        <div class="xc-page-hero__support">
+          
+          <div class="xc-page-hero__secondary">
+            <img
+              src="/media/apple-cabin-hero.jpg"
+              alt="Scenic hospitality project reference"
+               />
+          </div>
+          
+
+          
+          <div class="xc-page-hero__panel">
+            <span>What to look for</span>
+            <strong>Location, quantity, product type, and delivery logic</strong>
+            <p>Those are usually more decision-useful than polished visuals alone, especially when buyers are comparing multiple suppliers.</p>
+            
+            <ul>
+              
+              <li>What kind of project it is</li>
+              
+              <li>How many units were used</li>
+              
+              <li>What the product solved on site</li>
+              
+            </ul>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    <article class="xc-landing-article xc-landing-article--hero mx-auto prose prose-quoteless dark:prose-invert">
+      
+
+      <section id="dream-single-post-content" class="xc-page-body">
+        <section class="xc-section-shell">
+  <h2>Start with These Project Directions</h2>
+  <div class="xc-feature-grid">
+    <div class="xc-feature-card">
+      <span>Hospitality</span>
+      <strong>Resorts, campgrounds, scenic destinations, and guest room projects</strong>
+      <p>Useful when the project depends on room appeal, experience quality, and visual differentiation.</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>Deployment</span>
+      <strong>Workforce housing, offices, and support buildings</strong>
+      <p>More relevant when transport logic, repeated deployment, and installation efficiency matter most.</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>Functional Units</span>
+      <strong>Office pods, utility spaces, and commercial support modules</strong>
+      <p>Useful for projects that need modular spaces beyond accommodation.</p>
+    </div>
+  </div>
+  <div class="xc-callout">
+    <strong>Featured cases are now organized as a cleaner entry page.</strong>
+    <p>You can start from <a href="/posts/our-featured-projects/">Featured Projects</a> and use real application context to narrow down product direction more effectively.</p>
+  </div>
+</section>
+<section class="xc-section-shell">
+  <h2>What Serious Buyers Usually Confirm from a Project Page</h2>
+  <div class="xc-spec-grid">
+    <div class="xc-spec-card">
+      <span>Location</span>
+      <strong>Which country or region the project is in</strong>
+      <p>This helps frame transport difficulty, climate expectations, and buyer context.</p>
+    </div>
+    <div class="xc-spec-card">
+      <span>Project Type</span>
+      <strong>Hospitality, workforce housing, or support use</strong>
+      <p>The same product can behave very differently depending on the business model behind it.</p>
+    </div>
+    <div class="xc-spec-card">
+      <span>Deployment Scale</span>
+      <strong>Whether it is a pilot unit or a batch project</strong>
+      <p>Scale affects pricing discussion, shipment planning, and delivery rhythm.</p>
+    </div>
+    <div class="xc-spec-card">
+      <span>Execution Logic</span>
+      <strong>Shipping, installation, and site conditions</strong>
+      <p>Without that layer, project references are much less useful for real decision-making.</p>
+    </div>
+  </div>
+</section>
+
+
+        
+
+        
+      </section>
+    </article>
+  </div>
+</div>
+
+        <footer class="xc-footer">
+  <div class="xc-footer__grid">
+    <div class="xc-footer__brand">
+      <p class="xc-footer__eyebrow">XC Mobile House</p>
+      <h2>Start from product selection, project fit, and delivery planning.</h2>
+      <p>
+        Use this site to review product families, applications, case references, shipping guidance, and inquiry options.
+      </p>
+      <div class="xc-footer__actions">
+        <a href="/contact/" class="xc-chip-link xc-chip-link--primary">Start an Inquiry</a>
+        <a href="/catalog/" class="xc-chip-link">Open Catalog</a>
+      </div>
+    </div>
+
+    <div class="xc-footer__column">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="/products/">Products</a></li>
+        <li><a href="/solutions/">Solutions</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/factory-quality/">Factory &amp; Quality</a></li>
+      </ul>
+    </div>
+
+    <div class="xc-footer__column">
+      <h3>Core Lines</h3>
+      <ul>
+        <li><a href="/space-capsule/">Space Capsule</a></li>
+        <li><a href="/apple-cabin/">Apple Cabin</a></li>
+        <li><a href="/wooden-cabin/">Wooden Cabin</a></li>
+        <li><a href="/container-solutions/">Container Solutions</a></li>
+      </ul>
+    </div>
+
+    <div class="xc-footer__column">
+      <h3>Contact</h3>
+      <ul class="xc-footer__contact">
+        <li><a href="mailto:gavin@mobilehouse.asia">gavin@mobilehouse.asia</a></li>
+        <li><a href="https://wa.me/8619906365856" target="_blank" rel="noreferrer">WhatsApp: +86 19906365856</a></li>
+        <li>Qingzhou, Weifang, Shandong, China</li>
+      </ul>
+      <div class="xc-footer__socials">
+        <a href="https://api.whatsapp.com/send?phone=8619906365856" target="_blank" rel="noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/newsletters/7311612702156603393/?displayConfirmation=true" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/roryshanshan/picx-images-hosting/raw/master/IMG_3958.1lbqa2aob3.webp" target="_blank" rel="noreferrer" title="WeChat"><i class="fab fa-weixin"></i></a>
+        <a href="mailto:gavin@mobilehouse.asia" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="xc-footer__bottom">
+    <div class="xc-footer__copyright">
+      
+      <p>© 2016 - 2026 XC Mobile House</p>
+      
+      
+      <p>Qingzhou, Weifang, Shandong, China</p>
+      
+    </div>
+
+    <div
+      x-data="{ icons: [
+        { name: 'sunny', status: 'n' },
+        { name: 'moon', status: 'y' },
+        { name: 'desktop', status: 'auto' }
+      ] }"
+      class="xc-theme-toggle"
+    >
+      <template x-for="icon in icons">
+        <div
+          role="button"
+          tabindex="0"
+          :aria-label="'Select ' + icon.name + ' mode'"
+          class="xc-theme-toggle__item"
+          :class="$store.darkMode.icon() === icon.name && 'xc-theme-toggle__item--active'"
+          @click="$store.darkMode.toggle(icon.status)"
+        >
+          <ion-icon
+            :name="`${icon.name}-outline`"
+            :class="$store.darkMode.icon() === icon.name && 'xc-theme-toggle__icon--active'"
+          >
+          </ion-icon>
+        </div>
+      </template>
+    </div>
+  </div>
+</footer>
+
+      </div>
+    </main>
+
+    <a
+  class="xc-float-whatsapp"
+  href="https://wa.me/8619906365856"
+  target="_blank"
+  rel="noreferrer"
+  aria-label="WhatsApp">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  <span>WhatsApp</span>
+</a>
+
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+<script src="/js/menu-toggle.js"></script>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

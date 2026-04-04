@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目案例 | XC Mobile House</title>
+
+    
+    
+<link rel="icon" href="https://i.postimg.cc/sjj7ZykN/202504120804853.png" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#14352b">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SW79DGRXN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SW79DGRXN');
+  gtag('config', 'G-V634PEVNZN');  
+</script>
+
+
+  <link rel="canonical" href="https://mobilehouse.asia/zh/projects/">
+
+
+
+
+<meta name="author" content="Gavin" />
+<meta name="description" content="查看 XC Mobile House 的项目参考和应用方向，帮助快速建立项目判断。" />
+
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="https://mobilehouse.asia/zh/projects/">
+  <meta property="og:site_name" content="XC Mobile House">
+  <meta property="og:title" content="项目案例">
+  <meta property="og:description" content="查看 XC Mobile House 的项目参考和应用方向，帮助快速建立项目判断。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="项目案例">
+  <meta name="twitter:description" content="查看 XC Mobile House 的项目参考和应用方向，帮助快速建立项目判断。">
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://mobilehouse.asia#organization","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"CN","addressLocality":"Qingzhou","addressRegion":"Shandong"},"contactPoint":[{"@type":"ContactPoint","areaServed":"Worldwide","availableLanguage":["zh-CN","en-US"],"contactType":"sales","email":"gavin@mobilehouse.asia","telephone":"+8619906365856","url":"https://wa.me/8619906365856"}],"email":"gavin@mobilehouse.asia","logo":{"@type":"ImageObject","url":"https://i.postimg.cc/G3tYDFp6/202504112221048.png"},"name":"XC Mobile House","sameAs":["https://www.linkedin.com/newsletters/7311612702156603393/?displayConfirmation=true"],"telephone":"+8619906365856","url":"https://mobilehouse.asia/"},{"@id":"https://mobilehouse.asia/zh/#website","@type":"WebSite","description":"XC Mobile House 专注于太空舱、苹果舱、木屋和模块化集装箱建筑方案。","inLanguage":"zh-CN","name":"XC Mobile House","publisher":{"@id":"https://mobilehouse.asia#organization"},"url":"https://mobilehouse.asia/zh/"},{"@id":"https://mobilehouse.asia/zh/projects/#webpage","@type":"CollectionPage","about":{"@id":"https://mobilehouse.asia#organization"},"breadcrumb":{"@id":"https://mobilehouse.asia/zh/projects/#breadcrumb"},"description":"查看 XC Mobile House 的项目参考和应用方向，帮助快速建立项目判断。","inLanguage":"zh-CN","isPartOf":{"@id":"https://mobilehouse.asia/zh/#website"},"name":"项目案例","primaryImageOfPage":{"@type":"ImageObject","url":"https://mobilehouse.asia/media/space-capsule-project.jpg"},"url":"https://mobilehouse.asia/zh/projects/"},{"@id":"https://mobilehouse.asia/zh/projects/#breadcrumb","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://mobilehouse.asia/zh/","name":"首页","position":1},{"@type":"ListItem","item":"https://mobilehouse.asia/zh/projects/","name":"项目案例","position":2}]},{"@id":"https://mobilehouse.asia/zh/projects/#catalog","@type":"ItemList","description":"查看 XC Mobile House 的项目参考和应用方向，帮助快速建立项目判断。","itemListElement":[{"@type":"ListItem","item":{"@type":"WebPage","name":"精选项目案例","url":"https://mobilehouse.asia/zh/posts/our-featured-projects/"},"position":1},{"@type":"ListItem","item":{"@type":"WebPage","name":"度假村与营地","url":"https://mobilehouse.asia/zh/resort-glamping/"},"position":2},{"@type":"ListItem","item":{"@type":"WebPage","name":"景区与精品酒店","url":"https://mobilehouse.asia/zh/scenic-boutique-hotel/"},"position":3},{"@type":"ListItem","item":{"@type":"WebPage","name":"营地与宿舍项目","url":"https://mobilehouse.asia/zh/workforce-camp/"},"position":4}],"name":"项目案例","numberOfItems":4,"url":"https://mobilehouse.asia/zh/projects/"}]}</script>
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data class="xc-body">
+    <div id="dream-global-bg"></div>
+    <div class="xc-ambient xc-ambient--one"></div>
+    <div class="xc-ambient xc-ambient--two"></div>
+    <div class="xc-noise-layer"></div>
+
+    <nav
+  x-data="{ isSticky: false, mobileOpen: false }"
+  x-init="
+    const onScroll = () => { isSticky = window.scrollY > 12 };
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    $watch('mobileOpen', value => document.body.classList.toggle('xc-mobile-nav-open', value));
+  "
+  class="xc-nav-shell"
+  :class="{ 'xc-nav-shell--sticky': isSticky, 'xc-nav-shell--open': mobileOpen }">
+  <div class="container xc-nav">
+    <section class="xc-brand-wrap">
+      <a href="/zh/" class="xc-brand">
+        <span class="xc-brand__avatar">
+          <img src="https://i.postimg.cc/G3tYDFp6/202504112221048.png" alt="XC Mobile House" />
+        </span>
+        
+        <span class="xc-brand__copy">
+          
+          <strong>XC Mobile House</strong>
+          
+          
+          <em>模块化舱体与房屋</em>
+          
+        </span>
+        
+      </a>
+    </section>
+
+    
+
+    <section class="xc-nav-desktop">
+      <ul class="main-menu xc-main-menu">
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/zh/products/" class="xc-main-menu__link">
+                产品中心
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/zh/space-capsule/" class="xc-submenu__link">
+                        太空舱
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/apple-cabin/" class="xc-submenu__link">
+                        苹果舱
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/wooden-cabin/" class="xc-submenu__link">
+                        木屋系列
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/container-solutions/" class="xc-submenu__link">
+                        集装箱方案
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/other/" class="xc-submenu__link">
+                        更多产品
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/zh/solutions/" class="xc-main-menu__link">
+                解决方案
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/zh/resort-glamping/" class="xc-submenu__link">
+                        度假村与营地
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/scenic-boutique-hotel/" class="xc-submenu__link">
+                        景区与精品酒店
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/workforce-camp/" class="xc-submenu__link">
+                        营地与宿舍项目
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/zh/projects/" class="xc-main-menu__link">
+                项目案例
+                
+              </a>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/zh/factory-quality/" class="xc-main-menu__link">
+                工厂质控
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/zh/shipping-installation/" class="xc-submenu__link">
+                        运输与安装
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/faq/" class="xc-submenu__link">
+                        常见问题
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/zh/resources/" class="xc-main-menu__link">
+                资料中心
+                
+                <ion-icon name="chevron-down-outline" class="xc-main-menu__chevron"></ion-icon>
+                
+              </a>
+              
+                <ul class="submenu xc-submenu">
+                  
+                    <li>
+                      <a href="/zh/catalog/" class="xc-submenu__link">
+                        电子目录
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/zh/posts/" class="xc-submenu__link">
+                        博客
+                      </a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+          
+            <li class="xc-main-menu__item">
+              <a href="/zh/contact/" class="xc-main-menu__link">
+                联系我们
+                
+              </a>
+              
+            </li>
+          
+        
+      </ul>
+      <div class="xc-nav-actions">
+        
+
+
+
+
+  
+    
+  
+
+  
+
+
+
+
+
+  <a
+    href="/projects/"
+    class="xc-lang-toggle xc-lang-toggle--desktop"
+    aria-label="Switch language to English">
+    <span>EN</span>
+  </a>
+
+
+        <a href="/zh/contact/" class="xc-nav-cta">获取报价</a>
+      </div>
+    </section>
+
+    <div class="xc-nav-mobile-actions" style="display: none;">
+      
+
+
+
+
+  
+    
+  
+
+  
+
+
+
+
+
+  <a
+    href="/projects/"
+    class="xc-lang-toggle xc-lang-toggle--mobile"
+    aria-label="Switch language to English">
+    <span>EN</span>
+  </a>
+
+
+      <button
+        type="button"
+        class="xc-mobile-trigger"
+        aria-label="Toggle site menu"
+        :aria-expanded="mobileOpen.toString()"
+        @click="mobileOpen = !mobileOpen">
+        <span class="xc-mobile-trigger__bars" :class="{ 'is-open': mobileOpen }">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <div x-cloak x-show="mobileOpen" class="xc-mobile-backdrop" style="display: none;" @click="mobileOpen = false"></div>
+
+  <div class="container xc-mobile-panel-wrap" x-cloak x-show="mobileOpen" style="display: none;" x-transition.opacity.duration.150ms>
+    <div class="xc-mobile-panel">
+      <div class="xc-mobile-panel__top">
+        <div>
+          <span class="xc-mobile-panel__eyebrow">XC Mobile House</span>
+          <strong>模块化客房解决方案</strong>
+        </div>
+        <a href="/zh/contact/" class="xc-mobile-panel__quote" @click="mobileOpen = false">获取报价</a>
+      </div>
+
+      <div class="xc-mobile-sections">
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/zh/products/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>产品中心</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/zh/space-capsule/" @click="mobileOpen = false">太空舱</a>
+                  
+                    <a href="/zh/apple-cabin/" @click="mobileOpen = false">苹果舱</a>
+                  
+                    <a href="/zh/wooden-cabin/" @click="mobileOpen = false">木屋系列</a>
+                  
+                    <a href="/zh/container-solutions/" @click="mobileOpen = false">集装箱方案</a>
+                  
+                    <a href="/zh/other/" @click="mobileOpen = false">更多产品</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/zh/solutions/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>解决方案</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/zh/resort-glamping/" @click="mobileOpen = false">度假村与营地</a>
+                  
+                    <a href="/zh/scenic-boutique-hotel/" @click="mobileOpen = false">景区与精品酒店</a>
+                  
+                    <a href="/zh/workforce-camp/" @click="mobileOpen = false">营地与宿舍项目</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/zh/projects/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>项目案例</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/zh/factory-quality/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>工厂质控</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/zh/shipping-installation/" @click="mobileOpen = false">运输与安装</a>
+                  
+                    <a href="/zh/faq/" @click="mobileOpen = false">常见问题</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/zh/resources/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>资料中心</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+                <div class="xc-mobile-links">
+                  
+                    <a href="/zh/catalog/" @click="mobileOpen = false">电子目录</a>
+                  
+                    <a href="/zh/posts/" @click="mobileOpen = false">博客</a>
+                  
+                </div>
+              
+            </section>
+          
+        
+          
+            <section class="xc-mobile-section">
+              <a href="/zh/contact/" class="xc-mobile-section__head" @click="mobileOpen = false">
+                <span>联系我们</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+
+              
+            </section>
+          
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <main class="xc-site-main">
+      <div class="container xc-site-container">
+        
+<div class="xc-single xc-single--page">
+  <div class="xc-single__content">
+    
+    
+    <section class="xc-page-hero xc-page-hero--projects">
+      <div class="xc-page-hero__copy">
+        <p class="xc-page-hero__eyebrow">案例与应用参考</p>
+        <h1 class="xc-page-hero__title">通过真实项目看产品更适合落在哪些场景</h1>
+        <p class="xc-page-hero__lede">
+          项目型采购不会只看产品长什么样，更会看它适合哪些业务场景、能做多少数量，以及运输和落地逻辑是否清晰。
+        </p>
+
+        
+        <div class="xc-page-hero__badges">
+          
+          <span>住宿项目</span>
+          
+          <span>营地部署</span>
+          
+          <span>功能配套</span>
+          
+        </div>
+        
+
+        
+        <div class="xc-inline-actions xc-inline-actions--hero">
+          
+          
+          
+            
+          
+          <a class="xc-chip-link xc-chip-link--primary" href="/zh/posts/our-featured-projects/">查看精选案例</a>
+          
+          
+          
+            
+          
+          <a class="xc-chip-link" href="/zh/solutions/">浏览解决方案</a>
+          
+          
+          
+            
+          
+          <a class="xc-chip-link" href="/zh/contact/">联系我们</a>
+          
+        </div>
+        
+
+        
+        <div class="xc-page-hero__metrics">
+          
+          <div class="xc-page-hero__metric">
+            <strong>案例优先</strong>
+            <span>更容易建立真实判断</span>
+          </div>
+          
+          <div class="xc-page-hero__metric">
+            <strong>产品 &#43; 场景</strong>
+            <span>比单看型号更有效</span>
+          </div>
+          
+          <div class="xc-page-hero__metric">
+            <strong>支持项目沟通</strong>
+            <span>便于第一轮交流</span>
+          </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="xc-page-hero__visual">
+        <div class="xc-page-hero__image-shell">
+          <img
+            class="xc-page-hero__image"
+            src="/media/space-capsule-project.jpg"
+            alt="项目案例主图"
+             />
+
+          
+          <div class="xc-page-hero__floating">
+            <span>如果你也在推进项目</span>
+            <strong>发送项目位置、数量和参考案例</strong>
+            <p>这样可以更快进入针对性的讨论。</p>
+          </div>
+          
+        </div>
+
+        <div class="xc-page-hero__support">
+          
+          <div class="xc-page-hero__secondary">
+            <img
+              src="/media/apple-cabin-hero.jpg"
+              alt="景区项目参考"
+               />
+          </div>
+          
+
+          
+          <div class="xc-page-hero__panel">
+            <span>建议重点看</span>
+            <strong>案例中的场景、数量和落地逻辑</strong>
+            <p>这些内容比漂亮图片更有判断价值，能帮助更快区分适合自己的产品方向。</p>
+            
+            <ul>
+              
+              <li>项目在哪个国家或地区</li>
+              
+              <li>用了哪条产品线和多少数量</li>
+              
+              <li>解决了什么实际问题</li>
+              
+            </ul>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    <article class="xc-landing-article xc-landing-article--hero mx-auto prose prose-quoteless dark:prose-invert">
+      
+
+      <section id="dream-single-post-content" class="xc-page-body">
+        <section class="xc-section-shell">
+  <h2>先看这些案例方向</h2>
+  <div class="xc-feature-grid">
+    <div class="xc-feature-card">
+      <span>文旅住宿</span>
+      <strong>度假村、营地和景区客房项目</strong>
+      <p>更适合比较房型定位、景观关系和客房吸引力。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>模块部署</span>
+      <strong>营地宿舍、办公室和临建配套</strong>
+      <p>更适合比较运输方式、安装效率和标准化复制能力。</p>
+    </div>
+    <div class="xc-feature-card">
+      <span>功能配套</span>
+      <strong>办公舱、工作舱和功能型单元</strong>
+      <p>更适合看空间类型、尺寸范围和使用场景延展。</p>
+    </div>
+  </div>
+  <div class="xc-callout">
+    <strong>精选项目案例已经整理成一页入口。</strong>
+    <p>你可以直接打开 <a href="/zh/posts/our-featured-projects/">精选项目案例</a>，从应用场景和落地方式来判断更适合的产品方向。</p>
+  </div>
+</section>
+<section class="xc-section-shell">
+  <h2>严肃买家通常会从案例里确认什么</h2>
+  <div class="xc-spec-grid">
+    <div class="xc-spec-card">
+      <span>项目位置</span>
+      <strong>在哪个国家或地区</strong>
+      <p>有助于参考运输难度和目标市场接受度。</p>
+    </div>
+    <div class="xc-spec-card">
+      <span>项目类型</span>
+      <strong>度假住宿、营地宿舍还是配套空间</strong>
+      <p>不同场景对应的产品逻辑完全不同。</p>
+    </div>
+    <div class="xc-spec-card">
+      <span>交付规模</span>
+      <strong>单套示范还是批量部署</strong>
+      <p>数量决定沟通节奏、运输分批方式和报价深度。</p>
+    </div>
+    <div class="xc-spec-card">
+      <span>落地方式</span>
+      <strong>装运、吊装和现场条件是否清晰</strong>
+      <p>这会直接影响方案的可执行性。</p>
+    </div>
+  </div>
+</section>
+
+
+        
+
+        
+      </section>
+    </article>
+  </div>
+</div>
+
+        <footer class="xc-footer">
+  <div class="xc-footer__grid">
+    <div class="xc-footer__brand">
+      <p class="xc-footer__eyebrow">XC Mobile House</p>
+      <h2>从产品选择到交付沟通，都可以从这里开始。</h2>
+      <p>
+        你可以在这里查看核心产品、应用场景、案例、运输与安装信息，并快速进入项目沟通。
+      </p>
+      <div class="xc-footer__actions">
+        <a href="/zh/contact/" class="xc-chip-link xc-chip-link--primary">联系咨询</a>
+        <a href="/zh/catalog/" class="xc-chip-link">查看目录</a>
+      </div>
+    </div>
+
+    <div class="xc-footer__column">
+      <h3>快速入口</h3>
+      <ul>
+        <li><a href="/zh/products/">产品中心</a></li>
+        <li><a href="/zh/solutions/">解决方案</a></li>
+        <li><a href="/zh/projects/">项目案例</a></li>
+        <li><a href="/zh/factory-quality/">工厂与质控</a></li>
+      </ul>
+    </div>
+
+    <div class="xc-footer__column">
+      <h3>核心产品线</h3>
+      <ul>
+        <li><a href="/zh/space-capsule/">太空舱</a></li>
+        <li><a href="/zh/apple-cabin/">苹果舱</a></li>
+        <li><a href="/zh/wooden-cabin/">木屋系列</a></li>
+        <li><a href="/zh/container-solutions/">集装箱方案</a></li>
+      </ul>
+    </div>
+
+    <div class="xc-footer__column">
+      <h3>联系我们</h3>
+      <ul class="xc-footer__contact">
+        <li><a href="mailto:gavin@mobilehouse.asia">gavin@mobilehouse.asia</a></li>
+        <li><a href="https://wa.me/8619906365856" target="_blank" rel="noreferrer">WhatsApp: +86 19906365856</a></li>
+        <li>中国山东省潍坊市青州市</li>
+      </ul>
+      <div class="xc-footer__socials">
+        <a href="https://api.whatsapp.com/send?phone=8619906365856" target="_blank" rel="noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/newsletters/7311612702156603393/?displayConfirmation=true" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/roryshanshan/picx-images-hosting/raw/master/IMG_3958.1lbqa2aob3.webp" target="_blank" rel="noreferrer" title="WeChat"><i class="fab fa-weixin"></i></a>
+        <a href="mailto:gavin@mobilehouse.asia" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="xc-footer__bottom">
+    <div class="xc-footer__copyright">
+      
+      <p>© 2016 - 2026 XC Mobile House</p>
+      
+      
+      <p>中国山东省潍坊市青州市</p>
+      
+    </div>
+
+    <div
+      x-data="{ icons: [
+        { name: 'sunny', status: 'n' },
+        { name: 'moon', status: 'y' },
+        { name: 'desktop', status: 'auto' }
+      ] }"
+      class="xc-theme-toggle"
+    >
+      <template x-for="icon in icons">
+        <div
+          role="button"
+          tabindex="0"
+          :aria-label="'Select ' + icon.name + ' mode'"
+          class="xc-theme-toggle__item"
+          :class="$store.darkMode.icon() === icon.name && 'xc-theme-toggle__item--active'"
+          @click="$store.darkMode.toggle(icon.status)"
+        >
+          <ion-icon
+            :name="`${icon.name}-outline`"
+            :class="$store.darkMode.icon() === icon.name && 'xc-theme-toggle__icon--active'"
+          >
+          </ion-icon>
+        </div>
+      </template>
+    </div>
+  </div>
+</footer>
+
+      </div>
+    </main>
+
+    <a
+  class="xc-float-whatsapp"
+  href="https://wa.me/8619906365856"
+  target="_blank"
+  rel="noreferrer"
+  aria-label="WhatsApp 咨询">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  <span>WhatsApp 咨询</span>
+</a>
+
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+<script src="/js/menu-toggle.js"></script>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>
